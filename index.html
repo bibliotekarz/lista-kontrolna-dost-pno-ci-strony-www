@@ -58,12 +58,12 @@ label, input {
     
     <p class="wprowadzenie">Jeśli na PYTANIA KLUCZOWE zostanie udzielona odpowiedź negatywna (zaznaczona na czerwono), dalsza weryfikacja nie
         jest konieczna. Badane strony zostają od razu uznane za niedostępne w całości.</p>
-    <p class="pytanie">PYTANIE KLUCZOWE: Czy wszystkie elementy aktywne na stronie są dostępne za pomocą klawiatury?
+    <p class="pytanie">1. PYTANIE KLUCZOWE: Czy wszystkie elementy aktywne na stronie są dostępne za pomocą klawiatury?
     </p>
-    <--! :FIXME: -->
-    <label for="tak"><input type="radio" id="tak" name="p1" value="1">Tak</label>
-    <input type="radio" id="nie" name="p1" value="0">
-    <label for="nie">Nie</label>
+    <input type="radio" id="p1tak" name="p1" value="1">
+    <label for="p1tak">Tak</label>
+    <input type="radio" id="p1nie" name="p1" value="0">
+    <label for="p1nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 2.1.1 - Poziom „A”</p>
     <p class="opis">Sprawdź, czy wszystkie elementy aktywne czyli linki, przyciski i inne elementy, na które można
         kliknąć w celu wywołania jakichkolwiek działań, na których można dokonywać wyboru, np. listy elementów, listy
@@ -73,11 +73,11 @@ label, input {
         klawisz ENTER aby sprawdzić czy działają tak samo jak po kliknięciu myszką lub operować strzałkami i spacją w
         celu dokonywania wyboru w listach elementów czy polach wyboru. Wszystkie te elementy bez wyjątku muszą być
         możliwe do obsłużenia bez konieczności użycia myszki, jedynie za pomocą klawiatury.</p>
-    <p class="pytanie">PYTANIE KLUCZOWE: Czy na stronie jest pułapka klawiaturowa?</p>
-    <input type="radio" id="niema" name="p1" value="0">
-    <label for="niema">Nie ma</label>
-    <input type="radio" id="jest" name="p1" value="1">
-    <label for="jest">Jest</label>
+    <p class="pytanie">2. PYTANIE KLUCZOWE: Czy na stronie jest pułapka klawiaturowa?</p>
+    <input type="radio" id="p2niema" name="p2" value="0">
+    <label for="p2niema">Nie ma</label>
+    <input type="radio" id="p2jest" name="p2" value="1">
+    <label for="p2jest">Jest</label>
     <p class="kryteria">Kryteria WCAG: 2.1.2 - Poziom „A”</p>
     <p class="opis">Sprawdź, czy na stronie nie ma sytuacji, w której zaznaczenie jakiegoś elementu podczas
         przemieszczania kursora (fokusu) za pomocą przycisków klawiatury powoduje zablokowanie możliwości jego dalszego
@@ -85,26 +85,26 @@ label, input {
         do kilku elementów na stronie bez możliwości dotarcia do reszty elementów. Należy wykonać sprawdzenie podobne do
         tego z poprzedniego pytania i sprawdzić, czy kursor (fokus) przemieszcza się swobodnie po wszystkich elementach
         strony po czym wraca do paska adresu przeglądarki.</p>
-    <p class="pytanie">PYTANIE KLUCZOWE: Czy na stronie znajdują się elementy, które powodują gwałtowne zmiany jasności
+    <p class="pytanie">3. PYTANIE KLUCZOWE: Czy na stronie znajdują się elementy, które powodują gwałtowne zmiany jasności
         lub szybko błyskają na czerwono? </p>
-        <input type="radio" id="niema" name="p1" value="1">
-        <label for="niema">Nie ma</label>
-        <input type="radio" id="wystepuja" name="p1" value="0">
-        <label for="wystepuja">Występują</label>
+        <input type="radio" id="p3niema" name="p3" value="1">
+        <label for="p3niema">Nie ma</label>
+        <input type="radio" id="p3wystepuja" name="p3" value="0">
+        <label for="p3wystepuja">Występują</label>
     <p class="kryteria">Kryteria WCAG: 2.3.1 - Poziom „A”</p>
     <p class="opis">Zobacz, czy na stronie jest coś, co błyska na czerwono. Jeśli tak, policz, ile takich błysków
         wystąpi w ciągu sekundy. Jeśli będzie ich 3 lub więcej – strona jest niedostępna i w pytaniu należy zaznaczyć
-        odpowiedź negatywną.</p>
-    <p class="opis">Zobacz, czy jest na stronie obszar, który podlega gwałtownym zmianom jasności. Jeśli tak, oceń, czy zajmuje on
+        odpowiedź negatywną.<br>
+        Zobacz, czy jest na stronie obszar, który podlega gwałtownym zmianom jasności. Jeśli tak, oceń, czy zajmuje on
         więcej niż 25% obszaru strony. Jeśli tak – strona jest niedostępna i w pytaniu należy zaznaczyć odpowiedź
-        negatywną.</p>
-    <p class="opis">W przeciwnych przypadkach odpowiedź na pytanie jest pozytywna.</p>
-    <p class="pytanie">PYTANIE KLUCZOWE: Czy są na stronie elementy uruchamiające dźwięk, którego nie da się zatrzymać?
+        negatywną.<br>
+        W przeciwnych przypadkach odpowiedź na pytanie jest pozytywna.</p>
+    <p class="pytanie">4. PYTANIE KLUCZOWE: Czy są na stronie elementy uruchamiające dźwięk, którego nie da się zatrzymać?
     </p>
-    <input type="radio" id="niema" name="p1" value="0">
-    <label for="niema">Nie ma</label>
-    <input type="radio" id="wystepuja" name="p1" value="1">
-    <label for="wystepuja">Występują</label>
+    <input type="radio" id="p4niema" name="p4" value="0">
+    <label for="p4niema">Nie ma</label>
+    <input type="radio" id="p4wystepuja" name="p4" value="1">
+    <label for="p4wystepuja">Występują</label>
     <p class="kryteria">Kryteria WCAG: 1.4.2 - Poziom „A”</p>
     <p class="opis">Sprawdź, czy nie ma elementów, które uruchamiają automatycznie dźwięk, którego nie da się zatrzymać,
         a którego trwanie przekracza 3 sekundy.</p>
@@ -114,36 +114,36 @@ label, input {
 
     
     <p class="wprowadzenie">Jeśli na badanej podstronie nie ma formularza, pytania te należy pominąć.</p>
-    <p class="pytanie">Czy informacja o błędzie w formularzu jednoznacznie ten błąd określa, jest dostępna i zrozumiała
+    <p class="pytanie">5. Czy informacja o błędzie w formularzu jednoznacznie ten błąd określa, jest dostępna i zrozumiała
         dla wszystkich użytkowników?</p>
-    <input type="radio" id="tak" name="p1" value="1">
-    <label for="tak">Tak</label>
-    <input type="radio" id="nie" name="p1" value="0">
-    <label for="nie">Nie</label>
+    <input type="radio" id="p5tak" name="p5" value="1">
+    <label for="p5tak">Tak</label>
+    <input type="radio" id="p5nie" name="p5" value="0">
+    <label for="p5nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 3.3.1 - Poziom „A”</p>
     <p class="opis">Sprawdź, czy w przypadku wpisania niepoprawnych danych do formularza, informacja o błędzie jest
         wystarczająco zrozumiała. Oznacza to, że musi być możliwość zrozumienia, z samej treści komunikatu, przyczyny
-        błędu i sposobu, w jaki należy ponownie wpisać informacje żeby błąd nie wystąpił ponownie.</p>
-    <p class="opis">Jak to zrobić?</p>
-    <p class="opis">Należy sprawdzić co się dzieje, gdy do pól formularza nie zostaną wpisane żadne informacje i formularz zostanie
+        błędu i sposobu, w jaki należy ponownie wpisać informacje żeby błąd nie wystąpił ponownie.<br>
+        Jak to zrobić?<br>
+        Należy sprawdzić co się dzieje, gdy do pól formularza nie zostaną wpisane żadne informacje i formularz zostanie
         wysłany. Następnie należy sprawdzić co się dzieje, gdy do formularza zostaną wpisane nieprawidłowe dane, np.
-        nieprawidłowa data (np. 30-02-2019), nieprawidłowy kod pocztowy itp., i formularz zostanie wysłany. </p>
-    <p class="opis">Jeśli po wysłaniu formularza z wpisanymi nieprawidłowymi danymi pojawiają się komunikaty o błędnie wypełnionych
+        nieprawidłowa data (np. 30-02-2019), nieprawidłowy kod pocztowy itp., i formularz zostanie wysłany. <br>
+        Jeśli po wysłaniu formularza z wpisanymi nieprawidłowymi danymi pojawiają się komunikaty o błędnie wypełnionych
         polach, to należy sprawdzić czy są one podane w formie dostępnej (tekstowej) i czy treść komunikatu o błędzie
         jest logiczny i zrozumiały. W szczególności konieczne jest sprawdzenie, czy informacja o błędach nie ogranicza
         się jedynie do wizualnego wyróżnienia pól, w których dane są nieprawidłowe (np. oznaczenia czerwonym kolorem).
     </p>
-    <p class="pytanie">Czy w przypadku pojawienia się błędów w danych wpisanych w formularzu pojawia się informacja
+    <p class="pytanie">6. Czy w przypadku pojawienia się błędów w danych wpisanych w formularzu pojawia się informacja
         sugerująca sposób w jaki można ponownie, poprawnie wpisać te dane? </p>
-    <input type="radio" id="tak" name="p1" value="1">
-    <label for="tak">Tak</label>
-    <input type="radio" id="nie" name="p1" value="0">
-    <label for="nie">Nie</label>
+    <input type="radio" id="p6tak" name="p6" value="1">
+    <label for="p6tak">Tak</label>
+    <input type="radio" id="p6nie" name="p6" value="0">
+    <label for="p6nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 3.3.3 - Poziom „AA”</p>
     <p class="opis">Sprawdź, czy w przypadku, gdy w formularzu zostały wpisane niepoprawne dane użytkownik dostaje
-        jednoznaczną informację połączoną z sugestią w jaki sposób powinien poprawić błąd.</p>
-    <p class="opis">Jak to zrobić?</p>
-    <p class="opis">Należy sprawdzić, czy w komunikatach o błędach zawarte są jednoznaczne rady co do tego, jak należy wpisywać dane
+        jednoznaczną informację połączoną z sugestią w jaki sposób powinien poprawić błąd.<br>
+        Jak to zrobić?<br>
+        Należy sprawdzić, czy w komunikatach o błędach zawarte są jednoznaczne rady co do tego, jak należy wpisywać dane
         do pól formularza. Chodzi w szczególności o na przykład poszerzoną informację o formacie daty, w rodzaju: „datę
         należy wpisywać w formacie dd-mm-rrrr gdzie litery dd oznaczają dzień, mm oznaczają miesiąc, przy czym jeśli
         numer miesiąca jest jednocyfrowy to jest poprzedzony zerem, a rok jest zapisany w formie czterocyfrowej, np.
@@ -153,63 +153,63 @@ label, input {
     <h3>Pozostałe pytania</h3>
 
     
-    <p class="pytanie">Czy wszystkie znaczące elementy animowane lub dźwiękowe posiadają odpowiedni opis (tytuł)
+    <p class="pytanie">7. Czy wszystkie znaczące elementy animowane lub dźwiękowe posiadają odpowiedni opis (tytuł)
         wyjaśniający co przedstawiają lub czego dotyczą? </p>
-    <input type="radio" id="tak" name="p1" value="1">
-    <label for="tak">Tak</label>
-    <input type="radio" id="nie" name="p1" value="0">
-    <label for="nie">Nie</label>
-    <input type="radio" id="niedotyczy" name="p1" value="2">
-    <label for="niedotyczy">Nie dotyczy</label>
+    <input type="radio" id="p7tak" name="p7" value="1">
+    <label for="p7tak">Tak</label>
+    <input type="radio" id="p7nie" name="p7" value="0">
+    <label for="p7nie">Nie</label>
+    <input type="radio" id="p7niedotyczy" name="p7" value="2">
+    <label for="p7niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.1.1, 1.2.1, 1.2.3 - Poziom „A” </p>
     <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach elementów multimedialnych, każdemu z nich przypisany jest
         poprawnie sformułowany tytuł wyjaśniający co jest przedstawione lub czego dotyczy. Jeśli na stronie nie ma
         takich elementów wówczas należy wybrać odpowiedź NIE DOTYCZY. </p>
-    <p class="pytanie">Czy są na stronie migające lub poruszające się elementy, których nie da się zatrzymać? </p>
-    <input type="radio" id="niema" name="p1" value="1">
-    <label for="niema">Nie ma</label>
-    <input type="radio" id="wystepuja" name="p1" value="0">
-    <label for="wystepuja">Występują</label>
+    <p class="pytanie">8. Czy są na stronie migające lub poruszające się elementy, których nie da się zatrzymać? </p>
+    <input type="radio" id="p8niema" name="p8" value="1">
+    <label for="p8niema">Nie ma</label>
+    <input type="radio" id="p8wystepuja" name="p8" value="0">
+    <label for="p8wystepuja">Występują</label>
     <p class="kryteria">Kryteria WCAG: 2.2.1, 2.2.2 - Poziom „A”</p>
     <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach elementów ruchomych lub migających, a samo
         miganie czy ruch nie niesie w sobie żadnej informacji, miganie lub ruch da się zatrzymać i ponownie uruchomić,
         lub zmiany (mignięcia) następują rzadziej niż raz na 5 sekund, lub czy można ukryć i ponownie wyświetlić
         migający lub ruchomy element. </p>
-    <p class="pytanie">Czy jest ostrzeżenie przed otwarciem nowego okna/zakładki w przeglądarce. </p>
-    <input type="radio" id="tak" name="p1" value="1">
-    <label for="tak">Tak</label>
-    <input type="radio" id="nie" name="p1" value="0">
-    <label for="nie">Nie</label>
-    <input type="radio" id="niedotyczy" name="p1" value="2">
-    <label for="niedotyczy">Nie dotyczy</label>
+    <p class="pytanie">9. Czy jest ostrzeżenie przed otwarciem nowego okna/zakładki w przeglądarce. </p>
+    <input type="radio" id="p9tak" name="p9" value="1">
+    <label for="p9tak">Tak</label>
+    <input type="radio" id="p9nie" name="p9" value="0">
+    <label for="p9nie">Nie</label>
+    <input type="radio" id="p9niedotyczy" name="p9" value="2">
+    <label for="p9niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 2.4.4 - Poziom „A”</p>
     <p class="opis">Sprawdź, czy w przypadku gdy po kliknięciu w któryś z elementów otwiera się nowe okno lub nowa karta
         przeglądarki, to czy w bezpośredniej bliskości, lub wewnątrz samego klikniętego elementu, albo w wartości
         atrybutu „title”, albo w inny sposób na stronie znajduje się dostępna dla każdego, zrozumiała informacja o
-        otwarciu nowego okna przeglądarki. </p>
-    <p class="opis">W przypadku, gdy na stronie nie ma żadnych linków ani innych aktywnych elementów można wybrać opcję „NIE DOTYCZY”
+        otwarciu nowego okna przeglądarki. <br>
+        W przypadku, gdy na stronie nie ma żadnych linków ani innych aktywnych elementów można wybrać opcję „NIE DOTYCZY”
     </p>
-    <p class="pytanie">Czy na stronie jest mechanizm otwierający nowe okno przeglądarki bez udziału użytkownika? </p>
-    <input type="radio" id="niema" name="p1" value="0">
-    <label for="niema">Nie ma</label>
-    <input type="radio" id="jest" name="p1" value="1">
-    <label for="jest">Jest</label>
+    <p class="pytanie">10. Czy na stronie jest mechanizm otwierający nowe okno przeglądarki bez udziału użytkownika? </p>
+    <input type="radio" id="p10niema" name="p10" value="0">
+    <label for="p10niema">Nie ma</label>
+    <input type="radio" id="p10jest" name="p10" value="1">
+    <label for="p10jest">Jest</label>
     <p class="kryteria">Kryteria WCAG: 2.4.4. - Poziom „A”</p>
     <p class="opis">Sprawdź, czy na stronie nie ma sytuacji, w której zaznaczenie fokusem bądź inne działanie nie będące
         kliknięciem ani naciśnięciem klawisza ENTER jakiegoś elementu powoduje wyświetlenie nowego okna.</p>
-    <p class="pytanie">Czy jest na stronie jest aktualna mapa strony bądź wyszukiwarka, jeżeli jest to uzasadnione?</p>
-    <input type="radio" id="tak" name="p1" value="1">
-    <label for="tak">Tak</label>
-    <input type="radio" id="nie" name="p1" value="0">
-    <label for="nie">Nie</label>
-    <input type="radio" id="niedotyczy" name="p1" value="2">
-    <label for="niedotyczy">Nie dotyczy</label>
+    <p class="pytanie">11. Czy jest na stronie jest aktualna mapa strony bądź wyszukiwarka, jeżeli jest to uzasadnione?</p>
+    <input type="radio" id="p11tak" name="p11" value="1">
+    <label for="p11tak">Tak</label>
+    <input type="radio" id="p11nie" name="p11" value="0">
+    <label for="p11nie">Nie</label>
+    <input type="radio" id="p11niedotyczy" name="p11" value="2">
+    <label for="p11niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 2.4.5 - Poziom „AA”</p>
     <p class="opis">Sprawdź, czy w badanym serwisie znajduje się dostępna ze strony głównej, aktualna mapa strony, a
-        jeśli nie, to czy jest mechanizm pozwalający na wyszukiwanie treści w serwisie.</p>
-    <p class="opis">W przypadku, gdy w badanym serwisie www jest tylko jedna strona lub jeśli struktura serwisu na to nie pozwala
-        można zaznaczyć odpowiedź NIE DOTYCZY, jeśli nie ma mechanizmu wyszukiwania ani mapy strony.</p>
-    <p class="pytanie">Czy zachowana jest spójność układu i działania pasków menu i innych elementów nawigacyjnych na
+        jeśli nie, to czy jest mechanizm pozwalający na wyszukiwanie treści w serwisie.<br>
+        W przypadku, gdy w badanym serwisie www jest tylko jedna strona lub jeśli struktura serwisu na to nie pozwala
+        można zaznaczyć odpowiedź NIE DOTYCZY, jeśli nie ma mechanizmu wyszukiwania ani mapy strony.<br>
+        Czy zachowana jest spójność układu i działania pasków menu i innych elementów nawigacyjnych na
         różnych stronach w serwisie? </p>
     <input type="radio" id="tak" name="p1" value="1">
     <label for="tak">Tak</label>
