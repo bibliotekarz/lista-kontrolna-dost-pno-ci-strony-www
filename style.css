@@ -1,0 +1,49 @@
+    .kryteria {
+        /* color: aqua; */
+        font-size: x-small;
+    }
+    
+    .opis {
+        /*    visibility: hidden; 
+        display: none; */
+    }
+    
+    .wprowadzenie {
+        font-size: larger;
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+    }
+    
+    .pytanie {
+        color: black;
+        font-size: large;
+        font-weight: 600;
+        background-color: lightgray;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    
+    li {
+        /* display: inline; 
+        visibility: hidden; */
+        list-style-type: square;
+    }
+    
+    h3, h2 {
+        padding: 2rem;
+    }
+    
+    label, input {
+        border: lightgreen;
+        border-style: solid;
+    }
+    
+    .no {
+        border-style: double;
+        border-color: red;
+    }
+    
+    .ok {
+        border-style: double;
+        border-color: green;
+    }
