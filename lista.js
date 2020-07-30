@@ -1,13 +1,13 @@
-function myFunction(pytanie, wynik) {
+function statusOdpowiedzi(pytanie, wynik) {
     var x = document.getElementById(pytanie);
-    /* if (x.style.display === "none") { */
+    sessionStorage.setItem(pytanie, wynik);
+    console.log(sessionStorage.getItem(pytanie) + " pobrał dane z " + pytanie);
     if (wynik == 1) {
-        /*   x.style.display = "block"; */
         x.classList.add("ok");
         x.classList.remove("no");
     } else {
-        /*   x.style.display = "none"; */
         x.classList.remove("ok");
         x.classList.add("no");
     }
+    
 } 
