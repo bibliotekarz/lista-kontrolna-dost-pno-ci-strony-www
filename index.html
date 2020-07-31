@@ -14,37 +14,26 @@
 <body>
 
     <h2>Weryfikacja dostępności cyfrowej na poziomie 1.</h2>
-    <p class="wprowadzenie">Sprawdzenie dostępności cyfrowej strony internetowej na poziomie 1 nie wymaga żadnej wiedzy
-        technicznej na temat obsługi stron internetowych ani na temat kodu HTML. Wymaga jedynie podstawowej umiejętności
-        korzystania ze stron internetowych. </p>
-    <p class="wprowadzenie">Przy każdym elemencie (pytaniu, zadaniu) z listy kontrolnej należy wybrać jedną z
-        proponowanych odpowiedzi.</p>
+    <p class="wprowadzenie">Sprawdzenie dostępności cyfrowej strony internetowej na poziomie 1 nie wymaga żadnej wiedzy technicznej na temat obsługi stron internetowych ani na temat kodu HTML. Wymaga jedynie podstawowej umiejętności korzystania ze stron internetowych. </p>
+    <p class="wprowadzenie">Przy każdym elemencie (pytaniu, zadaniu) z listy kontrolnej należy wybrać jedną z proponowanych odpowiedzi.</p>
 
 
     <h3>Pytania kluczowe</h3>
 
 
-    <p class="wprowadzenie">Jeśli na PYTANIA KLUCZOWE zostanie udzielona odpowiedź negatywna (zaznaczona na czerwono),
-        dalsza weryfikacja nie jest konieczna. Badane strony zostają od razu uznane za niedostępne w całości.</p>
+    <p class="wprowadzenie">Jeśli na PYTANIA KLUCZOWE zostanie udzielona odpowiedź negatywna (zaznaczona na czerwono), dalsza weryfikacja nie jest konieczna. Badane strony zostają od razu uznane za niedostępne w całości.</p>
 
 
-    <p class="pytanie" id="py1">1. PYTANIE KLUCZOWE: Czy wszystkie elementy aktywne na stronie są dostępne za pomocą
-        klawiatury?
+    <p class="pytanie" id="py1">1. PYTANIE KLUCZOWE: Czy wszystkie elementy aktywne na stronie są dostępne za pomocą klawiatury?
     </p>
     <input type="radio" id="p1tak" name="p1" value="1" onclick="statusOdpowiedzi('py1', this.value)">
     <label for="p1tak">Tak</label>
     <input type="radio" id="p1nie" name="p1" value="0" onclick="statusOdpowiedzi('py1', this.value)">
     <label for="p1nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 2.1.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy wszystkie elementy aktywne czyli linki, przyciski i inne elementy, na które można
-        kliknąć w celu wywołania jakichkolwiek działań, na których można dokonywać wyboru, np. listy elementów, listy
-        rozwijalne, wszelkie pola formularzy do których
-        można wpisywać informacje, na każdej badanej stronie, są dostępne za pomocą klawiatury, czyli czy stronę da się
-        w pełni obsłużyć bez użycia myszki. Należy spróbować użyć na stronie klawisza TAB w celu przemieszczania się po
-        elementach aktywnych,
-        należy na tych elementach naciskać klawisz ENTER aby sprawdzić czy działają tak samo jak po kliknięciu myszką
-        lub operować strzałkami i spacją w celu dokonywania wyboru w listach elementów czy polach wyboru. Wszystkie te
-        elementy bez wyjątku muszą
+    <p class="opis">Sprawdź, czy wszystkie elementy aktywne czyli linki, przyciski i inne elementy, na które można kliknąć w celu wywołania jakichkolwiek działań, na których można dokonywać wyboru, np. listy elementów, listy rozwijalne, wszelkie pola formularzy do których
+        można wpisywać informacje, na każdej badanej stronie, są dostępne za pomocą klawiatury, czyli czy stronę da się w pełni obsłużyć bez użycia myszki. Należy spróbować użyć na stronie klawisza TAB w celu przemieszczania się po elementach aktywnych,
+        należy na tych elementach naciskać klawisz ENTER aby sprawdzić czy działają tak samo jak po kliknięciu myszką lub operować strzałkami i spacją w celu dokonywania wyboru w listach elementów czy polach wyboru. Wszystkie te elementy bez wyjątku muszą
         być możliwe do obsłużenia bez konieczności użycia myszki, jedynie za pomocą klawiatury.</p>
 
 
@@ -54,40 +43,30 @@
     <input type="radio" id="p2jest" name="p2" value="0" onclick="statusOdpowiedzi('py2', this.value)">
     <label for="p2jest">Jest</label>
     <p class="kryteria">Kryteria WCAG: 2.1.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy na stronie nie ma sytuacji, w której zaznaczenie jakiegoś elementu podczas
-        przemieszczania kursora (fokusu) za pomocą przycisków klawiatury powoduje zablokowanie możliwości jego dalszego
-        przemieszczania, lub czy nie ma sytuacji, w której
-        możliwość przemieszczania się fokusu jest ograniczona jedynie do kilku elementów na stronie bez możliwości
-        dotarcia do reszty elementów. Należy wykonać sprawdzenie podobne do tego z poprzedniego pytania i sprawdzić, czy
-        kursor (fokus) przemieszcza
+    <p class="opis">Sprawdź, czy na stronie nie ma sytuacji, w której zaznaczenie jakiegoś elementu podczas przemieszczania kursora (fokusu) za pomocą przycisków klawiatury powoduje zablokowanie możliwości jego dalszego przemieszczania, lub czy nie ma sytuacji, w której
+        możliwość przemieszczania się fokusu jest ograniczona jedynie do kilku elementów na stronie bez możliwości dotarcia do reszty elementów. Należy wykonać sprawdzenie podobne do tego z poprzedniego pytania i sprawdzić, czy kursor (fokus) przemieszcza
         się swobodnie po wszystkich elementach strony po czym wraca do paska adresu przeglądarki.</p>
 
 
-    <p class="pytanie" id="py3">3. PYTANIE KLUCZOWE: Czy na stronie znajdują się elementy, które powodują gwałtowne zmiany
-        jasności lub szybko błyskają na czerwono? </p>
+    <p class="pytanie" id="py3">3. PYTANIE KLUCZOWE: Czy na stronie znajdują się elementy, które powodują gwałtowne zmiany jasności lub szybko błyskają na czerwono? </p>
     <input type="radio" id="p3niema" name="p3" value="1" onclick="statusOdpowiedzi('py3', this.value)">
     <label for="p3niema">Nie ma</label>
     <input type="radio" id="p3wystepuja" name="p3" value="0" onclick="statusOdpowiedzi('py3', this.value)">
     <label for="p3wystepuja">Występują</label>
     <p class="kryteria">Kryteria WCAG: 2.3.1 - Poziom „A”</p>
-    <p class="opis">Zobacz, czy na stronie jest coś, co błyska na czerwono. Jeśli tak, policz, ile takich błysków
-        wystąpi w ciągu sekundy. Jeśli będzie ich 3 lub więcej – strona jest niedostępna i w pytaniu należy zaznaczyć
-        odpowiedź negatywną.<br> Zobacz, czy jest na
-        stronie obszar, który podlega gwałtownym zmianom jasności. Jeśli tak, oceń, czy zajmuje on więcej niż 25%
-        obszaru strony. Jeśli tak – strona jest niedostępna i w pytaniu należy zaznaczyć odpowiedź negatywną.
+    <p class="opis">Zobacz, czy na stronie jest coś, co błyska na czerwono. Jeśli tak, policz, ile takich błysków wystąpi w ciągu sekundy. Jeśli będzie ich 3 lub więcej – strona jest niedostępna i w pytaniu należy zaznaczyć odpowiedź negatywną.<br> Zobacz, czy jest na
+        stronie obszar, który podlega gwałtownym zmianom jasności. Jeśli tak, oceń, czy zajmuje on więcej niż 25% obszaru strony. Jeśli tak – strona jest niedostępna i w pytaniu należy zaznaczyć odpowiedź negatywną.
         <br> W przeciwnych przypadkach odpowiedź na pytanie jest pozytywna.</p>
 
 
-    <p class="pytanie" id="py4">4. PYTANIE KLUCZOWE: Czy są na stronie elementy uruchamiające dźwięk, którego nie da się
-        zatrzymać?
+    <p class="pytanie" id="py4">4. PYTANIE KLUCZOWE: Czy są na stronie elementy uruchamiające dźwięk, którego nie da się zatrzymać?
     </p>
     <input type="radio" id="p4niema" name="p4" value="1" onclick="statusOdpowiedzi('py4', this.value)">
     <label for="p4niema">Nie ma</label>
     <input type="radio" id="p4wystepuja" name="p4" value="0" onclick="statusOdpowiedzi('py4', this.value)">
     <label for="p4wystepuja">Występują</label>
     <p class="kryteria">Kryteria WCAG: 1.4.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy nie ma elementów, które uruchamiają automatycznie dźwięk, którego nie da się zatrzymać,
-        a którego trwanie przekracza 3 sekundy.</p>
+    <p class="opis">Sprawdź, czy nie ma elementów, które uruchamiają automatycznie dźwięk, którego nie da się zatrzymać, a którego trwanie przekracza 3 sekundy.</p>
 
 
     <h3>Pytania dotyczące podstron z formularzem</h3>
@@ -96,44 +75,29 @@
     <p class="wprowadzenie">Jeśli na badanej podstronie nie ma formularza, pytania te należy pominąć.</p>
 
 
-    <p class="pytanie" id="py5">5. Czy informacja o błędzie w formularzu jednoznacznie ten błąd określa, jest dostępna i
-        zrozumiała dla wszystkich użytkowników?</p>
+    <p class="pytanie" id="py5">5. Czy informacja o błędzie w formularzu jednoznacznie ten błąd określa, jest dostępna i zrozumiała dla wszystkich użytkowników?</p>
     <input type="radio" id="p5tak" name="p5" value="1" onclick="statusOdpowiedzi('py5', this.value)">
     <label for="p5tak">Tak</label>
     <input type="radio" id="p5nie" name="p5" value="0" onclick="statusOdpowiedzi('py5', this.value)">
     <label for="p5nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 3.3.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku wpisania niepoprawnych danych do formularza, informacja o błędzie jest
-        wystarczająco zrozumiała. Oznacza to, że musi być możliwość zrozumienia, z samej treści komunikatu, przyczyny
-        błędu i sposobu, w jaki należy ponownie wpisać
-        informacje żeby błąd nie wystąpił ponownie.<br> Jak to zrobić?<br> Należy sprawdzić co się dzieje, gdy do pól
-        formularza nie zostaną wpisane żadne informacje i formularz zostanie wysłany. Następnie należy sprawdzić co się
-        dzieje, gdy do formularza
-        zostaną wpisane nieprawidłowe dane, np. nieprawidłowa data (np. 30-02-2019), nieprawidłowy kod pocztowy itp., i
-        formularz zostanie wysłany. <br> Jeśli po wysłaniu formularza z wpisanymi nieprawidłowymi danymi pojawiają się
-        komunikaty o błędnie
-        wypełnionych polach, to należy sprawdzić czy są one podane w formie dostępnej (tekstowej) i czy treść komunikatu
-        o błędzie jest logiczny i zrozumiały. W szczególności konieczne jest sprawdzenie, czy informacja o błędach nie
-        ogranicza się jedynie
+    <p class="opis">Sprawdź, czy w przypadku wpisania niepoprawnych danych do formularza, informacja o błędzie jest wystarczająco zrozumiała. Oznacza to, że musi być możliwość zrozumienia, z samej treści komunikatu, przyczyny błędu i sposobu, w jaki należy ponownie wpisać
+        informacje żeby błąd nie wystąpił ponownie.<br> Jak to zrobić?<br> Należy sprawdzić co się dzieje, gdy do pól formularza nie zostaną wpisane żadne informacje i formularz zostanie wysłany. Następnie należy sprawdzić co się dzieje, gdy do formularza
+        zostaną wpisane nieprawidłowe dane, np. nieprawidłowa data (np. 30-02-2019), nieprawidłowy kod pocztowy itp., i formularz zostanie wysłany. <br> Jeśli po wysłaniu formularza z wpisanymi nieprawidłowymi danymi pojawiają się komunikaty o błędnie
+        wypełnionych polach, to należy sprawdzić czy są one podane w formie dostępnej (tekstowej) i czy treść komunikatu o błędzie jest logiczny i zrozumiały. W szczególności konieczne jest sprawdzenie, czy informacja o błędach nie ogranicza się jedynie
         do wizualnego wyróżnienia pól, w których dane są nieprawidłowe (np. oznaczenia czerwonym kolorem).
     </p>
 
 
-    <p class="pytanie" id="py6">6. Czy w przypadku pojawienia się błędów w danych wpisanych w formularzu pojawia się informacja
-        sugerująca sposób w jaki można ponownie, poprawnie wpisać te dane? </p>
+    <p class="pytanie" id="py6">6. Czy w przypadku pojawienia się błędów w danych wpisanych w formularzu pojawia się informacja sugerująca sposób w jaki można ponownie, poprawnie wpisać te dane? </p>
     <input type="radio" id="p6tak" name="p6" value="1" onclick="statusOdpowiedzi('py6', this.value)">
     <label for="p6tak">Tak</label>
     <input type="radio" id="p6nie" name="p6" value="0" onclick="statusOdpowiedzi('py6', this.value)">
     <label for="p6nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 3.3.3 - Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy w przypadku, gdy w formularzu zostały wpisane niepoprawne dane użytkownik dostaje
-        jednoznaczną informację połączoną z sugestią w jaki sposób powinien poprawić błąd.<br> Jak to zrobić?<br> Należy
-        sprawdzić, czy w komunikatach o błędach
-        zawarte są jednoznaczne rady co do tego, jak należy wpisywać dane do pól formularza. Chodzi w szczególności o na
-        przykład poszerzoną informację o formacie daty, w rodzaju: „datę należy wpisywać w formacie dd-mm-rrrr gdzie
-        litery dd oznaczają dzień,
-        mm oznaczają miesiąc, przy czym jeśli numer miesiąca jest jednocyfrowy to jest poprzedzony zerem, a rok jest
-        zapisany w formie czterocyfrowej, np. 2019”, albo „numer PESEL powinien zawierać 11 cyfr”. </p>
+    <p class="opis">Sprawdź, czy w przypadku, gdy w formularzu zostały wpisane niepoprawne dane użytkownik dostaje jednoznaczną informację połączoną z sugestią w jaki sposób powinien poprawić błąd.<br> Jak to zrobić?<br> Należy sprawdzić, czy w komunikatach o błędach
+        zawarte są jednoznaczne rady co do tego, jak należy wpisywać dane do pól formularza. Chodzi w szczególności o na przykład poszerzoną informację o formacie daty, w rodzaju: „datę należy wpisywać w formacie dd-mm-rrrr gdzie litery dd oznaczają dzień,
+        mm oznaczają miesiąc, przy czym jeśli numer miesiąca jest jednocyfrowy to jest poprzedzony zerem, a rok jest zapisany w formie czterocyfrowej, np. 2019”, albo „numer PESEL powinien zawierać 11 cyfr”. </p>
 
 
     <h3>Pozostałe pytania</h3>
@@ -141,8 +105,7 @@
 
 
 
-    <p class="pytanie" id="py7">7. Czy wszystkie znaczące elementy animowane lub dźwiękowe posiadają odpowiedni opis (tytuł)
-        wyjaśniający co przedstawiają lub czego dotyczą? </p>
+    <p class="pytanie" id="py7">7. Czy wszystkie znaczące elementy animowane lub dźwiękowe posiadają odpowiedni opis (tytuł) wyjaśniający co przedstawiają lub czego dotyczą? </p>
     <input type="radio" id="p7tak" name="p7" value="1" onclick="statusOdpowiedzi('py7', this.value)">
     <label for="p7tak">Tak</label>
     <input type="radio" id="p7nie" name="p7" value="0" onclick="statusOdpowiedzi('py7', this.value)">
@@ -150,9 +113,7 @@
     <input type="radio" id="p7niedotyczy" name="p7" value="2" onclick="statusOdpowiedzi('py7', this.value)">
     <label for="p7niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.1.1, 1.2.1, 1.2.3 - Poziom „A” </p>
-    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach elementów multimedialnych, każdemu z nich
-        przypisany jest poprawnie sformułowany tytuł wyjaśniający co jest przedstawione lub czego dotyczy. Jeśli na
-        stronie nie ma takich elementów wówczas należy
+    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach elementów multimedialnych, każdemu z nich przypisany jest poprawnie sformułowany tytuł wyjaśniający co jest przedstawione lub czego dotyczy. Jeśli na stronie nie ma takich elementów wówczas należy
         wybrać odpowiedź NIE DOTYCZY. </p>
 
 
@@ -162,11 +123,11 @@
     <input type="radio" id="p8wystepuja" name="p8" value="0" onclick="statusOdpowiedzi('py8', this.value)">
     <label for="p8wystepuja">Występują</label>
     <p class="kryteria">Kryteria WCAG: 2.2.1, 2.2.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach elementów ruchomych lub migających, a samo
-        miganie czy ruch nie niesie w sobie żadnej informacji, miganie lub ruch da się zatrzymać i ponownie uruchomić,
-        lub zmiany (mignięcia) następują rzadziej
+    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach elementów ruchomych lub migających, a samo miganie czy ruch nie niesie w sobie żadnej informacji, miganie lub ruch da się zatrzymać i ponownie uruchomić, lub zmiany (mignięcia) następują rzadziej
         niż raz na 5 sekund, lub czy można ukryć i ponownie wyświetlić migający lub ruchomy element. </p>
 
+
+    <!-- //TODO 7 9 11 -->
 
     <p class="pytanie" id="py9">9. Czy jest ostrzeżenie przed otwarciem nowego okna/zakładki w przeglądarce. </p>
     <input type="radio" id="p9tak" name="p9" value="1" onclick="statusOdpowiedzi('py9', this.value)">
@@ -176,11 +137,8 @@
     <input type="radio" id="p9niedotyczy" name="p9" value="2" onclick="statusOdpowiedzi('py9', this.value)">
     <label for="p9niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 2.4.4 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku gdy po kliknięciu w któryś z elementów otwiera się nowe okno lub nowa karta
-        przeglądarki, to czy w bezpośredniej bliskości, lub wewnątrz samego klikniętego elementu, albo w wartości
-        atrybutu „title”, albo w inny sposób na
-        stronie znajduje się dostępna dla każdego, zrozumiała informacja o otwarciu nowego okna przeglądarki. <br> W
-        przypadku, gdy na stronie nie ma żadnych linków ani innych aktywnych elementów można wybrać opcję „NIE DOTYCZY”
+    <p class="opis">Sprawdź, czy w przypadku gdy po kliknięciu w któryś z elementów otwiera się nowe okno lub nowa karta przeglądarki, to czy w bezpośredniej bliskości, lub wewnątrz samego klikniętego elementu, albo w wartości atrybutu „title”, albo w inny sposób na
+        stronie znajduje się dostępna dla każdego, zrozumiała informacja o otwarciu nowego okna przeglądarki. <br> W przypadku, gdy na stronie nie ma żadnych linków ani innych aktywnych elementów można wybrać opcję „NIE DOTYCZY”
     </p>
 
 
@@ -191,8 +149,7 @@
     <input type="radio" id="p10jest" name="p10" value="0" onclick="statusOdpowiedzi('py10', this.value)">
     <label for="p10jest">Jest</label>
     <p class="kryteria">Kryteria WCAG: 2.4.4. - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy na stronie nie ma sytuacji, w której zaznaczenie fokusem bądź inne działanie nie będące
-        kliknięciem ani naciśnięciem klawisza ENTER jakiegoś elementu powoduje wyświetlenie nowego okna.</p>
+    <p class="opis">Sprawdź, czy na stronie nie ma sytuacji, w której zaznaczenie fokusem bądź inne działanie nie będące kliknięciem ani naciśnięciem klawisza ENTER jakiegoś elementu powoduje wyświetlenie nowego okna.</p>
 
 
     <p class="pytanie" id="py11">11. Czy jest na stronie jest aktualna mapa strony bądź wyszukiwarka, jeżeli jest to uzasadnione?
@@ -204,15 +161,11 @@
     <input type="radio" id="p11niedotyczy" name="p11" value="2" onclick="statusOdpowiedzi('py11', this.value)">
     <label for="p11niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 2.4.5 - Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy w badanym serwisie znajduje się dostępna ze strony głównej, aktualna mapa strony, a
-        jeśli nie, to czy jest mechanizm pozwalający na wyszukiwanie treści w serwisie.<br> W przypadku, gdy w badanym
-        serwisie www jest tylko jedna strona lub
-        jeśli struktura serwisu na to nie pozwala można zaznaczyć odpowiedź NIE DOTYCZY, jeśli nie ma mechanizmu
-        wyszukiwania ani mapy strony.</p>
+    <p class="opis">Sprawdź, czy w badanym serwisie znajduje się dostępna ze strony głównej, aktualna mapa strony, a jeśli nie, to czy jest mechanizm pozwalający na wyszukiwanie treści w serwisie.<br> W przypadku, gdy w badanym serwisie www jest tylko jedna strona lub
+        jeśli struktura serwisu na to nie pozwala można zaznaczyć odpowiedź NIE DOTYCZY, jeśli nie ma mechanizmu wyszukiwania ani mapy strony.</p>
 
 
-    <p class="pytanie" id="py12">12. Czy zachowana jest spójność układu i działania pasków menu i innych elementów nawigacyjnych
-        na różnych stronach w serwisie? </p>
+    <p class="pytanie" id="py12">12. Czy zachowana jest spójność układu i działania pasków menu i innych elementów nawigacyjnych na różnych stronach w serwisie? </p>
     <input type="radio" id="p12tak" name="p12" value="1" onclick="statusOdpowiedzi('py12', this.value)">
     <label for="p12tak">Tak</label>
     <input type="radio" id="p12nie" name="p12" value="0" onclick="statusOdpowiedzi('py12', this.value)">
@@ -220,26 +173,22 @@
     <input type="radio" id="p12niedotyczy" name="p12" value="2" onclick="statusOdpowiedzi('py12', this.value)">
     <label for="p12niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 2.4.5, 3.2.3 - Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy na badanych stronach podstawowe elementy mechanizmów nawigacji (przede wszystkim menu)
-        ułożone są zawsze w ten sam sposób, mają ten sam, spójny wygląd i logiczny układ zawartości. W przypadku, gdy
-        nie ma menu można wybrać odpowiedź NIE DOTYCZY.
+    <p class="opis">Sprawdź, czy na badanych stronach podstawowe elementy mechanizmów nawigacji (przede wszystkim menu) ułożone są zawsze w ten sam sposób, mają ten sam, spójny wygląd i logiczny układ zawartości. W przypadku, gdy nie ma menu można wybrać odpowiedź NIE
+        DOTYCZY.
     </p>
 
 
-    <p class="pytanie" id="py13">13. Czy nawigacja za pomocą klawiatury odbywa się w logicznej kolejności w stosunku do zawartości
-        strony?
+    <p class="pytanie" id="py13">13. Czy nawigacja za pomocą klawiatury odbywa się w logicznej kolejności w stosunku do zawartości strony?
     </p>
     <input type="radio" id="p13tak" name="p13" value="1" onclick="statusOdpowiedzi('py13', this.value)">
     <label for="p13tak">Tak</label>
     <input type="radio" id="p13nie" name="p13" value="0" onclick="statusOdpowiedzi('py13', this.value)">
     <label for="p13nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 2.4.3 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy na stronach serwisu nawigacja za pomocą klawiatury powoduje przemieszczanie się kursora
-        w logicznej kolejności w stosunku do zawartości stron (najczęściej od góry do dołu, od lewej do prawej). </p>
+    <p class="opis">Sprawdź, czy na stronach serwisu nawigacja za pomocą klawiatury powoduje przemieszczanie się kursora w logicznej kolejności w stosunku do zawartości stron (najczęściej od góry do dołu, od lewej do prawej). </p>
 
 
-    <p class="pytanie" id="py14">14. Czy linki prowadzące do dokumentów do pobrania zawierają informację o ich formacie oraz
-        języku?
+    <p class="pytanie" id="py14">14. Czy linki prowadzące do dokumentów do pobrania zawierają informację o ich formacie oraz języku?
     </p>
     <input type="radio" id="p14tak" name="p14" value="1" onclick="statusOdpowiedzi('py14', this.value)">
     <label for="p14tak">Tak</label>
@@ -248,11 +197,8 @@
     <input type="radio" id="p14niedotyczy" name="p14" value="2" onclick="statusOdpowiedzi('py14', this.value)">
     <label for="p14niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 2.4.4 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy linki prowadzące do dokumentów do pobrania zawierają w swojej treści informację o
-        formacie, a także jeśli to konieczne o jego języku, a jeśli nie to czy w bezpośredniej bliskości tego linku jest
-        taka informacja. Dobrą praktyką jest zamieszczać
-        również informację o rozmiarze dokumentu.<br> Przykładowy wygląd linku prowadzącego do dokumentu do pobrania:
-        Nazwa dokumentu (100 KB, PDF)</p>
+    <p class="opis">Sprawdź, czy linki prowadzące do dokumentów do pobrania zawierają w swojej treści informację o formacie, a także jeśli to konieczne o jego języku, a jeśli nie to czy w bezpośredniej bliskości tego linku jest taka informacja. Dobrą praktyką jest zamieszczać
+        również informację o rozmiarze dokumentu.<br> Przykładowy wygląd linku prowadzącego do dokumentu do pobrania: Nazwa dokumentu (100 KB, PDF)</p>
 
 
     <p class="pytanie" id="py15">15. Czy po powiększeniu strony do 200% utrzymana jest widoczność całości informacji na stronie?
@@ -262,12 +208,9 @@
     <input type="radio" id="p15nie" name="p15" value="0" onclick="statusOdpowiedzi('py15', this.value)">
     <label for="p15nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 1.4.4 - Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy w przypadku powiększenia w przeglądarce (np. za pomocą klawiszy CTRL ++) strony do
-        wielkości odpowiadającej 200% wielkości podstawowej za pomocą narzędzi oferowanych przez przeglądarkę możliwe
-        jest przejrzenie całości zawartości strony
-        bez konieczności przesuwania jej poziomo (za wyjątkiem tabel i niektórych innych elementów, których powiększenie
-        nie jest możliwe bez uruchomienia suwaka poziomego) i czy żaden element nie został ukryty, utracony lub
-        wyłączony.</p>
+    <p class="opis">Sprawdź, czy w przypadku powiększenia w przeglądarce (np. za pomocą klawiszy CTRL ++) strony do wielkości odpowiadającej 200% wielkości podstawowej za pomocą narzędzi oferowanych przez przeglądarkę możliwe jest przejrzenie całości zawartości strony
+        bez konieczności przesuwania jej poziomo (za wyjątkiem tabel i niektórych innych elementów, których powiększenie nie jest możliwe bez uruchomienia suwaka poziomego) i czy żaden element nie został ukryty, utracony lub wyłączony.
+    </p>
 
 
     <p class="pytanie" id="py16">16. Czy dostęp do treści strony jest możliwy bez względu na orientację ekranu (pionowa/pozioma)?
@@ -283,26 +226,18 @@
     <h2>Weryfikacja dostępności cyfrowej na poziomie 2.</h2>
 
 
-    <p class="wprowadzenie">Sprawdzenie dostępności cyfrowej strony internetowej na poziomie 2 wymaga podstawowej
-        (niezaawansowanej) wiedzy na temat funkcjonowania stron internetowych, dodatków do przeglądarek, posługiwania
-        się prostymi programami, rozumienia podstawowej logiki
-        działania stron i umieszczonych na nich obiektów bez konieczności znajomości kodu HTML. Osoba przeprowadzająca
-        badanie powinna mieć podstawowe przygotowanie w kwestiach dostępności cyfrowej (np. szkolenie dla redaktorów
-        stron w tworzeniu dostępnych
-        cyfrowo treści), czyli powinna rozumieć podstawowe potrzeby różnych grup osób niepełnosprawnych. Potrafi
-        posłużyć się w przeglądarce internetowej w sposób podstawowy dodatkiem typu WAVE czyli narzędziem wskazującym
-        ewentualne błędy dostępności
+    <p class="wprowadzenie">Sprawdzenie dostępności cyfrowej strony internetowej na poziomie 2 wymaga podstawowej (niezaawansowanej) wiedzy na temat funkcjonowania stron internetowych, dodatków do przeglądarek, posługiwania się prostymi programami, rozumienia podstawowej logiki
+        działania stron i umieszczonych na nich obiektów bez konieczności znajomości kodu HTML. Osoba przeprowadzająca badanie powinna mieć podstawowe przygotowanie w kwestiach dostępności cyfrowej (np. szkolenie dla redaktorów stron w tworzeniu dostępnych
+        cyfrowo treści), czyli powinna rozumieć podstawowe potrzeby różnych grup osób niepełnosprawnych. Potrafi posłużyć się w przeglądarce internetowej w sposób podstawowy dodatkiem typu WAVE czyli narzędziem wskazującym ewentualne błędy dostępności
         cyfrowej. </p>
-    <p class="wprowadzenie">Przy każdym pytaniu/zdaniu listy kontrolnej należy wybrać jedną z proponowanych odpowiedzi:
-        TAK, NIE lub NIE DOTYCZY.
+    <p class="wprowadzenie">Przy każdym pytaniu/zdaniu listy kontrolnej należy wybrać jedną z proponowanych odpowiedzi: TAK, NIE lub NIE DOTYCZY.
     </p>
 
 
     <h3>Pytania kluczowe</h3>
 
 
-    <p class="wprowadzenie">Jeśli na PYTANIA KLUCZOWE zostanie udzielona odpowiedź negatywna (zaznaczona na czerwono),
-        dalsza weryfikacja nie jest konieczna. Badane strony zostają od razu uznane za niedostępne w całości.</p>
+    <p class="wprowadzenie">Jeśli na PYTANIA KLUCZOWE zostanie udzielona odpowiedź negatywna (zaznaczona na czerwono), dalsza weryfikacja nie jest konieczna. Badane strony zostają od razu uznane za niedostępne w całości.</p>
 
 
     <p class="pytanie" id="py17">17. PYTANIE KLUCZOWE: Czy istnieje rozwiązanie powodującego dostępność CAPTCHA?</p>
@@ -313,13 +248,8 @@
     <input type="radio" id="p17niedotyczy" name="p17" value="2" onclick="statusOdpowiedzi('py17', this.value)">
     <label for="p17niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.1.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy istnieje alternatywne, rozwiązanie powodujące pełną dostępność elementów związanych z
-        CAPTCHA, jeśli takie rozwiązanie zostało zastosowane. Jeśli na badanych stronach nie ma zabezpieczenia CAPTCHA
-        należy wybrać odpowiedź NIE DOTYCZY.<br> Zabezpieczenie CAPTCHA musi być możliwe do obsłużenia samodzielnie
-        przez każdego użytkownika. Oznacza to, że nie może się opierać wyłącznie na elemencie graficznym bez alternatywy
-        tekstowej lub możliwości odsłuchania, jak to często ma miejsce
-        w przypadku tych rozwiązań. Zabezpieczenie powinno mieć formę czytelną dla każdego, na przykład zadania
-        matematycznego do rozwiązania, przedstawionego w formie tekstowej. </p>
+    <p class="opis">Sprawdź, czy istnieje alternatywne, rozwiązanie powodujące pełną dostępność elementów związanych z CAPTCHA, jeśli takie rozwiązanie zostało zastosowane. Jeśli na badanych stronach nie ma zabezpieczenia CAPTCHA należy wybrać odpowiedź NIE DOTYCZY.<br>        Zabezpieczenie CAPTCHA musi być możliwe do obsłużenia samodzielnie przez każdego użytkownika. Oznacza to, że nie może się opierać wyłącznie na elemencie graficznym bez alternatywy tekstowej lub możliwości odsłuchania, jak to często ma miejsce
+        w przypadku tych rozwiązań. Zabezpieczenie powinno mieć formę czytelną dla każdego, na przykład zadania matematycznego do rozwiązania, przedstawionego w formie tekstowej. </p>
 
 
     <h3>Pytania dotyczące formularza</h3>
@@ -327,9 +257,7 @@
 
 
 
-    <p class="pytanie" id="py18">18. Czy w przypadku formularza do którego wpisywane są szczególnie ważne dane związane z
-        finansami, informacjami osobowymi lub dotyczące sytuacji prawnej, istnieje mechanizm umożliwiający weryfikację i
-        poprawienie danych przed ich wysłaniem? </p>
+    <p class="pytanie" id="py18">18. Czy w przypadku formularza do którego wpisywane są szczególnie ważne dane związane z finansami, informacjami osobowymi lub dotyczące sytuacji prawnej, istnieje mechanizm umożliwiający weryfikację i poprawienie danych przed ich wysłaniem? </p>
     <input type="radio" id="p18tak" name="p18" value="1" onclick="statusOdpowiedzi('py18', this.value)">
     <label for="p18tak">Tak</label>
     <input type="radio" id="p18nie" name="p18" value="0" onclick="statusOdpowiedzi('py18', this.value)">
@@ -337,14 +265,12 @@
     <input type="radio" id="p18niedotyczy" name="p18" value="2" onclick="statusOdpowiedzi('py18', this.value)">
     <label for="p18niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 3.3.4 - Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy w przypadku istnienia formularza, do którego wpisywane są szczególnie ważne dane
-        związane z finansami, informacjami osobowymi czy dotyczące sytuacji prawnej użytkownik może:</p>
+    <p class="opis">Sprawdź, czy w przypadku istnienia formularza, do którego wpisywane są szczególnie ważne dane związane z finansami, informacjami osobowymi czy dotyczące sytuacji prawnej użytkownik może:</p>
     <ul>
         <li>Zmienić lub anulować dane lub działania przed ich uruchomieniem/wysłaniem;</li>
         <li>Sprawdzić i poprawić dane przed ich definitywnym wysłaniem;</li>
         <li>Odpowiedzieć na żądanie potwierdzenia wysłania formularza;</li>
-        <li>Odzyskać dane w przypadku działania polegającego na ich usunięciu (poza sytuacją, w której definitywne
-            usunięcie zostało jednoznacznie potwierdzone).</li>
+        <li>Odzyskać dane w przypadku działania polegającego na ich usunięciu (poza sytuacją, w której definitywne usunięcie zostało jednoznacznie potwierdzone).</li>
     </ul>
 
 
@@ -361,15 +287,9 @@
     <input type="radio" id="p19niedotyczy" name="p19" value="2" onclick="statusOdpowiedzi('py19', this.value)">
     <label for="p19niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.4.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku zmiany domyślnych ustawień linków, zostało zachowane wyróżnienie
-        kolorystyczne linku, bądź stosunek kontrastu tekstu linku do otaczającego go tekstu wynosi co najmniej 3:1 oraz
-        jest zachowane wyraźne wyróżnienie linku w momencie,
-        gdy staje na nim fokus.<br> Domyślnie linki są koloru ciemnoniebieskiego i są podkreślone. Twórcy stron
-        zmieniają ten wygląd tak, aby lepiej odpowiadał wymaganiom graficznym i wyglądowi strony. Może to powodować
-        sytuację, w której linki nie są
-        wystarczająco wyróżnione i mogą być trudne do zauważenia przez niektórych użytkowników, np. słabowidzących.
-        Dlatego najlepiej gdy link odróżnia się od reszty tekstu na stronie zarówno kolorystycznie jak i wyglądem (np.
-        podkreśleniem). Na wszystkich
+    <p class="opis">Sprawdź, czy w przypadku zmiany domyślnych ustawień linków, zostało zachowane wyróżnienie kolorystyczne linku, bądź stosunek kontrastu tekstu linku do otaczającego go tekstu wynosi co najmniej 3:1 oraz jest zachowane wyraźne wyróżnienie linku w momencie,
+        gdy staje na nim fokus.<br> Domyślnie linki są koloru ciemnoniebieskiego i są podkreślone. Twórcy stron zmieniają ten wygląd tak, aby lepiej odpowiadał wymaganiom graficznym i wyglądowi strony. Może to powodować sytuację, w której linki nie są
+        wystarczająco wyróżnione i mogą być trudne do zauważenia przez niektórych użytkowników, np. słabowidzących. Dlatego najlepiej gdy link odróżnia się od reszty tekstu na stronie zarówno kolorystycznie jak i wyglądem (np. podkreśleniem). Na wszystkich
         stronach w danym serwisie linki powinny być wyróżnione w ten sposób.</p>
 
 
@@ -379,16 +299,11 @@
     <input type="radio" id="p20wystepuja" name="p20" value="0" onclick="statusOdpowiedzi('py20', this.value)">
     <label for="p20wystepuja">Występują</label>
     <p class="kryteria">Kryteria WCAG: 1.3.1, 1.4.1 - Poziom „A”</p>
-    <p class="opis">Jeśli którykolwiek z elementów na badanej stronie niesie informację przekazaną za pomocą koloru, to
-        sprawdzić, czy ta informacja jest dostępna również w inny sposób. Może to się odnosić w szczególności do
-        wszelkiego rodzaju wykresów, ale często też
-        na przykład podświetlenia na czerwono elementów formularza zawierających błędne informacje.<br> Informacja
-        przekazywana jedynie za pomocą koloru jest niedostępna zarówno dla osób niewidomych jak i dla osób
-        nieodróżniających kolorów.</p>
+    <p class="opis">Jeśli którykolwiek z elementów na badanej stronie niesie informację przekazaną za pomocą koloru, to sprawdzić, czy ta informacja jest dostępna również w inny sposób. Może to się odnosić w szczególności do wszelkiego rodzaju wykresów, ale często też
+        na przykład podświetlenia na czerwono elementów formularza zawierających błędne informacje.<br> Informacja przekazywana jedynie za pomocą koloru jest niedostępna zarówno dla osób niewidomych jak i dla osób nieodróżniających kolorów.</p>
 
 
-    <p class="pytanie" id="py21">21. Czy wszystkie multimedialne elementy wizualne zawierające ścieżkę dźwiękową niezbędną dla
-        zrozumienia zawartości posiadają poprawnie sformułowane napisy dla niesłyszących? </p>
+    <p class="pytanie" id="py21">21. Czy wszystkie multimedialne elementy wizualne zawierające ścieżkę dźwiękową niezbędną dla zrozumienia zawartości posiadają poprawnie sformułowane napisy dla niesłyszących? </p>
     <input type="radio" id="p21tak" name="p21" value="1" onclick="statusOdpowiedzi('py21', this.value)">
     <label for="tak">Tak</label>
     <input type="radio" id="p21nie" name="p21" value="0" onclick="statusOdpowiedzi('py21', this.value)">
@@ -396,18 +311,13 @@
     <input type="radio" id="p21niedotyczy" name="p21" value="2" onclick="statusOdpowiedzi('py21', this.value)">
     <label for="niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.2.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach któregokolwiek z elementów mających związek
-        z multimediami wizualnymi, każdemu z nich przypisane są, jeśli jest to niezbędne dla zrozumienia zawartości,
-        poprawnie sformułowane napisy oddające
-        zawartość dźwiękową prezentowanego materiału. Badanie musi zostać wykonane jedynie dla elementów, które nie są
-        prostą ilustracją obecnego na danej stronie tekstu, nie wnoszącą żadnych nowych treści.<br> Napisy dla
-        niesłyszących zawierają nie tylko
-        transkrypcję wypowiadanego tekstu, ale również informację o dźwiękach istotnych dla zrozumienia przedstawianych
-        treści.</p>
+    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach któregokolwiek z elementów mających związek z multimediami wizualnymi, każdemu z nich przypisane są, jeśli jest to niezbędne dla zrozumienia zawartości, poprawnie sformułowane napisy oddające
+        zawartość dźwiękową prezentowanego materiału. Badanie musi zostać wykonane jedynie dla elementów, które nie są prostą ilustracją obecnego na danej stronie tekstu, nie wnoszącą żadnych nowych treści.<br> Napisy dla niesłyszących zawierają nie tylko
+        transkrypcję wypowiadanego tekstu, ale również informację o dźwiękach istotnych dla zrozumienia przedstawianych treści.
+    </p>
 
 
-    <p class="pytanie" id="py22">22. Czy wszystkie elementy multimedialne niosące treść są dostępne bez użycia myszki lub
-        posiadają dostępną alternatywę? </p>
+    <p class="pytanie" id="py22">22. Czy wszystkie elementy multimedialne niosące treść są dostępne bez użycia myszki lub posiadają dostępną alternatywę? </p>
     <input type="radio" id="p22tak" name="p22" value="1" onclick="statusOdpowiedzi('py22', this.value)">
     <label for="p22tak">Tak</label>
     <input type="radio" id="p22nie" name="p22" value="0" onclick="statusOdpowiedzi('py22', this.value)">
@@ -415,17 +325,11 @@
     <input type="radio" id="p22niedotyczy" name="p22" value="2" onclick="statusOdpowiedzi('py22', this.value)">
     <label for="p22niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 2.1.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach elementów multimedialnych niosących
-        informację jest możliwe obsłużenie wszystkich prezentowanych funkcjonalności klawiaturą, lub na stronie znajduje
-        się wyczerpująca, dostępna alternatywa.<br> Elementy multimedialne publikowane na stronach internetowych
-        prezentowane są najczęściej w formie odtwarzaczy wideo, które mają różne funkcje takie jak regulacja głośności,
-        wstrzymywanie, przejście do kolejnego elementu itp. Należy sprawdzić czy
-        wszystkie te funkcje da się uruchomić i zatrzymać klawiszami klawiatury.<br> W przypadku gdy na stronach nie ma
-        elementów multimedialnych należy wybrać odpowiedź NIE DOTYCZY.</p>
+    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach elementów multimedialnych niosących informację jest możliwe obsłużenie wszystkich prezentowanych funkcjonalności klawiaturą, lub na stronie znajduje się wyczerpująca, dostępna alternatywa.<br>        Elementy multimedialne publikowane na stronach internetowych prezentowane są najczęściej w formie odtwarzaczy wideo, które mają różne funkcje takie jak regulacja głośności, wstrzymywanie, przejście do kolejnego elementu itp. Należy sprawdzić czy
+        wszystkie te funkcje da się uruchomić i zatrzymać klawiszami klawiatury.<br> W przypadku gdy na stronach nie ma elementów multimedialnych należy wybrać odpowiedź NIE DOTYCZY.</p>
 
 
-    <p class="pytanie" id="py23">23. Czy wszystkie graficzne elementy klikalne lub podzielone na strefy klikalne są dostępne z
-        klawiatury? </p>
+    <p class="pytanie" id="py23">23. Czy wszystkie graficzne elementy klikalne lub podzielone na strefy klikalne są dostępne z klawiatury? </p>
     <input type="radio" id="p23tak" name="p23" value="1" onclick="statusOdpowiedzi('py23', this.value)">
     <label for="p23tak">Tak</label>
     <input type="radio" id="p23nie" name="p23" value="0" onclick="statusOdpowiedzi('py23', this.value)">
@@ -433,27 +337,19 @@
     <input type="radio" id="p23niedotyczy" name="p23" value="2" onclick="statusOdpowiedzi('py23', this.value)">
     <label for="p23niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 2.1.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach elementu podzielonego na obszary, w które
-        można kliknąć (np. mapa Polski z podziałem na województwa), każdy z nich jest dostępna za pomocą klawiatury lub
-        dostępna jest alternatywa. <br> Należy
-        spróbować dotrzeć do takiego elementu na stronie za pomocą klawisza TAB po czym zobaczyć, czy da się nacisnąć
-        ENTER lub SPACJĘ w momencie, gdy wybrany jest wydzielony w tym elemencie obszar i czy efekt będzie ten sam co
-        kliknięcie. Należy powtórzyć
-        sprawdzenie na wszystkich takich obszarach. <br> Jeśli nie ma takich elementów, wówczas należy wybrać odpowiedź
-        NIE DOTYCZY.</p>
+    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach elementu podzielonego na obszary, w które można kliknąć (np. mapa Polski z podziałem na województwa), każdy z nich jest dostępna za pomocą klawiatury lub dostępna jest alternatywa. <br> Należy
+        spróbować dotrzeć do takiego elementu na stronie za pomocą klawisza TAB po czym zobaczyć, czy da się nacisnąć ENTER lub SPACJĘ w momencie, gdy wybrany jest wydzielony w tym elemencie obszar i czy efekt będzie ten sam co kliknięcie. Należy powtórzyć
+        sprawdzenie na wszystkich takich obszarach. <br> Jeśli nie ma takich elementów, wówczas należy wybrać odpowiedź NIE DOTYCZY.</p>
 
 
     <p class="pytanie" id="py24">24. Czy jakiś element na badanej stronie wskazuje elementy za pomocą koloru?</p>
-    <input type="radio" id="p24tak" name="p24" value="0" onclick="statusOdpowiedzi('py24', this.value)">
-    <label for="p24tak">Tak</label>
     <input type="radio" id="p24nie" name="p24" value="1" onclick="statusOdpowiedzi('py24', this.value)">
     <label for="p24nie">Nie</label>
+    <input type="radio" id="p24tak" name="p24" value="0" onclick="statusOdpowiedzi('py24', this.value)">
+    <label for="p24tak">Tak</label>
     <p class="kryteria">Kryteria sukcesu WCAG: 1.4.1 - Poziom „A”</p>
-    <p class="opis">Badanie dotyczy elementów, które w jakikolwiek sposób odnoszą się do kolorów przedstawiając
-        odniesienie do nich w tekście, lub w jakikolwiek inny sposób, na przykład kolor elementów, kolor tła. <br>
-        Sprawdź, czy jakieś elementy na badanych stronach
-        nie zawierają przekazanej w jakikolwiek sposób treści zmuszającej do szukania bądź wskazania elementów na
-        podstawie ich kolorów. </p>
+    <p class="opis">Badanie dotyczy elementów, które w jakikolwiek sposób odnoszą się do kolorów przedstawiając odniesienie do nich w tekście, lub w jakikolwiek inny sposób, na przykład kolor elementów, kolor tła. <br> Sprawdź, czy jakieś elementy na badanych stronach
+        nie zawierają przekazanej w jakikolwiek sposób treści zmuszającej do szukania bądź wskazania elementów na podstawie ich kolorów. </p>
 
 
     <p class="pytanie" id="py25">25. Czy kontrast tekstu w stosunku do tła wynosi co najmniej 4,5:1? </p>
@@ -462,32 +358,23 @@
     <input type="radio" id="p25nie" name="p25" value="0" onclick="statusOdpowiedzi('py25', this.value)">
     <label for="p25nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 1.4.3 - Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy kontrast tekstu w stosunku do tła przynajmniej na poziomie 4,5:1 lub czy nie ma
-        poprawnie funkcjonującej wersji kontrastowej strony. <br> Do sprawdzenia kontrastu można użyć różnorodnych
-        narzędzi, takich jak dodatek WAVE do przeglądarki
-        Firefox oraz Chrome czy Colour Contrast Analyser
-        (https://developer.paciellogroup.com/resources/contrastanalyser/), które w prosty sposób pozwalają przeprowadzić
-        sprawdzenie.<br> Jeśli wielkość niektórych segmentów tekstu przekraczała swoją wielkością
-        150% wielkości podstawowej tekstu na stronie, kontrast powinien być na poziomie co najmniej 3:1.</p>
+    <p class="opis">Sprawdź, czy kontrast tekstu w stosunku do tła przynajmniej na poziomie 4,5:1 lub czy nie ma poprawnie funkcjonującej wersji kontrastowej strony. <br> Do sprawdzenia kontrastu można użyć różnorodnych narzędzi, takich jak dodatek WAVE do przeglądarki
+        Firefox oraz Chrome czy Colour Contrast Analyser (https://developer.paciellogroup.com/resources/contrastanalyser/), które w prosty sposób pozwalają przeprowadzić sprawdzenie.
+        <br> Jeśli wielkość niektórych segmentów tekstu przekraczała swoją wielkością 150% wielkości podstawowej tekstu na stronie, kontrast powinien być na poziomie co najmniej 3:1.</p>
 
 
-    <p class="pytanie" id="py26">26. Czy kontrast kolorów użytych w elementach interfejsu w tym w grafikach pozwalających na
-        zrozumienie treści lub będących nośnikiem informacji, w stosunku do tła wynosi co najmniej 3:1? </p>
+    <p class="pytanie" id="py26">26. Czy kontrast kolorów użytych w elementach interfejsu w tym w grafikach pozwalających na zrozumienie treści lub będących nośnikiem informacji, w stosunku do tła wynosi co najmniej 3:1? </p>
     <input type="radio" id="p26tak" name="p26" value="1" onclick="statusOdpowiedzi('py26', this.value)">
     <label for="p26tak">Tak</label>
     <input type="radio" id="p26nie" name="p26" value="0" onclick="statusOdpowiedzi('py26', this.value)">
     <label for="p26nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 1.4.11 - Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy kontrast kolorów użytych w interfejsie i grafikach pozwalających na zrozumienie treści
-        lub będących nośnikiem informacji, w stosunku do otoczenia wynosi co najmniej 3:1. <br> Do sprawdzenia kontrastu
-        można użyć różnorodnych narzędzi,
-        takich jak dodatek WAVE do przeglądarki Firefox czy Colour Contrast Analyser
-        (https://developer.paciellogroup.com/resources/contrastanalyser/), które w prosty sposób pozwalają przeprowadzić
-        sprawdzenie.</p>
+    <p class="opis">Sprawdź, czy kontrast kolorów użytych w interfejsie i grafikach pozwalających na zrozumienie treści lub będących nośnikiem informacji, w stosunku do otoczenia wynosi co najmniej 3:1. <br> Do sprawdzenia kontrastu można użyć różnorodnych narzędzi,
+        takich jak dodatek WAVE do przeglądarki Firefox czy Colour Contrast Analyser (https://developer.paciellogroup.com/resources/contrastanalyser/), które w prosty sposób pozwalają przeprowadzić sprawdzenie.
+    </p>
 
 
-    <p class="pytanie" id="py27">27. Czy wszystkie znaczące elementy animowane lub dźwiękowe posiadają odpowiedni opis tekstowy
-        wyjaśniający co przedstawiają lub czego dotyczą? </p>
+    <p class="pytanie" id="py27">27. Czy wszystkie znaczące elementy animowane lub dźwiękowe posiadają odpowiedni opis tekstowy wyjaśniający co przedstawiają lub czego dotyczą? </p>
     <input type="radio" id="p27tak" name="p27" value="1" onclick="statusOdpowiedzi('py27', this.value)">
     <label for="p27tak">Tak</label>
     <input type="radio" id="p27nie" name="p27" value="0" onclick="statusOdpowiedzi('py27', this.value)">
@@ -495,18 +382,12 @@
     <input type="radio" id="p27niedotyczy" name="p27" value="2" onclick="statusOdpowiedzi('py27', this.value)">
     <label for="p27niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.2.3 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach multimediów lub elementów mających związek z
-        multimediami (np. animacje), każdemu z nich przypisany jest poprawnie sformułowana i łatwo dostępna transkrypcja
-        tekstowa oddająca zawartość prezentowanego
-        materiału. <br> Sprawdź, czy ta transkrypcja wyjaśnia dokładnie zawartość materiału tak, aby osoba niewidoma
-        miała pełne rozeznanie w prezentowanym materiale. <br> Sprawdź, czy zawartość dźwiękowa jest spisana dokładnie,
-        co do słowa dla osób niesłyszących.
-        Sprawdzenie należy wykonać jedynie dla elementów, dla których nie ma dokładniejszych metod udostępniania treści
-        dla osób niepełnosprawnych (np. audiodeskrypcja).</p>
+    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach multimediów lub elementów mających związek z multimediami (np. animacje), każdemu z nich przypisany jest poprawnie sformułowana i łatwo dostępna transkrypcja tekstowa oddająca zawartość prezentowanego
+        materiału. <br> Sprawdź, czy ta transkrypcja wyjaśnia dokładnie zawartość materiału tak, aby osoba niewidoma miała pełne rozeznanie w prezentowanym materiale. <br> Sprawdź, czy zawartość dźwiękowa jest spisana dokładnie, co do słowa dla osób niesłyszących.
+        Sprawdzenie należy wykonać jedynie dla elementów, dla których nie ma dokładniejszych metod udostępniania treści dla osób niepełnosprawnych (np. audiodeskrypcja).</p>
 
 
-    <p class="pytanie" id="py28">28. Czy wszystkie multimedialne elementy wizualne posiadają możliwą do uruchomienia bezwzrokowo,
-        poprawnie sformułowaną audiodeskrypcję? </p>
+    <p class="pytanie" id="py28">28. Czy wszystkie multimedialne elementy wizualne posiadają możliwą do uruchomienia bezwzrokowo, poprawnie sformułowaną audiodeskrypcję? </p>
     <input type="radio" id="p28tak" name="p28" value="1" onclick="statusOdpowiedzi('py28', this.value)">
     <label for="p28tak">Tak</label>
     <input type="radio" id="p28nie" name="p28" value="0" onclick="statusOdpowiedzi('py28', this.value)">
@@ -514,20 +395,14 @@
     <input type="radio" id="p28niedotyczy" name="p28" value="2" onclick="statusOdpowiedzi('py28', this.value)">
     <label for="p28niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.2.5 - Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach elementów mających związek z multimediami
-        wizualnymi, każdemu z nich przypisany jest poprawnie sformułowana, możliwa do uruchomienia bezwzrokowo
-        audiodeskrypcja oddająca zawartość prezentowanego
+    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach elementów mających związek z multimediami wizualnymi, każdemu z nich przypisany jest poprawnie sformułowana, możliwa do uruchomienia bezwzrokowo audiodeskrypcja oddająca zawartość prezentowanego
         materiału.
-        <br> Badanie powinno zostać wykonane jedynie dla elementów, które nie są prostą ilustracją obecnego na danej
-        stronie tekstu, nie wnoszącą żadnych nowych treści. <br> Dodatkowe informacje na temat obowiązku dodawania
-        audiodeskrypcji można znaleźć
-        pod adresem:
-        https://www.gov.pl/web/dostepnosc-cyfrowa/co-z-audiodeskrypcja-wyjasnienia-dotyczace-dostepnosci-cyfrowej-multimediow
+        <br> Badanie powinno zostać wykonane jedynie dla elementów, które nie są prostą ilustracją obecnego na danej stronie tekstu, nie wnoszącą żadnych nowych treści. <br> Dodatkowe informacje na temat obowiązku dodawania audiodeskrypcji można znaleźć
+        pod adresem: https://www.gov.pl/web/dostepnosc-cyfrowa/co-z-audiodeskrypcja-wyjasnienia-dotyczace-dostepnosci-cyfrowej-multimediow
     </p>
 
 
-    <p class="pytanie" id="py29">29. Czy obecny jest link „przejdź do treści”, a jeśli jest i jest więcej linków pozwalających na
-        omijanie bloków, to czy jest zachowana ich spójność na wszystkich badanych stronach?</p>
+    <p class="pytanie" id="py29">29. Czy obecny jest link „przejdź do treści”, a jeśli jest i jest więcej linków pozwalających na omijanie bloków, to czy jest zachowana ich spójność na wszystkich badanych stronach?</p>
     <input type="radio" id="p29tak" name="p29" value="1" onclick="statusOdpowiedzi('py29', this.value)">
     <label for="p29tak">Tak</label>
     <input type="radio" id="p29nie" name="p29" value="0" onclick="statusOdpowiedzi('py29', this.value)">
@@ -535,26 +410,19 @@
     <input type="radio" id="p29niedotyczy" name="p29" value="2" onclick="statusOdpowiedzi('py29', this.value)">
     <label for="p29niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 2.4.1 - Poziom „A”, 3.2.3 - Poziom „AA”</p>
-    <p class="opis">Sprawdź obecność kotwicy (zakładki, odsyłacza czyli unikatowego id w odpowiednim znaczniku) na
-        początku treści podstawowej każdej strony serwisu oraz obecność na stronie linku prowadzącego do tej
-        kotwicy.<br> Sprawdź, czy istnieją linki prowadzące
-        do kotwic na podstawowych, zgrupowanych w bloki nawigacyjne, linkach (np. menu). <br> Sprawdź spójność użycia
-        oraz poprawne działanie linków prowadzących do tych kotwic na wszystkich badanych podstronach serwisu. <br>
-        Sprawdź czy na wszystkich
-        stronach kolejność rozmieszczenia tych linków w kodzie HTML jest taka sama.</p>
+    <p class="opis">Sprawdź obecność kotwicy (zakładki, odsyłacza czyli unikatowego id w odpowiednim znaczniku) na początku treści podstawowej każdej strony serwisu oraz obecność na stronie linku prowadzącego do tej kotwicy.
+        <br> Sprawdź, czy istnieją linki prowadzące do kotwic na podstawowych, zgrupowanych w bloki nawigacyjne, linkach (np. menu). <br> Sprawdź spójność użycia oraz poprawne działanie linków prowadzących do tych kotwic na wszystkich badanych podstronach
+        serwisu. <br> Sprawdź czy na wszystkich stronach kolejność rozmieszczenia tych linków w kodzie HTML jest taka sama.</p>
 
 
-    <p class="pytanie" id="py30">30. Czy na badanych stronach informacje są przekazywane jedynie poprzez użycie pozycji bądź
-        formy?
+    <p class="pytanie" id="py30">30. Czy na badanych stronach informacje są przekazywane jedynie poprzez użycie pozycji bądź formy?
     </p>
     <input type="radio" id="p30nie" name="p30" value="1" onclick="statusOdpowiedzi('py30', this.value)">
     <label for="p30nie">Nie</label>
     <input type="radio" id="p30tak" name="p30" value="0" onclick="statusOdpowiedzi('py30', this.value)">
     <label for="p30tak">Tak</label>
     <p class="kryteria">Kryterium WCAG – 1.3.3 - Poziom „A”</p>
-    <p class="opis">Sprawdź czy jakikolwiek element na badanych podstronach przekazuje informację za pomocą swojej
-        pozycji bądź formy. Jeśli tak jest, to sprawdź, czy informacja przekazywana za pomocą kształtu bądź miejsca na
-        stronie jest dostępna inną drogą. </p>
+    <p class="opis">Sprawdź czy jakikolwiek element na badanych podstronach przekazuje informację za pomocą swojej pozycji bądź formy. Jeśli tak jest, to sprawdź, czy informacja przekazywana za pomocą kształtu bądź miejsca na stronie jest dostępna inną drogą. </p>
 
 
     <p class="pytanie" id="py31">31. Czy tytuły stron mają poprawną strukturę.</p>
@@ -563,10 +431,8 @@
     <input type="radio" id="p31nie" name="p31" value="0" onclick="statusOdpowiedzi('py31', this.value)">
     <label for="p31nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 2.4.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy strony posiadają poprawnie sformułowany, unikalny w całym serwisie tytuł informujący o
-        zawartości zbudowany według schematu: <br> Informacja o zawartości strony – informacja o właścicielu strony <br>
-        Tytuł strony pojawia się na zakładce w przeglądarce, zazwyczaj pokazuje się w całości w formie „dymka” gdy wskaźnik myszki zostanie skierowany na
-        zakładkę przeglądarki.</p>
+    <p class="opis">Sprawdź, czy strony posiadają poprawnie sformułowany, unikalny w całym serwisie tytuł informujący o zawartości zbudowany według schematu: <br> Informacja o zawartości strony – informacja o właścicielu strony <br> Tytuł strony pojawia się na zakładce
+        w przeglądarce, zazwyczaj pokazuje się w całości w formie „dymka” gdy wskaźnik myszki zostanie skierowany na zakładkę przeglądarki.</p>
 
 
     <p class="pytanie" id="py32">32. Czy elementy, które tego wymagają, mają poprawnie utworzony poszerzony opis? </p>
@@ -577,23 +443,14 @@
     <input type="radio" id="p32niedotyczy" name="p32" value="2" onclick="statusOdpowiedzi('py32', this.value)">
     <label for="p32niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.1.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy elementy graficzne, jeśli tego wymagają, posiadają poprawnie sformułowany, łatwo
-        dostępny poszerzony opis (np. za pomocą znaczników &lt;details&gt; i &lt;summary&gt;). Odnosi się to szczególnie
-        do bardzo skomplikowanych grafik, obrazów,
-        wykresów itp. Poszerzony opis może być dostarczony na przykład w formie linku prowadzącego do miejsca, w którym
-        można przeczytać co przedstawia grafika. </p>
+    <p class="opis">Sprawdź, czy elementy graficzne, jeśli tego wymagają, posiadają poprawnie sformułowany, łatwo dostępny poszerzony opis (np. za pomocą znaczników &lt;details&gt; i &lt;summary&gt;). Odnosi się to szczególnie do bardzo skomplikowanych grafik, obrazów,
+        wykresów itp. Poszerzony opis może być dostarczony na przykład w formie linku prowadzącego do miejsca, w którym można przeczytać co przedstawia grafika. </p>
 
     <h2>Weryfikacja dostępności cyfrowej na poziomie 3.</h2>
-    <p class="wprowadzenie">Sprawdzenie dostępności cyfrowej strony internetowej na poziomie 3 wymaga zaawansowanej
-        wiedzy na temat funkcjonowania stron internetowych, dodatków do przeglądarek, posługiwania się prostymi
-        programami narzędziowymi, znajomości działania stron i
-        umieszczonych na nich obiektów wraz ze znajomością kodu HTML i arkuszy stylów. Osoba przeprowadzająca badanie
-        powinna mieć przygotowanie w kwestiach dostępności cyfrowej, czyli powinna rozumieć potrzeby różnych grup osób
-        niepełnosprawnych. Potrafi
-        posłużyć się dodatkami wspierającymi badanie dostępności jak również narzędziami wspomagającymi osoby
-        niepełnosprawne takimi jak czytnik ekranu.</p>
-    <p class="wprowadzenie">Przy każdym pytaniu/zdaniu listy kontrolnej należy jedną z proponowanych odpowiedzi.
-        Zaznaczenie odpowiedzi oznaczonej kolorem czerwonym oznacza błąd dostępności cyfrowej. </p>
+    <p class="wprowadzenie">Sprawdzenie dostępności cyfrowej strony internetowej na poziomie 3 wymaga zaawansowanej wiedzy na temat funkcjonowania stron internetowych, dodatków do przeglądarek, posługiwania się prostymi programami narzędziowymi, znajomości działania stron i
+        umieszczonych na nich obiektów wraz ze znajomością kodu HTML i arkuszy stylów. Osoba przeprowadzająca badanie powinna mieć przygotowanie w kwestiach dostępności cyfrowej, czyli powinna rozumieć potrzeby różnych grup osób niepełnosprawnych. Potrafi
+        posłużyć się dodatkami wspierającymi badanie dostępności jak również narzędziami wspomagającymi osoby niepełnosprawne takimi jak czytnik ekranu.</p>
+    <p class="wprowadzenie">Przy każdym pytaniu/zdaniu listy kontrolnej należy jedną z proponowanych odpowiedzi. Zaznaczenie odpowiedzi oznaczonej kolorem czerwonym oznacza błąd dostępności cyfrowej. </p>
 
 
     <h3>Listy i tabele</h3>
@@ -601,8 +458,7 @@
 
 
 
-    <p class="pytanie" id="py33">33. Czy fragmenty treści strony będące faktycznie listami elementów są zdefiniowane w kodzie
-        strony jako listy? </p>
+    <p class="pytanie" id="py33">33. Czy fragmenty treści strony będące faktycznie listami elementów są zdefiniowane w kodzie strony jako listy? </p>
     <input type="radio" id="p33tak" name="p33" value="1" onclick="statusOdpowiedzi('py33', this.value)">
     <label for="p33tak">Tak</label>
     <input type="radio" id="p33nie" name="p33" value="0" onclick="statusOdpowiedzi('py33', this.value)">
@@ -610,8 +466,7 @@
     <input type="radio" id="p33niedotyczy" name="p33" value="2" onclick="statusOdpowiedzi('py33', this.value)">
     <label for="p33niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.3.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy wszystkie bloki tekstu wyglądające jak listy elementów zdefiniowane są jako takie w
-        kodzie HTML.</p>
+    <p class="opis">Sprawdź, czy wszystkie bloki tekstu wyglądające jak listy elementów zdefiniowane są jako takie w kodzie HTML.</p>
 
 
     <p class="pytanie" id="py34">34. Czy wszystkie tabele prezentujące dane mają poprawnie zdefiniowane nagłówki?</p>
@@ -622,19 +477,16 @@
     <input type="radio" id="p34niedotyczy" name="p34" value="2" onclick="statusOdpowiedzi('py34', this.value)">
     <label for="p34niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryterium WCAG – 1.3.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w każdej tabeli prezentującej dane wszystkie nagłówki (kolumn lub linii) zdefiniowane
-        są w znacznikach &lt;th&gt;.</p>
+    <p class="opis">Sprawdź, czy w każdej tabeli prezentującej dane wszystkie nagłówki (kolumn lub linii) zdefiniowane są w znacznikach &lt;th&gt;.</p>
 
 
-    <p class="pytanie" id="py35">35. Czy na stronach są tabele prezentujące dane, które są stworzonych za pomocą narzędzi
-        tekstowych innych niż znaczniki tabel? </p>
-    <input type="radio" id="p35tak" name="p35" value="0" onclick="statusOdpowiedzi('py35', this.value)">
-    <label for="p35tak">Tak</label>
+    <p class="pytanie" id="py35">35. Czy na stronach są tabele prezentujące dane, które są stworzonych za pomocą narzędzi tekstowych innych niż znaczniki tabel? </p>
     <input type="radio" id="p35nie" name="p35" value="1" onclick="statusOdpowiedzi('py35', this.value)">
     <label for="p35nie">Nie</label>
+    <input type="radio" id="p35tak" name="p35" value="0" onclick="statusOdpowiedzi('py35', this.value)">
+    <label for="p35tak">Tak</label>
     <p class="kryteria">Kryterium WCAG – 1.3.1 oraz 1.3.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy tabele prezentujące dane nie są tworzone za pomocą znaczników innych niż znaczniki
-        tabeli.
+    <p class="opis">Sprawdź, czy tabele prezentujące dane nie są tworzone za pomocą znaczników innych niż znaczniki tabeli.
     </p>
 
 
@@ -646,15 +498,14 @@
     <input type="radio" id="p36niedotyczy" name="p36" value="2" onclick="statusOdpowiedzi('py36', this.value)">
     <label for="p36niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryterium WCAG – 1.3.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy tabele będące szkieletem mają zdefiniowaną rolę (role=presentation). W przypadku, gdy
-        tabele nie są używane do tworzenia szkieletu strony należy wybrać odpowiedź NIE DOTYCZY</p>
+    <p class="opis">Sprawdź, czy tabele będące szkieletem mają zdefiniowaną rolę (role=presentation). W przypadku, gdy tabele nie są używane do tworzenia szkieletu strony należy wybrać odpowiedź NIE DOTYCZY</p>
 
 
     <p class="pytanie" id="py37">37. Czy tabele nie prezentujące danych zawierają elementy tabel prezentujących dane? </p>
-    <input type="radio" id="p37tak" name="p37" value="0" onclick="statusOdpowiedzi('py37', this.value)">
-    <label for="p37tak">Tak</label>
     <input type="radio" id="p37nie" name="p37" value="1" onclick="statusOdpowiedzi('py37', this.value)">
     <label for="p37nie">Nie</label>
+    <input type="radio" id="p37tak" name="p37" value="0" onclick="statusOdpowiedzi('py37', this.value)">
+    <label for="p37tak">Tak</label>
     <input type="radio" id="p37niedotyczy" name="p37" value="2" onclick="statusOdpowiedzi('py37', this.value)">
     <label for="p37niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryterium WCAG – 1.3.1 - Poziom „A”</p>
@@ -684,18 +535,16 @@
     <input type="radio" id="p38nie" name="p38" value="0" onclick="statusOdpowiedzi('py38', this.value)">
     <label for="p38nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 2.4.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy zbadane elementy mające podobne funkcje, mające ważne znaczenie dla nawigacji na
-        stronie, są zgrupowane wewnątrz spójnych struktur takich jak lista elementów, nie pomieszane z innymi
-        elementami, nie mającymi podobnych funkcji i tego samego
+    <p class="opis">Sprawdź, czy zbadane elementy mające podobne funkcje, mające ważne znaczenie dla nawigacji na stronie, są zgrupowane wewnątrz spójnych struktur takich jak lista elementów, nie pomieszane z innymi elementami, nie mającymi podobnych funkcji i tego samego
         znaczenia.
     </p>
 
 
     <p class="pytanie" id="py39">39. Czy na stronie znajdują się puste linki? </p>
-    <input type="radio" id="p39tak" name="p39" value="0" onclick="statusOdpowiedzi('py39', this.value)">
-    <label for="p39tak">Tak</label>
     <input type="radio" id="p39nie" name="p39" value="1" onclick="statusOdpowiedzi('py39', this.value)">
     <label for="p39nie">Nie</label>
+    <input type="radio" id="p39tak" name="p39" value="0" onclick="statusOdpowiedzi('py39', this.value)">
+    <label for="p39tak">Tak</label>
     <p class="kryteria">Kryteria WCAG: 2.4.4 - Poziom „A”</p>
     <p class="opis">Sprawdź, czy na badanych stronach nie ma linków, które nie zawierają żadnej zawartości.</p>
 
@@ -707,8 +556,7 @@
     <input type="radio" id="p40nie" name="p40" value="0" onclick="statusOdpowiedzi('py40', this.value)">
     <label for="p40nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 2.4.4 - Poziom „A”, 3.2.3, 3.2.4 – Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy w przypadku gdy kilka linków (nawet na różnych podstronach) ma tę samą treść i są w ten
-        sam sposób opisane to czy pełnią zawsze tę samą funkcję lub prowadzą do tego samego celu. </p>
+    <p class="opis">Sprawdź, czy w przypadku gdy kilka linków (nawet na różnych podstronach) ma tę samą treść i są w ten sam sposób opisane to czy pełnią zawsze tę samą funkcję lub prowadzą do tego samego celu. </p>
 
 
     <p class="pytanie" id="py41">41. Czy nie ma efektu jąkania?</p>
@@ -717,28 +565,19 @@
     <input type="radio" id="p41jest" name="p41" value="0" onclick="statusOdpowiedzi('py41', this.value)">
     <label for="p41jest">Jest</label>
     <p class="kryteria">Kryteria WCAG: 2.4.4 - Poziom „A”, 3.2.3, 3.2.4 – Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy nie ma powtórzeń opisów alternatywnych i tytułów (title) w linkach, a także czy te same
-        linki nie są powielane. Efekt jąkania to sytuacja, w której czytnik ekranu po wybraniu jakiegoś elementu na
-        stronie niepotrzebnie, wielokrotnie wypowiada
+    <p class="opis">Sprawdź, czy nie ma powtórzeń opisów alternatywnych i tytułów (title) w linkach, a także czy te same linki nie są powielane. Efekt jąkania to sytuacja, w której czytnik ekranu po wybraniu jakiegoś elementu na stronie niepotrzebnie, wielokrotnie wypowiada
         ten sam tekst.</p>
 
 
-    <p class="pytanie" id="py42">42. Czy jest możliwość łatwego zrozumienia celu lub działania linków i przycisków dla wszystkich
-        użytkowników? </p>
+    <p class="pytanie" id="py42">42. Czy jest możliwość łatwego zrozumienia celu lub działania linków i przycisków dla wszystkich użytkowników? </p>
     <input type="radio" id="p42tak" name="p42" value="1" onclick="statusOdpowiedzi('py42', this.value)">
     <label for="p42tak">Tak</label>
     <input type="radio" id="p42nie" name="p42" value="0" onclick="statusOdpowiedzi('py42', this.value)">
     <label for="p42nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 2.4.4 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy możliwe jest zrozumienie celu lub funkcjonalności elementu aktywnego (linku,
-        przycisku), bez konieczności widzenia kontekstu w jakim został umieszczony. <br> Badanie odnosi się szczególnie
-        do linków typu „czytaj więcej” i im podobnych.
-        Jeśli wyjąć taki link ze strony to nie da się określić dokąd taki link prowadzi i jest to błąd. Każdy link
-        powinien być zrozumiały sam w sobie. Rozwiązaniem tego problemu może być czasami dodanie ukrytego tekstu, czyli
-        tekstu, który nie będzie
-        pokazywał się na ekranie, natomiast będzie odczytywany przez czytniki ekranu. Podczas weryfikacji należy
-        sprawdzić, czy nie ma przypisanego do linku takiego ukrytego tekstu – jeśli jest i jest poprawny, wówczas link
-        należy uznać za poprawny i
+    <p class="opis">Sprawdź, czy możliwe jest zrozumienie celu lub funkcjonalności elementu aktywnego (linku, przycisku), bez konieczności widzenia kontekstu w jakim został umieszczony. <br> Badanie odnosi się szczególnie do linków typu „czytaj więcej” i im podobnych.
+        Jeśli wyjąć taki link ze strony to nie da się określić dokąd taki link prowadzi i jest to błąd. Każdy link powinien być zrozumiały sam w sobie. Rozwiązaniem tego problemu może być czasami dodanie ukrytego tekstu, czyli tekstu, który nie będzie
+        pokazywał się na ekranie, natomiast będzie odczytywany przez czytniki ekranu. Podczas weryfikacji należy sprawdzić, czy nie ma przypisanego do linku takiego ukrytego tekstu – jeśli jest i jest poprawny, wówczas link należy uznać za poprawny i
         zrozumiały.
     </p>
 
@@ -748,8 +587,7 @@
 
 
 
-    <p class="pytanie" id="py43">43. Czy wszystkie elementy nietekstowe w serwisie mają przypisaną poprawnie sformułowaną
-        alternatywę tekstową? </p>
+    <p class="pytanie" id="py43">43. Czy wszystkie elementy nietekstowe w serwisie mają przypisaną poprawnie sformułowaną alternatywę tekstową? </p>
     <input type="radio" id="p43tak" name="p43" value="1" onclick="statusOdpowiedzi('py43', this.value)">
     <label for="p43tak">Tak</label>
     <input type="radio" id="p43nie" name="p43" value="0" onclick="statusOdpowiedzi('py43', this.value)">
@@ -757,19 +595,16 @@
     <input type="radio" id="p43niedotyczy" name="p43" value="2" onclick="statusOdpowiedzi('py43', this.value)">
     <label for="p43niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.1.1 - Poziom „A”</p>
-    <p class="opis">Badanie dotyczy następujących elementów samodzielnie występujących na stronie (nie będących częścią
-        innych elementów), niosących znaczącą informację, nie będących elementem multimedialnym ani CAPTCHĄ:
-    <ul>
-        <li>applet</li>
-        <li>object</li>
-        <li>embed</li>
-        <li>canvas</li>
-        <li>kod javascript generujący którykolwiek z powyższych elementów.</li>
-    </ul>
-    <br> Sprawdź, czy w przypadku obecności na badanych stronach któregokolwiek z tych elementów, każdemu z nich
-    przypisany jest poprawnie sformułowana alternatywa tekstowa lub odpowiednio „noembed” lub ewentualnie długi opis
-    albo inny jednoznaczny,
-    wyczerpujący opis zawartości znajdujący się w bezpośredniej bliskości na stronie.</p>
+    <p class="opis">Badanie dotyczy następujących elementów samodzielnie występujących na stronie (nie będących częścią innych elementów), niosących znaczącą informację, nie będących elementem multimedialnym ani CAPTCHĄ:
+        <ul>
+            <li>applet</li>
+            <li>object</li>
+            <li>embed</li>
+            <li>canvas</li>
+            <li>kod javascript generujący którykolwiek z powyższych elementów.</li>
+        </ul>
+        <br> Sprawdź, czy w przypadku obecności na badanych stronach któregokolwiek z tych elementów, każdemu z nich przypisany jest poprawnie sformułowana alternatywa tekstowa lub odpowiednio „noembed” lub ewentualnie długi opis albo inny jednoznaczny,
+        wyczerpujący opis zawartości znajdujący się w bezpośredniej bliskości na stronie.</p>
 
 
     <p class="pytanie" id="py44">44. Czy wszystkie opisy alternatywne mają rozsądną długość (liczbę znaków)? </p>
@@ -780,11 +615,9 @@
     <input type="radio" id="p44niedotyczy" name="p44" value="2" onclick="statusOdpowiedzi('py44', this.value)">
     <label for="p44niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.1.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy we wszystkich przypadkach, gdy pojawia się opis alternatywny (atrybut alt) tekst opisu
-        alternatywnego jest odpowiednio zwięzły. Ocenia się, że tekst alternatywny nie powinien przekraczać ok. 80
-        znaków (ze względu na ograniczenie dzięki
-        temu liczby manipulacji w przypadku użycia linijki brajlowskiej), przy czym najistotniejsza jest jednak jego
-        treść.</p>
+    <p class="opis">Sprawdź, czy we wszystkich przypadkach, gdy pojawia się opis alternatywny (atrybut alt) tekst opisu alternatywnego jest odpowiednio zwięzły. Ocenia się, że tekst alternatywny nie powinien przekraczać ok. 80 znaków (ze względu na ograniczenie dzięki
+        temu liczby manipulacji w przypadku użycia linijki brajlowskiej), przy czym najistotniejsza jest jednak jego treść.
+    </p>
 
 
     <p class="pytanie" id="py45">45. Czy wszystkie graficzne elementy czysto dekoracyjne mają pusty atrybut alt (alt=””)? </p>
@@ -795,12 +628,10 @@
     <input type="radio" id="p45niedotyczy" name="p45" value="2" onclick="statusOdpowiedzi('py45', this.value)">
     <label for="p45niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.1.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy każdemu graficznych elementów osadzonych w znacznikach &lt;img&gt; mających wyłącznie
-        rolę dekoracyjną przypisany jest pusty atrybut „alt” (alt=””).</p>
+    <p class="opis">Sprawdź, czy każdemu graficznych elementów osadzonych w znacznikach &lt;img&gt; mających wyłącznie rolę dekoracyjną przypisany jest pusty atrybut „alt” (alt=””).</p>
 
 
-    <p class="pytanie" id="py46">46. Czy zachowana jest spójność tekstowych opisów alternatywnych, etykiet i „title” w
-        powtarzających się elementach?</p>
+    <p class="pytanie" id="py46">46. Czy zachowana jest spójność tekstowych opisów alternatywnych, etykiet i „title” w powtarzających się elementach?</p>
     <input type="radio" id="p46tak" name="p46" value="1" onclick="statusOdpowiedzi('py46', this.value)">
     <label for="p46tak">Tak</label>
     <input type="radio" id="p46nie" name="p46" value="0" onclick="statusOdpowiedzi('py46', this.value)">
@@ -808,12 +639,10 @@
     <input type="radio" id="p46niedotyczy" name="p46" value="2" onclick="statusOdpowiedzi('py46', this.value)">
     <label for="p46niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 3.2.4 - Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy za każdym razem gdy dany element nietekstowy występuje na stronie, jego opis
-        alternatywny, etykieta lub atrybut „title” mają tę samą wartość.</p>
+    <p class="opis">Sprawdź, czy za każdym razem gdy dany element nietekstowy występuje na stronie, jego opis alternatywny, etykieta lub atrybut „title” mają tę samą wartość.</p>
 
 
-    <p class="pytanie" id="py47">47. Czy wszystkie grafiki w serwisie mają przypisany poprawnie sformułowany opis alternatywny, a
-        te, które niosą szczególnie istotne treści uzupełnione są o poprawną, dostępną alternatywę? </p>
+    <p class="pytanie" id="py47">47. Czy wszystkie grafiki w serwisie mają przypisany poprawnie sformułowany opis alternatywny, a te, które niosą szczególnie istotne treści uzupełnione są o poprawną, dostępną alternatywę? </p>
     <input type="radio" id="p47tak" name="p47" value="1" onclick="statusOdpowiedzi('py47', this.value)">
     <label for="p47tak">Tak</label>
     <input type="radio" id="p47nie" name="p47" value="0" onclick="statusOdpowiedzi('py47', this.value)">
@@ -821,9 +650,7 @@
     <input type="radio" id="p47niedotyczy" name="p47" value="2" onclick="statusOdpowiedzi('py47', this.value)">
     <label for="p47niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.1.1 - Poziom „A”, 1.4.5 - Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach któregokolwiek z tych elementów, każdemu z
-        nich przypisany jest poprawnie sformułowany atrybut „alt”(lub inny, odpowiedni sposób opisu). Sprawdź również,
-        czy w przypadku, gdy grafika niesie szczególnie
+    <p class="opis">Sprawdź, czy w przypadku obecności na badanych stronach któregokolwiek z tych elementów, każdemu z nich przypisany jest poprawnie sformułowany atrybut „alt”(lub inny, odpowiedni sposób opisu). Sprawdź również, czy w przypadku, gdy grafika niesie szczególnie
         istotne treści, są one również zaprezentowane w formie dostępnej dla wszystkich użytkowników.</p>
 
 
@@ -840,12 +667,10 @@
     <input type="radio" id="p48niedotyczy" name="p48" value="2" onclick="statusOdpowiedzi('py48', this.value)">
     <label for="p48niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.1.1, 1.3.1, 3.3.2, 4.1.2 - Poziom „A”, 2.4.6 – Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy element formularza ma odpowiednio sformułowaną i poprawnie umieszczoną w kodzie HTML
-        etykietę (&lt;label&gt;).</p>
+    <p class="opis">Sprawdź, czy element formularza ma odpowiednio sformułowaną i poprawnie umieszczoną w kodzie HTML etykietę (&lt;label&gt;).</p>
 
 
-    <p class="pytanie" id="py49">49. Czy sposób funkcjonowania pól, format oraz charakter obowiązkowy informacji, które mają być
-        podane w formularzu jest jednoznacznie podany i zrozumiały dla wszystkich użytkowników?</p>
+    <p class="pytanie" id="py49">49. Czy sposób funkcjonowania pól, format oraz charakter obowiązkowy informacji, które mają być podane w formularzu jest jednoznacznie podany i zrozumiały dla wszystkich użytkowników?</p>
     <input type="radio" id="p49tak" name="p49" value="1" onclick="statusOdpowiedzi('py49', this.value)">
     <label for="p49tak">Tak</label>
     <input type="radio" id="p49nie" name="p49" value="0" onclick="statusOdpowiedzi('py49', this.value)">
@@ -853,11 +678,8 @@
     <input type="radio" id="p49niedotyczy" name="p49" value="2" onclick="statusOdpowiedzi('py49', this.value)">
     <label for="p49niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 3.3.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy użytkownik jest jednoznacznie uprzedzony o obowiązkowym wpisaniu danych w poszczególne
-        pola oraz czy istnieje informacja, jeśli to konieczne, o formacie danych do wpisania do pól formularza, które
-        mają być wypełnione. Informacja ta może
-        znajdować się na początku formularza, być zawarta w etykiecie każdego pola lub być zawarta w odpowiednim
-        atrybucie ARIA.</p>
+    <p class="opis">Sprawdź, czy użytkownik jest jednoznacznie uprzedzony o obowiązkowym wpisaniu danych w poszczególne pola oraz czy istnieje informacja, jeśli to konieczne, o formacie danych do wpisania do pól formularza, które mają być wypełnione. Informacja ta może
+        znajdować się na początku formularza, być zawarta w etykiecie każdego pola lub być zawarta w odpowiednim atrybucie ARIA.</p>
 
 
     <p class="pytanie" id="py50">50. Czy umiejscowienie etykiet pól formularzy nie pozostawia żadnych wątpliwości? </p>
@@ -868,12 +690,10 @@
     <input type="radio" id="p50niedotyczy" name="p50" value="2" onclick="statusOdpowiedzi('py50', this.value)">
     <label for="p50niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 3.3.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy etykiety przypisane do pól formularzy, jeśli takie są, umiejscowione są w taki sposób,
-        że można je jednoznacznie połączyć wizualnie z polem, którego dotyczą.</p>
+    <p class="opis">Sprawdź, czy etykiety przypisane do pól formularzy, jeśli takie są, umiejscowione są w taki sposób, że można je jednoznacznie połączyć wizualnie z polem, którego dotyczą.</p>
 
 
-    <p class="pytanie" id="py51">51. Czy pola o podobnym znaczeniu zostały pogrupowane w formularzu za pomocą znaczników
-        &lt;fieldset&gt; oraz ewentualnie &lt;optgroup&gt;? </p>
+    <p class="pytanie" id="py51">51. Czy pola o podobnym znaczeniu zostały pogrupowane w formularzu za pomocą znaczników &lt;fieldset&gt; oraz ewentualnie &lt;optgroup&gt;? </p>
     <input type="radio" id="p51tak" name="p51" value="1" onclick="statusOdpowiedzi('py51', this.value)">
     <label for="p51tak">Tak</label>
     <input type="radio" id="p51nie" name="p51" value="0" onclick="statusOdpowiedzi('py51', this.value)">
@@ -881,12 +701,10 @@
     <input type="radio" id="p51niedotyczy" name="p51" value="2" onclick="statusOdpowiedzi('py51', this.value)">
     <label for="p51niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.3.1, 3.3.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy pola formularzy mające podobną funkcję czy niosący informacje o podobnym charakterze są
-        zgrupowane w znaczniku &lt;fieldset&gt; lub w odpowiednim przypadku &lt;optgroup&gt;.</p>
+    <p class="opis">Sprawdź, czy pola formularzy mające podobną funkcję czy niosący informacje o podobnym charakterze są zgrupowane w znaczniku &lt;fieldset&gt; lub w odpowiednim przypadku &lt;optgroup&gt;.</p>
 
 
-    <p class="pytanie" id="py52">52. Czy w przypadku użycia znaczników &lt;fieldset&gt; w formularzach użyty jest odpowiednio
-        sformułowany znacznik &lt;legend&gt;? </p>
+    <p class="pytanie" id="py52">52. Czy w przypadku użycia znaczników &lt;fieldset&gt; w formularzach użyty jest odpowiednio sformułowany znacznik &lt;legend&gt;? </p>
     <input type="radio" id="p52tak" name="p52" value="1" onclick="statusOdpowiedzi('py52', this.value)">
     <label for="p52tak">Tak</label>
     <input type="radio" id="p52nie" name="p52" value="0" onclick="statusOdpowiedzi('py52', this.value)">
@@ -897,84 +715,71 @@
     <p class="opis">Sprawdź czy znaczniki &lt;fieldset&gt; posiadają odpowiednio opisane znaczniki &lt;legend&gt;.</p>
 
 
-    <p class="pytanie" id="py53">53. Czy w przypadku użycia znaczników &lt;optgroup&gt; w formularzach użyta jest odpowiednio
-        sformułowana etykieta &lt;label&gt;? </p>
+    <p class="pytanie" id="py53">53. Czy w przypadku użycia znaczników &lt;optgroup&gt; w formularzach użyta jest odpowiednio sformułowana etykieta &lt;label&gt;? </p>
     <input type="radio" id="p53tak" name="p53" value="1" onclick="statusOdpowiedzi('py53', this.value)">
     <label for="p53tak">Tak</label>
-    <input type="p53radio" id="nie" name="p53" value="0" onclick="statusOdpowiedzi('py53', this.value)">
+    <input type="radio" id="p53nie" name="p53" value="0" onclick="statusOdpowiedzi('py53', this.value)">
     <label for="p53nie">Nie</label>
     <input type="radio" id="p53niedotyczy" name="p53" value="2" onclick="statusOdpowiedzi('py53', this.value)">
     <label for="p53niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.3.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy nie ma znaczników &lt;optgroup&gt; niepołączonych z odpowiednio sformułowanym
-        znacznikiem &lt;label&gt;.</p>
+    <p class="opis">Sprawdź, czy nie ma znaczników &lt;optgroup&gt; niepołączonych z odpowiednio sformułowanym znacznikiem &lt;label&gt;.</p>
 
 
-    <p class="pytanie" id="py54">54. Czy tekstowe pole formularza, jeśli jest to możliwe, zawiera poprawnie działającą funkcję
-        autouzupełniania? </p>
+    <p class="pytanie" id="py54">54. Czy tekstowe pole formularza, jeśli jest to możliwe, zawiera poprawnie działającą funkcję autouzupełniania? </p>
     <input type="radio" id="p54tak" name="p54" value="1" onclick="statusOdpowiedzi('py54', this.value)">
     <label for="p54tak">Tak</label>
     <input type="radio" id="p54nie" name="p54" value="0" onclick="statusOdpowiedzi('py54', this.value)">
     <label for="p54nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 1.3.5 - Poziom „A”</p>
-    <p class="opis">Sprawdź czy, jeśli jest to możliwe i użyteczne, tekstowe pole formularza posiada poprawnie
-        działającą funkcję autouzupełniania..</p>
+    <p class="opis">Sprawdź czy, jeśli jest to możliwe i użyteczne, tekstowe pole formularza posiada poprawnie działającą funkcję autouzupełniania..</p>
 
 
     <h3>Pozostałe pytania</h3>
 
 
-
-
-    <p class="pytanie" id="py55">55. Czy ustawienie odstępów pomiędzy liniami, akapitami, znakami i wyrazami powoduje utratę
-        czytelności?
+    <p class="pytanie" id="py55">55. Czy ustawienie odstępów pomiędzy liniami, akapitami, znakami i wyrazami powoduje utratę czytelności?
     </p>
-    <input type="radio" id="p55tak" name="p55" value="0" onclick="statusOdpowiedzi('py55', this.value)">
-    <label for="p55tak">Tak</label>
     <input type="radio" id="p55nie" name="p55" value="1" onclick="statusOdpowiedzi('py55', this.value)">
     <label for="p55nie">Nie</label>
+    <input type="radio" id="p55tak" name="p55" value="0" onclick="statusOdpowiedzi('py55', this.value)">
+    <label for="p55tak">Tak</label>
     <p class="kryteria">Kryteria WCAG: 1.4.12 - Poziom „AA”</p>
     <p class="opis">Sprawdź, czy w przypadku
-    <ul>
-        <li>powiększenia odstępów między liniami (line-height) do 1,5 wielkości czcionki lub</li>
-        <li>powiększenia odstępów między paragrafami do dwukrotności wielkości czcionki lub</li>
-        <li>powiększenia odstępów między literami (letter-spacing) do 0,12 wielkości czcionki lub</li>
-        <li>powiększenie odstępów między słowami (word-spacing) do 0,16 wielkości czcionki</li>
-    </ul>
-    <br> tekst pozostaje w pełni czytelny. Pomocnym może być dodatek ARC Toolkit do Chrome.</p>
+        <ul>
+            <li>powiększenia odstępów między liniami (line-height) do 1,5 wielkości czcionki lub</li>
+            <li>powiększenia odstępów między paragrafami do dwukrotności wielkości czcionki lub</li>
+            <li>powiększenia odstępów między literami (letter-spacing) do 0,12 wielkości czcionki lub</li>
+            <li>powiększenie odstępów między słowami (word-spacing) do 0,16 wielkości czcionki</li>
+        </ul>
+        <br> tekst pozostaje w pełni czytelny. Pomocnym może być dodatek ARC Toolkit do Chrome.</p>
 
 
-    <p class="pytanie" id="py56">56. Czy dostęp do treści (zawartości) strony pomniejszonej do szerokości 320 px jest możliwy bez
-        potrzeby przesuwania poziomo?</p>
+    <p class="pytanie" id="py56">56. Czy dostęp do treści (zawartości) strony pomniejszonej do szerokości 320 px jest możliwy bez potrzeby przesuwania poziomo?</p>
     <input type="radio" id="p56tak" name="p56" value="1" onclick="statusOdpowiedzi('py56', this.value)">
     <label for="p56tak">Tak</label>
     <input type="radio" id="p56nie" name="p56" value="0" onclick="statusOdpowiedzi('py56', this.value)">
     <label for="p56nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 1.4.10 - Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy w przypadku gdy zawartość strony odczytywana jest w poziomie i jest prezentowana w
-        oknie o szerokości 320 px lub większej, odczyt może odbywać się bez konieczności używania suwaka poziomego.</p>
+    <p class="opis">Sprawdź, czy w przypadku gdy zawartość strony odczytywana jest w poziomie i jest prezentowana w oknie o szerokości 320 px lub większej, odczyt może odbywać się bez konieczności używania suwaka poziomego.</p>
 
 
-    <p class="pytanie" id="py57">57. Czy dostęp do treści (zawartości) strony pomniejszonej do szerokości 256 px jest możliwy bez
-        potrzeby przesuwania w pionie?</p>
+    <p class="pytanie" id="py57">57. Czy dostęp do treści (zawartości) strony pomniejszonej do szerokości 256 px jest możliwy bez potrzeby przesuwania w pionie?</p>
     <input type="radio" id="p57tak" name="p57" value="1" onclick="statusOdpowiedzi('py57', this.value)">
     <label for="p57tak">Tak</label>
     <input type="radio" id="p57nie" name="p57" value="0" onclick="statusOdpowiedzi('py57', this.value)">
     <label for="p57nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 1.4.10 - Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy w przypadku gdy zawartość strony odczytywana jest w pionie i jest prezentowana w oknie
-        o wysokości 256 px lub większej, odczyt może odbywać się bez konieczności używania suwaka pionowego.</p>
+    <p class="opis">Sprawdź, czy w przypadku gdy zawartość strony odczytywana jest w pionie i jest prezentowana w oknie o wysokości 256 px lub większej, odczyt może odbywać się bez konieczności używania suwaka pionowego.</p>
 
 
-    <p class="pytanie" id="py58">58. Czy występują na stronie elementy osadzone w znacznikach &lt;BLINK&gt;, &lt;BGSOUND&gt; lub
-        &lt;MARQEE&gt;? </p>
+    <p class="pytanie" id="py58">58. Czy występują na stronie elementy osadzone w znacznikach &lt;BLINK&gt;, &lt;BGSOUND&gt; lub &lt;MARQEE&gt;? </p>
     <input type="radio" id="p58niema" name="p58" value="1" onclick="statusOdpowiedzi('py58', this.value)">
     <label for="p58niema">Nie ma</label>
     <input type="radio" id="p58wystepuja" name="p58" value="0" onclick="statusOdpowiedzi('py58', this.value)">
     <label for="p58wystepuja">Występują</label>
     <p class="kryteria">Kryteria WCAG: 1.4.2, 2.2.1, 2.2.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź czy w kodzie html badanych stron nie ma znaczników &lt;BLINK&gt;, &lt;BGSOUND&gt; lub
-        &lt;MARQEE&gt;.
+    <p class="opis">Sprawdź czy w kodzie html badanych stron nie ma znaczników &lt;BLINK&gt;, &lt;BGSOUND&gt; lub &lt;MARQEE&gt;.
     </p>
 
 
@@ -984,8 +789,7 @@
     <input type="radio" id="p59wystepuja" name="p59" value="0" onclick="statusOdpowiedzi('py59', this.value)">
     <label for="p59wystepuja">Występują</label>
     <p class="kryteria">Kryteria WCAG: 1.3.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku obecności na stronie słów, w których odstępy pomiędzy literami są większe
-        niż w innych miejscach tekstu, rozstrzelenie liter nie jest symulowane spacjami.</p>
+    <p class="opis">Sprawdź, czy w przypadku obecności na stronie słów, w których odstępy pomiędzy literami są większe niż w innych miejscach tekstu, rozstrzelenie liter nie jest symulowane spacjami.</p>
 
 
     <p class="pytanie" id="py60">60. Czy na stronie nie ma symboli typu ASCII-Art bez obecność zrozumiałej alternatywy? </p>
@@ -994,18 +798,16 @@
     <input type="radio" id="p60wystepuja" name="p60" value="0" onclick="statusOdpowiedzi('py60', this.value)">
     <label for="p60wystepuja">Występują</label>
     <p class="kryteria">Kryterium WCAG – 1.1.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w tekście nie ma użycia symboli ASCII-Art., bądź jeśli są, to czy jest dostarczona dla
-        nich poprawna, dostępna alternatywa. </p>
+    <p class="opis">Sprawdź, czy w tekście nie ma użycia symboli ASCII-Art., bądź jeśli są, to czy jest dostarczona dla nich poprawna, dostępna alternatywa. </p>
 
 
     <p class="pytanie" id="py61">61. Czy selektor CSS outline wyłącza fokus? </p>
-    <input type="radio" id="p61tak" name="p61" value="0" onclick="statusOdpowiedzi('py61', this.value)">
-    <label for="p61tak">Tak</label>
     <input type="radio" id="p61nie" name="p61" value="1" onclick="statusOdpowiedzi('py61', this.value)">
     <label for="p61nie">Nie</label>
+    <input type="radio" id="p61tak" name="p61" value="0" onclick="statusOdpowiedzi('py61', this.value)">
+    <label for="p61tak">Tak</label>
     <p class="kryteria">Kryteria WCAG: 1.4.1 - Poziom „A”, 2.4.7 – Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy w przypadku obecności w aktywnych definicjach stylów selektora outline nie ma on
-        wartości powodujących likwidację widoczności fokusa.</p>
+    <p class="opis">Sprawdź, czy w przypadku obecności w aktywnych definicjach stylów selektora outline nie ma on wartości powodujących likwidację widoczności fokusa.</p>
 
 
     <p class="pytanie" id="py62">62. Czy nie ma zmian kontekstu bez wyraźnego zatwierdzenia przez użytkownika.</p>
@@ -1014,8 +816,7 @@
     <input type="radio" id="p62wystepuja" name="p62" value="0" onclick="statusOdpowiedzi('py62', this.value)">
     <label for="p62wystepuja">Występują</label>
     <p class="kryteria">Kryteria WCAG: 3.2.1, 3.2.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku gdy w wyniku działań użytkownika nie będących wprost zatwierdzeniem
-        działania, na stronie pojawia się zmiana, jest on o tym w sposób dostępny poinformowany. </p>
+    <p class="opis">Sprawdź, czy w przypadku gdy w wyniku działań użytkownika nie będących wprost zatwierdzeniem działania, na stronie pojawia się zmiana, jest on o tym w sposób dostępny poinformowany. </p>
 
 
     <p class="pytanie" id="py63">63. Czy na stronie są błędy walidacji lub przestarzałe, nieużywane elementy HTML. </p>
@@ -1024,8 +825,7 @@
     <input type="radio" id="p63wystepuja" name="p63" value="0" onclick="statusOdpowiedzi('py63', this.value)">
     <label for="p63wystepuja">Występują</label>
     <p class="kryteria">Kryteria WCAG: 4.1.1, 4.1.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy badane strony przechodzą test walidatorem HTML W3C bez żadnego błędu wpływającego na
-        dostępność cyfrową i czy w kodzie nie są używane przestarzałe, nieużywane znaczniki i atrybuty.</p>
+    <p class="opis">Sprawdź, czy badane strony przechodzą test walidatorem HTML W3C bez żadnego błędu wpływającego na dostępność cyfrową i czy w kodzie nie są używane przestarzałe, nieużywane znaczniki i atrybuty.</p>
 
 
     <p class="pytanie" id="py64">64. Czy każda strona ma poprawną deklarację języka? </p>
@@ -1034,8 +834,7 @@
     <input type="radio" id="p64nie" name="p64" value="0" onclick="statusOdpowiedzi('py64', this.value)">
     <label for="p64nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 3.1.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy strony posiadają poprawnie sformułowaną, odpowiadającą rzeczywistości deklarację języka
-        (znacznik &lt;html&gt; atrybut lang).</p>
+    <p class="opis">Sprawdź, czy strony posiadają poprawnie sformułowaną, odpowiadającą rzeczywistości deklarację języka (znacznik &lt;html&gt; atrybut lang).</p>
 
 
     <p class="pytanie" id="py65">65. Czy elementy obcojęzyczne w treści stron mają poprawnie zdefiniowany język? </p>
@@ -1046,8 +845,7 @@
     <input type="radio" id="p65niedotyczy" name="p65" value="2" onclick="statusOdpowiedzi('py65', this.value)">
     <label for="p65niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryterium WCAG – 3.1.2 - Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy elementy obcojęzyczne w stosunku do zadeklarowanego języka strony, a obecne w treści
-        (za wyjątkiem nazw własnych), maja poprawną deklarację języka (atrybut lang).</p>
+    <p class="opis">Sprawdź, czy elementy obcojęzyczne w stosunku do zadeklarowanego języka strony, a obecne w treści (za wyjątkiem nazw własnych), maja poprawną deklarację języka (atrybut lang).</p>
 
 
     <p class="pytanie" id="py66">66. Czy na każdej stronie jest przynajmniej jeden nagłówek h1? </p>
@@ -1056,9 +854,7 @@
     <input type="radio" id="p66nie" name="p66" value="0" onclick="statusOdpowiedzi('py66', this.value)">
     <label for="p66nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 2.4.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy każda strona zawiera poprawnie umieszczony nagłówek h1. <br> Nagłówek h1 powinien być
-        tylko jeden na stronie, poza wyjątkowymi sytuacjami gdy na jednej wyświetlanej stronie znajdują się całkowicie
-        odrębne, niepowiązane ze sobą hierarchicznie
+    <p class="opis">Sprawdź, czy każda strona zawiera poprawnie umieszczony nagłówek h1. <br> Nagłówek h1 powinien być tylko jeden na stronie, poza wyjątkowymi sytuacjami gdy na jednej wyświetlanej stronie znajdują się całkowicie odrębne, niepowiązane ze sobą hierarchicznie
         i logiczne bloki.</p>
 
 
@@ -1069,9 +865,7 @@
     <input type="radio" id="p67nie" name="p67" value="0" onclick="statusOdpowiedzi('py67', this.value)">
     <label for="p67nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 1.3.1 - Poziom „A” 2.4.6 – Poziom „AA”</p>
-    <p class="opis">Sprawdź, wszystkie nagłówki przypisane są do odpowiednich elementów i czy zachowana jest logiczna
-        ciągłość w kolejności i ułożeniu nagłówków.<br> Nagłówki powinny logicznie oddawać strukturę dokumentu. Powinny
-        więc być ułożone w kolejności od najwyższego
+    <p class="opis">Sprawdź, wszystkie nagłówki przypisane są do odpowiednich elementów i czy zachowana jest logiczna ciągłość w kolejności i ułożeniu nagłówków.<br> Nagłówki powinny logicznie oddawać strukturę dokumentu. Powinny więc być ułożone w kolejności od najwyższego
         do najniższego, bez przerw (po nagłówku h1 powinien następować h2, a nie h4), w logicznym układzie.</p>
 
 
@@ -1081,9 +875,7 @@
     <input type="radio" id="p68jest" name="p68" value="0" onclick="statusOdpowiedzi('py68', this.value)">
     <label for="p68jest">Jest</label>
     <p class="kryteria">Kryteria WCAG: 3.2.2. - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy na stronie nie ma sytuacji, w której samo zaznaczenie fokusem jakiegoś elementu lub
-        przejechanie po nim wskaźnikiem myszki powoduje zmianę kontekstu, na przykład przeładowanie strony, uruchomienie
-        skryptu wyświetlającego dane itp.</p>
+    <p class="opis">Sprawdź, czy na stronie nie ma sytuacji, w której samo zaznaczenie fokusem jakiegoś elementu lub przejechanie po nim wskaźnikiem myszki powoduje zmianę kontekstu, na przykład przeładowanie strony, uruchomienie skryptu wyświetlającego dane itp.</p>
 
 
     <p class="pytanie" id="py69">69. Czy w kodzie strony są elementy HTML służące prezentacji? </p>
@@ -1093,25 +885,25 @@
     <label for="p69wystepuja">Występują</label>
     <p class="kryteria">Kryteria WCAG: 1.3.1 - Poziom „A”, 1.4.5 - Poziom „AA”</p>
     <p class="opis">Badanie dotyczy następujących elementów:
-    <ul>
-        <li>basefont</li>
-        <li>blink</li>
-        <li>center</li>
-        <li>font</li>
-        <li>marquee</li>
-        <li>s</li>
-        <li>strike</li>
-        <li>tt</li>
-        <li>align</li>
-        <li>alink</li>
-        <li>background</li>
-        <li>basefont</li>
-        <li>bgcolor</li>
-        <li>color</li>
-        <li>link</li>
-        <li>vlink</li>
-    </ul>
-    <br> Sprawdzić, czy w kodzie HTML strony nie ma żadnego z powyższych elementów</p>
+        <ul>
+            <li>basefont</li>
+            <li>blink</li>
+            <li>center</li>
+            <li>font</li>
+            <li>marquee</li>
+            <li>s</li>
+            <li>strike</li>
+            <li>tt</li>
+            <li>align</li>
+            <li>alink</li>
+            <li>background</li>
+            <li>basefont</li>
+            <li>bgcolor</li>
+            <li>color</li>
+            <li>link</li>
+            <li>vlink</li>
+        </ul>
+        <br> Sprawdzić, czy w kodzie HTML strony nie ma żadnego z powyższych elementów</p>
 
 
     <p class="pytanie" id="py70">70. Czy deklaracja DTD jest poprawnie sformułowana w kodzie każdej strony?</p>
@@ -1131,47 +923,39 @@
     <input type="radio" id="p71niedotyczy" name="p71" value="2" onclick="statusOdpowiedzi('py71', this.value)">
     <label for="p71niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.3.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy we wszystkich listach definicji element dd jest poprzedzony elementem dt. Jeśli na
-        stronie nie ma list definicji wówczas należy wybrać odpowiedź NIE DOTYCZY</p>
+    <p class="opis">Sprawdź, czy we wszystkich listach definicji element dd jest poprzedzony elementem dt. Jeśli na stronie nie ma list definicji wówczas należy wybrać odpowiedź NIE DOTYCZY</p>
 
 
     <p class="pytanie" id="py72">72. Czy jest mechanizm automatycznie odświeżający stronę? </p>
-    <input type="radio" id="p72tak" name="p72" value="0" onclick="statusOdpowiedzi('py72', this.value)">
-    <label for="p72tak">Tak</label>
     <input type="radio" id="p72nie" name="p72" value="1" onclick="statusOdpowiedzi('py72', this.value)">
     <label for="p72nie">Nie</label>
+    <input type="radio" id="p72tak" name="p72" value="0" onclick="statusOdpowiedzi('py72', this.value)">
+    <label for="p72tak">Tak</label>
     <p class="kryteria">Kryteria WCAG: 2.2.1, 2.2.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku, gdy w kodzie HTML strony są wskazane elementy powodujące jej automatyczne
-        odświeżanie, to jest to absolutnie konieczne dla zrozumienia informacji, lub dla konkretnej funkcjonalności, lub
-        czy użytkownik może dowolnie zatrzymać
-        i uruchomić to działanie bądź zmienić przedział czasowy pomiędzy poszczególnymi odświeżeniami do okresu ponad 20
-        godzin.</p>
+    <p class="opis">Sprawdź, czy w przypadku, gdy w kodzie HTML strony są wskazane elementy powodujące jej automatyczne odświeżanie, to jest to absolutnie konieczne dla zrozumienia informacji, lub dla konkretnej funkcjonalności, lub czy użytkownik może dowolnie zatrzymać
+        i uruchomić to działanie bądź zmienić przedział czasowy pomiędzy poszczególnymi odświeżeniami do okresu ponad 20 godzin.
+    </p>
+
 
 
     <p class="pytanie" id="py73">73. Czy jest mechanizm automatycznie przekierowującego stronę do innego adresu? </p>
-    <input type="radio" id="p73tak" name="p73" value="0" onclick="statusOdpowiedzi('py73', this.value)">
-    <label for="p73tak">Tak</label>
     <input type="radio" id="p73nie" name="p73" value="1" onclick="statusOdpowiedzi('py73', this.value)">
     <label for="p73nie">Nie</label>
+    <input type="radio" id="p73tak" name="p73" value="0" onclick="statusOdpowiedzi('py73', this.value)">
+    <label for="p73tak">Tak</label>
     <p class="kryteria">Kryteria WCAG: 2.2.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku, gdy w kodzie strony są elementy powodujące jej automatyczne przekierowanie
-        do innej strony czy innego adresu www (typu &lt;meta http-equiv="refresh" content="5;
-        URL=http://adres.pl/innastrona/"&gt;), to jest to absolutnie
-        konieczne dla zrozumienia informacji lub dla konkretnej funkcjonalności, lub czy użytkownik może dowolnie
-        opóźnić, zatrzymać i uruchomić to działanie.</p>
+    <p class="opis">Sprawdź, czy w przypadku, gdy w kodzie strony są elementy powodujące jej automatyczne przekierowanie do innej strony czy innego adresu www (typu &lt;meta http-equiv="refresh" content="5; URL=http://adres.pl/innastrona/"&gt;), to jest to absolutnie
+        konieczne dla zrozumienia informacji lub dla konkretnej funkcjonalności, lub czy użytkownik może dowolnie opóźnić, zatrzymać i uruchomić to działanie.</p>
 
 
     <p class="pytanie" id="py74">74. Czy na stronie są elementy HTML niepoprawnie użyte w celu zmiany prezentacji? </p>
-    <input type="radio" id="p74tak" name="p74" value="0" onclick="statusOdpowiedzi('py74', this.value)">
-    <label for="p74tak">Tak</label>
     <input type="radio" id="p74nie" name="p74" value="1" onclick="statusOdpowiedzi('py74', this.value)">
     <label for="p74nie">Nie</label>
+    <input type="radio" id="p74tak" name="p74" value="0" onclick="statusOdpowiedzi('py74', this.value)">
+    <label for="p74tak">Tak</label>
     <p class="kryteria">Kryteria WCAG: 1.3.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy znaczniki HTML są użyte zgodne z ich przeznaczeniem, a nie jedynie w celu zmiany
-        prezentacji elementów na stronie.<br> Znaczniki HTML powinny być używane zgodnie z ich przeznaczeniem.
-        Przykładowo ramka, która otacza blok pól w formularzu
-        (fieldset) nie powinna być używana do wyróżnienia fragmentu tekstu czy innej elementu. Dotyczy to wszystkich
-        znaczników, które można użyć do zmiany wyglądu prezentowanych informacji.</p>
+    <p class="opis">Sprawdź, czy znaczniki HTML są użyte zgodne z ich przeznaczeniem, a nie jedynie w celu zmiany prezentacji elementów na stronie.<br> Znaczniki HTML powinny być używane zgodnie z ich przeznaczeniem. Przykładowo ramka, która otacza blok pól w formularzu
+        (fieldset) nie powinna być używana do wyróżnienia fragmentu tekstu czy innej elementu. Dotyczy to wszystkich znaczników, które można użyć do zmiany wyglądu prezentowanych informacji.</p>
 
 
     <p class="pytanie" id="py75">75. Czy została zachowana dostępność dokumentów do pobrania?</p>
@@ -1182,8 +966,7 @@
     <input type="radio" id="p75niedotyczy" name="p75" value="2" onclick="statusOdpowiedzi('py75', this.value)">
     <label for="p75niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.1.1, 1.3.1, 1.3.2, 3.1.1, 4.1.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy dokumenty do pobrania w serwisie są dostępne lub czy posiadają dostępną alternatywę. W
-        przypadku gdy nie ma dokumentów do pobrania należy wybrać odpowiedź NIE DOTYCZY</p>
+    <p class="opis">Sprawdź, czy dokumenty do pobrania w serwisie są dostępne lub czy posiadają dostępną alternatywę. W przypadku gdy nie ma dokumentów do pobrania należy wybrać odpowiedź NIE DOTYCZY</p>
 
 
     <p class="pytanie" id="py76">76. Czy na stronie wszystkie ramki mają tytuły? </p>
@@ -1194,9 +977,7 @@
     <input type="radio" id="p76niedotyczy" name="p76" value="2" onclick="statusOdpowiedzi('py76', this.value)">
     <label for="p76niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 2.4.1, 4.1.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy na wszystkich stronach, w których kodzie HTML znajdują się znaczniki frame lub iframe,
-        każdy z nich ma (jeśli jest to niezbędne) obecny i poprawnie sformułowany atrybut „title” oddający zawartość
-        prezentowaną w ramce.</p>
+    <p class="opis">Sprawdź, czy na wszystkich stronach, w których kodzie HTML znajdują się znaczniki frame lub iframe, każdy z nich ma (jeśli jest to niezbędne) obecny i poprawnie sformułowany atrybut „title” oddający zawartość prezentowaną w ramce.</p>
 
 
     <p class="pytanie" id="py77">77. Czy rozmiar czcionek w elementach formularzy jest definiowany tylko w jednostkach względnych?
@@ -1209,31 +990,25 @@
     <label for="p77niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.4.4 - Poziom „AA”</p>
     <p class="opis">Badanie dotyczy następujących właściwości w definicjach CSS:
-    <ul>
-        <li>pt (punkt)</li>
-        <li>pc (pica)</li>
-        <li>px (pixel)</li>
-        <li>cm (centymetr)</li>
-        <li>mm (millimetr)</li>
-        <li>in (cal)</li>
-    </ul>
-    <br> Sprawdź, czy w przypadku obecności powyższych właściwości w definicjach stylów nie są one stosowane do
-    definiowania rozmiaru czcionek w elementach formularzy ( selektory input, textarea, select, button).<br> Jeśli w
-    arkuszu stylów zdefiniowany
-    jest sposób prezentowania pól formularzy należy sprawdzić, czy rozmiar czcionki jest zdefiniowany jedynie w
-    jednostkach proporcjonalnych takich jak „rem”, „em” czy „ex”. </p>
+        <ul>
+            <li>pt (punkt)</li>
+            <li>pc (pica)</li>
+            <li>px (pixel)</li>
+            <li>cm (centymetr)</li>
+            <li>mm (millimetr)</li>
+            <li>in (cal)</li>
+        </ul>
+        <br> Sprawdź, czy w przypadku obecności powyższych właściwości w definicjach stylów nie są one stosowane do definiowania rozmiaru czcionek w elementach formularzy ( selektory input, textarea, select, button).<br> Jeśli w arkuszu stylów zdefiniowany
+        jest sposób prezentowania pól formularzy należy sprawdzić, czy rozmiar czcionki jest zdefiniowany jedynie w jednostkach proporcjonalnych takich jak „rem”, „em” czy „ex”. </p>
 
 
-    <p class="pytanie" id="py78">78. Czy na stronie są informacje generowane poprzez arkusze stylów bez dostępnej alternatywy?
-    </p>
-    <input type="radio" id="p78tak" name="p78" value="0" onclick="statusOdpowiedzi('py78', this.value)">
-    <label for="p78tak">Tak</label>
+    <p class="pytanie" id="py78">78. Czy na stronie są informacje generowane poprzez arkusze stylów bez dostępnej alternatywy?</p>
     <input type="radio" id="p78nie" name="p78" value="1" onclick="statusOdpowiedzi('py78', this.value)">
     <label for="p78nie">Nie</label>
+    <input type="radio" id="p78tak" name="p78" value="0" onclick="statusOdpowiedzi('py78', this.value)">
+    <label for="p78tak">Tak</label>
     <p class="kryteria">Kryteria WCAG: 1.1.1, 1.3.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku obecności w arkuszu stylów właściwości „content” (za wyjątkiem ikon
-        zawartych w plikach czcionek), przekazana treść nie niesie znaczącej informacji bądź czy niesiona informacja
-        jest dostępna również w inny sposób.</p>
+    <p class="opis">Sprawdź, czy w przypadku obecności w arkuszu stylów właściwości „content” (za wyjątkiem ikon zawartych w plikach czcionek), przekazana treść nie niesie znaczącej informacji bądź czy niesiona informacja jest dostępna również w inny sposób.</p>
 
 
     <p class="pytanie" id="py79">79. Czy wszystkie elementy HTML są poprawnie użyte zgodnie ze swoim przeznaczeniem?</p>
@@ -1242,24 +1017,22 @@
     <input type="radio" id="p79nie" name="p79" value="0" onclick="statusOdpowiedzi('py79', this.value)">
     <label for="p79nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 1.3.1, 2.1.1, 4.1.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku gdy na stronie znajduje się jakiś element, który po kliknięciu myszką lub
-        przejęciu fokusa powoduje uruchomienie akcji takiej jak wyświetlenie informacji, zatwierdzenie formularza,
-        przejście do innej strony, otwarcie nowego
+    <p class="opis">Sprawdź, czy w przypadku gdy na stronie znajduje się jakiś element, który po kliknięciu myszką lub przejęciu fokusa powoduje uruchomienie akcji takiej jak wyświetlenie informacji, zatwierdzenie formularza, przejście do innej strony, otwarcie nowego
         okna, generowanie treści itp., jest to element znajdujący się na poniższej liście:
-    <ul>
-        <li>a, </li>
-        <li>area, </li>
-        <li>button lub input type button, </li>
-        <li>submit, </li>
-        <li>reset, </li>
-        <li>file, </li>
-        <li>image, </li>
-        <li>password, </li>
-        <li>radio, </li>
-        <li>checkbox, </li>
-        <li>select </li>
-    </ul>
-    <br> lub czy istnieje inna możliwość uruchomienia takiej samej akcji za pomocą jednego z powyższych elementów.</p>
+        <ul>
+            <li>a, </li>
+            <li>area, </li>
+            <li>button lub input type button, </li>
+            <li>submit, </li>
+            <li>reset, </li>
+            <li>file, </li>
+            <li>image, </li>
+            <li>password, </li>
+            <li>radio, </li>
+            <li>checkbox, </li>
+            <li>select </li>
+        </ul>
+        <br> lub czy istnieje inna możliwość uruchomienia takiej samej akcji za pomocą jednego z powyższych elementów.</p>
 
 
     <p class="pytanie" id="py80">80. Czy cytaty są poprawne sygnalizowane w kodzie HTML? </p>
@@ -1270,28 +1043,21 @@
     <input type="radio" id="p80niedotyczy" name="p80" value="2" onclick="statusOdpowiedzi('py80', this.value)">
     <label for="p80niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.3.1 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy we wszystkich przypadkach gdy na stronie znajduje się cytat, jest znajduje się on w
-        znaczniku &lt;q&gt; lub &lt;blockquote&gt;</p>
+    <p class="opis">Sprawdź, czy we wszystkich przypadkach gdy na stronie znajduje się cytat, jest znajduje się on w znaczniku &lt;q&gt; lub &lt;blockquote&gt;</p>
 
 
-    <p class="pytanie" id="py81">81. Czy dodatkowe informacje pojawiające się na ekranie gdy kursor przemieszcza się nad elementem
-        interfejsu, lub gdy element interfejsu przyjmuje fokus, mogą być w pełni kontrolowane przez użytkownika?</p>
+    <p class="pytanie" id="py81">81. Czy dodatkowe informacje pojawiające się na ekranie gdy kursor przemieszcza się nad elementem interfejsu, lub gdy element interfejsu przyjmuje fokus, mogą być w pełni kontrolowane przez użytkownika?</p>
     <input type="radio" id="p81tak" name="p81" value="1" onclick="statusOdpowiedzi('py81', this.value)">
     <label for="p81tak">Tak</label>
     <input type="radio" id="p81nie" name="p81" value="0" onclick="statusOdpowiedzi('py81', this.value)">
     <label for="p81nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 1.4.13 - Poziom „AA”</p>
-    <p class="opis">Badanie dotyczy dodatkowych informacji lub elementów (dodatkowej zawartości), które pojawiają się w
-        momencie, gdy kursor myszy przemieszcza się nad danym elementem aktywnym (linkiem, przyciskiem, polem
-        formularza, itp.) lub gdy ten element przyjmuje
+    <p class="opis">Badanie dotyczy dodatkowych informacji lub elementów (dodatkowej zawartości), które pojawiają się w momencie, gdy kursor myszy przemieszcza się nad danym elementem aktywnym (linkiem, przyciskiem, polem formularza, itp.) lub gdy ten element przyjmuje
         fokus i zasłaniają lub przykrywają istotne elementy interfejsu.
-        <br> Sprawdź, czy dodatkowa zawartość może być ukryta bez przemieszczania fokusu ani kursora. <br> Sprawdź, czy
-        nad dodatkową zawartości można przesunąć wskaźnik myszy bez spowodowania jej zniknięcia.<br> Sprawdź czy
-        dodatkowa zawartość:</p>
+        <br> Sprawdź, czy dodatkowa zawartość może być ukryta bez przemieszczania fokusu ani kursora. <br> Sprawdź, czy nad dodatkową zawartości można przesunąć wskaźnik myszy bez spowodowania jej zniknięcia.<br> Sprawdź czy dodatkowa zawartość:</p>
     <ul>
         <li>pozostaje widoczna tak długo, jak długo fokus lub wskaźnik myszy pozostaje nad elementem aktywnym;</li>
-        <li>pozostaje widoczna do momentu, gdy użytkownik uruchomi działanie mające na celu ukrycie jej bez
-            przemieszczania fokusu ani wskaźnika myszy;</li>
+        <li>pozostaje widoczna do momentu, gdy użytkownik uruchomi działanie mające na celu ukrycie jej bez przemieszczania fokusu ani wskaźnika myszy;</li>
         <li>pozostaje widoczna tak długo, jak jest to zasadne.</li>
     </ul>
 
@@ -1306,50 +1072,39 @@
     <ul>
         <li>zdezaktywowanie skrótu;</li>
         <li>mechanizm pozwalający na przedefiniowanie skrótu;</li>
-        <li>w przypadku skrótu związanego z aktywnym elementem interfejsu, skrót działa jedynie w przypadku, gdy fokus
-            jest umieszczony na tym elemencie.</li>
+        <li>w przypadku skrótu związanego z aktywnym elementem interfejsu, skrót działa jedynie w przypadku, gdy fokus jest umieszczony na tym elemencie.</li>
     </ul>
 
 
-    <p class="pytanie" id="py83">83. Czy funkcja dostępna za pomocą gestu złożonego jest dostępna również za pomocą gestu
-        prostego?
+    <p class="pytanie" id="py83">83. Czy funkcja dostępna za pomocą gestu złożonego jest dostępna również za pomocą gestu prostego?
     </p>
     <input type="radio" id="p83tak" name="p83" value="1" onclick="statusOdpowiedzi('py83', this.value)">
     <label for="p83tak">Tak</label>
     <input type="radio" id="p83nie" name="p83" value="0" onclick="statusOdpowiedzi('py83', this.value)">
     <label for="p83nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 2.5.1 - Poziom „A”</p>
-    <p class="opis">Badanie dotyczy sytuacji, w których dostęp do pewnych funkcji możliwy jest za pomocą jednoczesnego
-        ruchu dwoma (lub więcej) palcami po ekranie.<br> Sprawdź, czy w przypadku, gdy niektóre funkcjonalności są
-        dostępne za pomocą jednoczesnego ruchu lub
-        dotknięcia ekranu kilkoma palcami możliwe jest również osiągnięcie tego samego efektu poprzez dotknięcie jednego
-        punktu na ekranie. </p>
+    <p class="opis">Badanie dotyczy sytuacji, w których dostęp do pewnych funkcji możliwy jest za pomocą jednoczesnego ruchu dwoma (lub więcej) palcami po ekranie.<br> Sprawdź, czy w przypadku, gdy niektóre funkcjonalności są dostępne za pomocą jednoczesnego ruchu lub
+        dotknięcia ekranu kilkoma palcami możliwe jest również osiągnięcie tego samego efektu poprzez dotknięcie jednego punktu na ekranie. </p>
 
 
-    <p class="pytanie" id="py84">84. Czy funkcja, której uruchomienie rozpoczyna się za pomocą gestu punktowego lub wciśnięcia
-        klawisza urządzenia wskazującego może być anulowana?</p>
+    <p class="pytanie" id="py84">84. Czy funkcja, której uruchomienie rozpoczyna się za pomocą gestu punktowego lub wciśnięcia klawisza urządzenia wskazującego może być anulowana?</p>
     <input type="radio" id="p84tak" name="p84" value="1" onclick="statusOdpowiedzi('py84', this.value)">
     <label for="p84tak">Tak</label>
     <input type="radio" id="p84nie" name="p84" value="0" onclick="statusOdpowiedzi('py84', this.value)">
     <label for="p84nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 2.5.2 - Poziom „A”</p>
-    <p class="opis">Badanie dotyczy sytuacji, w których dostęp do pewnych funkcji możliwy jest za pomocą gestu
-        punktowego na ekranie (wskazanie palcem lub poprzez wciśnięcie klawisza urządzenia wskazującego).<br> Sprawdź,
-        czy przed zakończeniem gestu punktowego (przed
+    <p class="opis">Badanie dotyczy sytuacji, w których dostęp do pewnych funkcji możliwy jest za pomocą gestu punktowego na ekranie (wskazanie palcem lub poprzez wciśnięcie klawisza urządzenia wskazującego).<br> Sprawdź, czy przed zakończeniem gestu punktowego (przed
         podniesieniem palca lub zwolnieniem klawisza myszy) możliwe jest anulowanie działania. </p>
 
 
     <h2>Weryfikacja dostępności cyfrowej na poziomie 4.</h2>
 
 
-    <p class="wprowadzenie">Sprawdzenie dostępności cyfrowej strony internetowej na poziomie 4 wymaga wiedzy koniecznej
-        do weryfikacji na poziomie 3 jak również wiedzy o działaniu różnego rodzaju skryptów. </p>
-    <p class="wprowadzenie">Przy każdym pytaniu/zdaniu listy kontrolnej należy jedną z proponowanych odpowiedzi.
-        Zaznaczenie odpowiedzi oznaczonej kolorem czerwonym oznacza błąd dostępności cyfrowej.</p>
+    <p class="wprowadzenie">Sprawdzenie dostępności cyfrowej strony internetowej na poziomie 4 wymaga wiedzy koniecznej do weryfikacji na poziomie 3 jak również wiedzy o działaniu różnego rodzaju skryptów. </p>
+    <p class="wprowadzenie">Przy każdym pytaniu/zdaniu listy kontrolnej należy jedną z proponowanych odpowiedzi. Zaznaczenie odpowiedzi oznaczonej kolorem czerwonym oznacza błąd dostępności cyfrowej.</p>
 
 
-    <p class="pytanie" id="py85">85. Czy wszystkie elementy typu skryptowego lub programowalne w inny sposób są w pełni dostępne
-        dla urządzeń wspomagających? </p>
+    <p class="pytanie" id="py85">85. Czy wszystkie elementy typu skryptowego lub programowalne w inny sposób są w pełni dostępne dla urządzeń wspomagających? </p>
     <input type="radio" id="p85tak" name="p85" value="1" onclick="statusOdpowiedzi('py85', this.value)">
     <label for="p85tak">Tak</label>
     <input type="radio" id="p85nie" name="p85" value="0" onclick="statusOdpowiedzi('py85', this.value)">
@@ -1358,19 +1113,17 @@
     <label for="p85niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 4.1.2 - Poziom „A”</p>
     <p class="opis">Badanie dotyczy następujących elementów;
-    <ul>
-        <li>object</li>
-        <li>embed</li>
-        <li>aplet</li>
-    </ul>
-    <br>
-    Sprawdź, czy w przypadku obecności na badanych stronach któregokolwiek z powyższych elementów są one w pełni
-    dostępne dla czytników ekranu oraz programów zmieniających układ kontrastu, oraz jeśli to niezbędne, czy posiadają
-    poprawną transkrypcję tekstową.</p>
+        <ul>
+            <li>object</li>
+            <li>embed</li>
+            <li>aplet</li>
+        </ul>
+        <br> Sprawdź, czy w przypadku obecności na badanych stronach któregokolwiek z powyższych elementów są one w pełni dostępne dla czytników ekranu oraz programów zmieniających układ kontrastu, oraz jeśli to niezbędne, czy posiadają poprawną transkrypcję
+        tekstową.
+    </p>
 
 
-    <p class="pytanie" id="py86">86. Czy gdy skrypt zmienia zawartość nietekstową na stronie, zmieniana jest również alternatywa
-        dla tej zawartości? </p>
+    <p class="pytanie" id="py86">86. Czy gdy skrypt zmienia zawartość nietekstową na stronie, zmieniana jest również alternatywa dla tej zawartości? </p>
     <input type="radio" id="p86tak" name="p86" value="1" onclick="statusOdpowiedzi('py86', this.value)">
     <label for="p86tak">Tak</label>
     <input type="radio" id="p86nie" name="p86" value="0" onclick="statusOdpowiedzi('py86', this.value)">
@@ -1378,12 +1131,10 @@
     <input type="radio" id="p86niedotyczy" name="p86" value="2" onclick="statusOdpowiedzi('py86', this.value)">
     <label for="p86niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 1.1.1, 4.1.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku gdy skrypt powoduje zmianę w elemencie nietekstowym na stronie lub wewnątrz
-        ramki, alternatywa tekstowa dla tego elementu ulega również zmianie jeśli jest to niezbędne.</p>
+    <p class="opis">Sprawdź, czy w przypadku gdy skrypt powoduje zmianę w elemencie nietekstowym na stronie lub wewnątrz ramki, alternatywa tekstowa dla tego elementu ulega również zmianie jeśli jest to niezbędne.</p>
 
 
-    <p class="pytanie" id="py87">87. Czy jeśli w kodzie strony używane są atrybuty zarządzania zdarzeniami myszki, to wszystkie
-        one mają swój ekwiwalent dla klawiatury i na odwrót?</p>
+    <p class="pytanie" id="py87">87. Czy jeśli w kodzie strony używane są atrybuty zarządzania zdarzeniami myszki, to wszystkie one mają swój ekwiwalent dla klawiatury i na odwrót?</p>
     <input type="radio" id="p87tak" name="p87" value="1" onclick="statusOdpowiedzi('py87', this.value)">
     <label for="p87tak">Tak</label>
     <input type="radio" id="p87nie" name="p87" value="0" onclick="statusOdpowiedzi('py87', this.value)">
@@ -1391,31 +1142,27 @@
     <input type="radio" id="p87niedotyczy" name="p87" value="2" onclick="statusOdpowiedzi('py87', this.value)">
     <label for="p87niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 2.1.1 - Poziom „A”</p>
-    <p class="opis">Badanie dotyczy wszystkich elementów stron, które mogą otrzymać fokus, i które mają atrybuty
-        zarządzania zdarzeniami lub kod javascript służący do zarządzania zdarzeniami.
-    <ul>
-        <li>onclick </li>
-        <li>onkeypress</li>
-        <li>onmousedown</li>
-        <li>onmouseup</li>
-        <li>onmouseover</li>
-        <li>onmouseout</li>
-        <li>onfocus</li>
-        <li>onblur</li>
-        <li>onkeydown</li>
-        <li>onkeyup</li>
-        <li>kod javascript pełniący rolę któregokolwiek z powyższych</li>
-    </ul>
+    <p class="opis">Badanie dotyczy wszystkich elementów stron, które mogą otrzymać fokus, i które mają atrybuty zarządzania zdarzeniami lub kod javascript służący do zarządzania zdarzeniami.
+        <ul>
+            <li>onclick </li>
+            <li>onkeypress</li>
+            <li>onmousedown</li>
+            <li>onmouseup</li>
+            <li>onmouseover</li>
+            <li>onmouseout</li>
+            <li>onfocus</li>
+            <li>onblur</li>
+            <li>onkeydown</li>
+            <li>onkeyup</li>
+            <li>kod javascript pełniący rolę któregokolwiek z powyższych</li>
+        </ul>
 
-    <br>
-    Sprawdź, czy w przypadku występowania któregokolwiek z powyższych elementów, jeśli jest to konieczne, to występuje
-    on zawsze w parze tak, aby każde zdarzenie było możliwe do obsłużenia zarówno myszką jak i klawiaturą, bądź czy
-    istnieje dostępna alternatywa.
+        <br> Sprawdź, czy w przypadku występowania któregokolwiek z powyższych elementów, jeśli jest to konieczne, to występuje on zawsze w parze tak, aby każde zdarzenie było możliwe do obsłużenia zarówno myszką jak i klawiaturą, bądź czy istnieje dostępna
+        alternatywa.
     </p>
 
 
-    <p class="pytanie" id="py88">88. Czy treść dynamicznie generowana przez skrypt pojawia się bezpośrednio po elemencie
-        powodującym jej pojawienie (w logicznej kolejności przemieszczania fokusa)? </p>
+    <p class="pytanie" id="py88">88. Czy treść dynamicznie generowana przez skrypt pojawia się bezpośrednio po elemencie powodującym jej pojawienie (w logicznej kolejności przemieszczania fokusa)? </p>
     <input type="radio" id="p88tak" name="p88" value="1" onclick="statusOdpowiedzi('py88', this.value)">
     <label for="p88tak">Tak</label>
     <input type="radio" id="p88nie" name="p88" value="0" onclick="statusOdpowiedzi('py88', this.value)">
@@ -1423,20 +1170,17 @@
     <input type="radio" id="p88niedotyczy" name="p88" value="2" onclick="statusOdpowiedzi('py88', this.value)">
     <label for="p88niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 2.4.3 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku gdy kod javascript na stronie powoduje generowanie bądź zmianę treści w
-        wyniku działań użytkownika, ta treść znajduje się bezpośrednio za elementem, który spowodował jej
-        powstanie/zmianę lub czy bezpośrednia dostępność tej
+    <p class="opis">Sprawdź, czy w przypadku gdy kod javascript na stronie powoduje generowanie bądź zmianę treści w wyniku działań użytkownika, ta treść znajduje się bezpośrednio za elementem, który spowodował jej powstanie/zmianę lub czy bezpośrednia dostępność tej
         treści jest inaczej zapewniona (np. za pomocą ARIA).</p>
 
 
     <p class="pytanie" id="py89">89. Czy ramka fokusa jest usunięta za pomocą skryptu? </p>
-    <input type="radio" id="p89tak" name="p89" value="0" onclick="statusOdpowiedzi('py89', this.value)">
-    <label for="p89tak">Tak</label>
     <input type="radio" id="p89nie" name="p89" value="1" onclick="statusOdpowiedzi('py89', this.value)">
     <label for="p89nie">Nie</label>
+    <input type="radio" id="p89tak" name="p89" value="0" onclick="statusOdpowiedzi('py89', this.value)">
+    <label for="p89tak">Tak</label>
     <p class="kryteria">Kryteria WCAG: 2.1.1, 3.2.1 - Poziom „A”, 2.4.7 - Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy w przypadku gdy na stronie znajduje się kod javascript, nie powoduje on usunięcia ramki
-        fokusa z elementów aktywnych</p>
+    <p class="opis">Sprawdź, czy w przypadku gdy na stronie znajduje się kod javascript, nie powoduje on usunięcia ramki fokusa z elementów aktywnych</p>
 
 
     <p class="pytanie" id="py90">90. Czy zapewniona jest dostępność wszystkich elementów generowanych dynamicznie? </p>
@@ -1445,33 +1189,27 @@
     <input type="radio" id="p90nie" name="p90" value="0" onclick="statusOdpowiedzi('py90', this.value)">
     <label for="p90nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 4.1.2 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy w przypadku gdy na stronie skrypt generuje dynamicznie zawartość, jest ona w pełni
-        dostępna.
+    <p class="opis">Sprawdź, czy w przypadku gdy na stronie skrypt generuje dynamicznie zawartość, jest ona w pełni dostępna.
     </p>
 
 
-    <p class="pytanie" id="py91">91. Czy wyświetlana w interfejsie etykieta jest zgodną z etykietą dostępną dla technologii
-        asystujących?
+    <p class="pytanie" id="py91">91. Czy wyświetlana w interfejsie etykieta jest zgodną z etykietą dostępną dla technologii asystujących?
     </p>
     <input type="radio" id="p91tak" name="p91" value="1" onclick="statusOdpowiedzi('py91', this.value)">
     <label for="p91tak">Tak</label>
     <input type="radio" id="p91nie" name="p91" value="0" onclick="statusOdpowiedzi('py91', this.value)">
     <label for="p91nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 2.5.3 - Poziom „A”</p>
-    <p class="opis">Sprawdź, czy widoczna etykieta każdego komponentu zgadza się z tym, co anonsują technologie
-        wspomagające. Odnosi się to w szczególności do czytników ekranu, które powinny wypowiadać ten sam tekst, który
-        jest wyświetlony.</p>
+    <p class="opis">Sprawdź, czy widoczna etykieta każdego komponentu zgadza się z tym, co anonsują technologie wspomagające. Odnosi się to w szczególności do czytników ekranu, które powinny wypowiadać ten sam tekst, który jest wyświetlony.</p>
 
 
-    <p class="pytanie" id="py92">92. Czy komunikaty o stanie lub o błędach są dostępne dla technologii wspomagających bez
-        konieczności przemieszczania fokusa?</p>
+    <p class="pytanie" id="py92">92. Czy komunikaty o stanie lub o błędach są dostępne dla technologii wspomagających bez konieczności przemieszczania fokusa?</p>
     <input type="radio" id="p92tak" name="p92" value="1" onclick="statusOdpowiedzi('py92', this.value)">
     <label for="p92tak">Tak</label>
     <input type="radio" id="p92nie" name="p92" value="0" onclick="statusOdpowiedzi('py92', this.value)">
     <label for="p92nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 4.1.3 - Poziom „AA”</p>
-    <p class="opis">Sprawdź, czy w przypadku pojawiania się komunikatu (na przykład o błędzie, o postępie jakichś
-        działań odbywających się w tle…) są one dostępne. </p>
+    <p class="opis">Sprawdź, czy w przypadku pojawiania się komunikatu (na przykład o błędzie, o postępie jakichś działań odbywających się w tle…) są one dostępne. </p>
 
     <div class="button" onclick="pobierzOdpowiedzi()">pobierzOdpowiedzi</div>
 
