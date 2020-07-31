@@ -33,11 +33,6 @@
         padding: 2rem;
     }
     
-    label, input {
-        border: lightgreen;
-        border-style: solid;
-    }
-    
     .no {
         border-style: double;
         border-color: red;
@@ -46,4 +41,13 @@
     .ok {
         border-style: double;
         border-color: green;
+    }
+    .irrelevant{
+        border-style: double;
+        border-color: gray;
+        color: darkgray;
+    }
+    .button{
+        border: darkmagenta;
+        border-style: solid;
     }
