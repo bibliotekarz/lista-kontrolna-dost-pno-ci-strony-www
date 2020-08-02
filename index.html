@@ -28,7 +28,7 @@
     </p>
     <input type="radio" id="p1tak" name="p1" value="1" onclick="statusOdpowiedzi('py1', this.value)">
     <label for="p1tak">Tak</label>
-    <input type="radio" id="p1nie" name="p1" value="0" onclick="statusOdpowiedzi('py1', this.value)">
+    <input type="radio" id="p1nie" name="p1" value="3" onclick="statusOdpowiedzi('py1', this.value)">
     <label for="p1nie">Nie</label>
     <p class="kryteria">Kryteria WCAG: 2.1.1 - Poziom „A”</p>
     <p class="opis">Sprawdź, czy wszystkie elementy aktywne czyli linki, przyciski i inne elementy, na które można kliknąć w celu wywołania jakichkolwiek działań, na których można dokonywać wyboru, np. listy elementów, listy rozwijalne, wszelkie pola formularzy do których
@@ -40,7 +40,7 @@
     <p class="pytanie" id="py2">2. PYTANIE KLUCZOWE: Czy na stronie jest pułapka klawiaturowa?</p>
     <input type="radio" id="p2niema" name="p2" value="1" onclick="statusOdpowiedzi('py2', this.value)">
     <label for="p2niema">Nie ma</label>
-    <input type="radio" id="p2jest" name="p2" value="0" onclick="statusOdpowiedzi('py2', this.value)">
+    <input type="radio" id="p2jest" name="p2" value="3" onclick="statusOdpowiedzi('py2', this.value)">
     <label for="p2jest">Jest</label>
     <p class="kryteria">Kryteria WCAG: 2.1.2 - Poziom „A”</p>
     <p class="opis">Sprawdź, czy na stronie nie ma sytuacji, w której zaznaczenie jakiegoś elementu podczas przemieszczania kursora (fokusu) za pomocą przycisków klawiatury powoduje zablokowanie możliwości jego dalszego przemieszczania, lub czy nie ma sytuacji, w której
@@ -51,7 +51,7 @@
     <p class="pytanie" id="py3">3. PYTANIE KLUCZOWE: Czy na stronie znajdują się elementy, które powodują gwałtowne zmiany jasności lub szybko błyskają na czerwono? </p>
     <input type="radio" id="p3niema" name="p3" value="1" onclick="statusOdpowiedzi('py3', this.value)">
     <label for="p3niema">Nie ma</label>
-    <input type="radio" id="p3wystepuja" name="p3" value="0" onclick="statusOdpowiedzi('py3', this.value)">
+    <input type="radio" id="p3wystepuja" name="p3" value="3" onclick="statusOdpowiedzi('py3', this.value)">
     <label for="p3wystepuja">Występują</label>
     <p class="kryteria">Kryteria WCAG: 2.3.1 - Poziom „A”</p>
     <p class="opis">Zobacz, czy na stronie jest coś, co błyska na czerwono. Jeśli tak, policz, ile takich błysków wystąpi w ciągu sekundy. Jeśli będzie ich 3 lub więcej – strona jest niedostępna i w pytaniu należy zaznaczyć odpowiedź negatywną.<br> Zobacz, czy jest na
@@ -63,7 +63,7 @@
     </p>
     <input type="radio" id="p4niema" name="p4" value="1" onclick="statusOdpowiedzi('py4', this.value)">
     <label for="p4niema">Nie ma</label>
-    <input type="radio" id="p4wystepuja" name="p4" value="0" onclick="statusOdpowiedzi('py4', this.value)">
+    <input type="radio" id="p4wystepuja" name="p4" value="3" onclick="statusOdpowiedzi('py4', this.value)">
     <label for="p4wystepuja">Występują</label>
     <p class="kryteria">Kryteria WCAG: 1.4.2 - Poziom „A”</p>
     <p class="opis">Sprawdź, czy nie ma elementów, które uruchamiają automatycznie dźwięk, którego nie da się zatrzymać, a którego trwanie przekracza 3 sekundy.</p>
@@ -80,6 +80,8 @@
     <label for="p5tak">Tak</label>
     <input type="radio" id="p5nie" name="p5" value="0" onclick="statusOdpowiedzi('py5', this.value)">
     <label for="p5nie">Nie</label>
+    <input type="radio" id="p5niedotyczy" name="p5" value="2" onclick="statusOdpowiedzi('py5', this.value)">
+    <label for="p5niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 3.3.1 - Poziom „A”</p>
     <p class="opis">Sprawdź, czy w przypadku wpisania niepoprawnych danych do formularza, informacja o błędzie jest wystarczająco zrozumiała. Oznacza to, że musi być możliwość zrozumienia, z samej treści komunikatu, przyczyny błędu i sposobu, w jaki należy ponownie wpisać
         informacje żeby błąd nie wystąpił ponownie.<br> Jak to zrobić?<br> Należy sprawdzić co się dzieje, gdy do pól formularza nie zostaną wpisane żadne informacje i formularz zostanie wysłany. Następnie należy sprawdzić co się dzieje, gdy do formularza
@@ -94,6 +96,8 @@
     <label for="p6tak">Tak</label>
     <input type="radio" id="p6nie" name="p6" value="0" onclick="statusOdpowiedzi('py6', this.value)">
     <label for="p6nie">Nie</label>
+    <input type="radio" id="p6niedotyczy" name="p6" value="2" onclick="statusOdpowiedzi('py6', this.value)">
+    <label for="p6niedotyczy">Nie dotyczy</label>
     <p class="kryteria">Kryteria WCAG: 3.3.3 - Poziom „AA”</p>
     <p class="opis">Sprawdź, czy w przypadku, gdy w formularzu zostały wpisane niepoprawne dane użytkownik dostaje jednoznaczną informację połączoną z sugestią w jaki sposób powinien poprawić błąd.<br> Jak to zrobić?<br> Należy sprawdzić, czy w komunikatach o błędach
         zawarte są jednoznaczne rady co do tego, jak należy wpisywać dane do pól formularza. Chodzi w szczególności o na przykład poszerzoną informację o formacie daty, w rodzaju: „datę należy wpisywać w formacie dd-mm-rrrr gdzie litery dd oznaczają dzień,
@@ -243,7 +247,7 @@
     <p class="pytanie" id="py17">17. PYTANIE KLUCZOWE: Czy istnieje rozwiązanie powodującego dostępność CAPTCHA?</p>
     <input type="radio" id="p17tak" name="p17" value="1" onclick="statusOdpowiedzi('py17', this.value)">
     <label for="p17tak">Tak</label>
-    <input type="radio" id="p17nie" name="p17" value="0" onclick="statusOdpowiedzi('py17', this.value)">
+    <input type="radio" id="p17nie" name="p17" value="3" onclick="statusOdpowiedzi('py17', this.value)">
     <label for="p17nie">Nie</label>
     <input type="radio" id="p17niedotyczy" name="p17" value="2" onclick="statusOdpowiedzi('py17', this.value)">
     <label for="p17niedotyczy">Nie dotyczy</label>

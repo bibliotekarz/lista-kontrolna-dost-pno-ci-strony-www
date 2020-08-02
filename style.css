@@ -1,5 +1,4 @@
     .kryteria {
-        /* color: aqua; */
         font-size: x-small;
     }
     
@@ -24,8 +23,7 @@
     }
     
     li {
-        /* display: inline; 
-        visibility: hidden; */
+
         list-style-type: square;
     }
     
@@ -46,6 +44,21 @@
         border-style: double;
         border-color: gray;
         color: darkgray;
+    }
+    .end {
+        border-style: double;
+        border-color: red;
+        background-color: yellow;
+    }
+    .end::before {
+
+        background-color: red;
+        content: "Tu się kończy dostępność badanej strony :( ";
+    }
+    .end::after {
+        
+        background-color: red;
+        content: " - dalsze badanie mija się z celem.";
     }
     .button{
         border: darkmagenta;
