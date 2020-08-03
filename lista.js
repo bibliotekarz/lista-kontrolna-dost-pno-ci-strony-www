@@ -27,6 +27,20 @@ function statusOdpowiedzi(pytanie, wynik) {
 
 function pobierzOdpowiedzi() {
 
-    alert(JSON.stringify(sessionStorage));
-
+    console.log("conol: " + JSON.stringify(sessionStorage));
+    let pytaniaZrobione = JSON.stringify(sessionStorage);
+    
+    console.log(typeof(pytaniaZrobione));
+    /* window.print()
+    
+    let pokazPytaniaZrobione = JSON.parse(pytaniaZrobione);
+    console.log(typeof(pokazPytaniaZrobione));
+    console.log(pokazPytaniaZrobione);*/
+    
+let duda = JSON.parse('sessionStorage');
+var keys = Object.keys(duda);
+console.log('obj contains ' + keys.length + ' keys: '+  keys);
+    /* var y = document.getElementById(pytanie).innerHTML;
+    console.log(y); */
+    alert(Object.keys({"success":"You are welcome","klucz":"wartość"})[1]);
 }
