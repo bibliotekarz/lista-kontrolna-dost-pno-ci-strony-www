@@ -50,6 +50,11 @@
         border-color: red;
         background-color: yellow;
     }
+    .stop {
+        border-style: double;
+        border-color: red;
+        background-color: yellow;
+    }
     .end::before {
 
         background-color: red;

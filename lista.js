@@ -5,20 +5,19 @@ function statusOdpowiedzi(pytanie, wynik) {
     switch (wynik) {
         case "1":
             x.classList.add("ok");
-            x.classList.remove("no", "irrelevant","end", "end::before", "end::after");
+            x.classList.remove("no", "irrelevant", "end");
             break;
         case "0":
-            x.classList.remove("ok", "irrelevant","end", "end::before", "end::after");
+            x.classList.remove("ok", "irrelevant", "end");
             x.classList.add("no");
             break;
         case "2":
-            x.classList.remove("no");
-            x.classList.remove("no", "ok", "end", "end::before", "end::after");
+            x.classList.remove("no", "ok", "end");
             x.classList.add("irrelevant");
             break;
         case "3":
             x.classList.remove("no", "ok", "irrelevant");
-            x.classList.add("end", "end::before", "end::after");
+            x.classList.add("end"); 
             break;
         default:
             alert("kombinujemy ;)")
@@ -26,21 +25,46 @@ function statusOdpowiedzi(pytanie, wynik) {
 }
 
 function pobierzOdpowiedzi() {
+        let linia = "<table><tr><th>Pytanie</th><th>Stan</th></tr>";
+    for (var i = 0; i < sessionStorage.length; i++) {
+        let pytanie = document.getElementById(sessionStorage.key(i)).innerHTML;
+        let wartosc = sessionStorage.getItem(sessionStorage.key(i));
 
-    console.log("conol: " + JSON.stringify(sessionStorage));
-    let pytaniaZrobione = JSON.stringify(sessionStorage);
+        let stan = "";
+        switch (wartosc) {
+            case "1":
+                stan = "ok\">OK";
+                console.log(pytanie + " OK ");
+                break;
+            case "0":
+                stan = "no\">NIE";
+                console.log(pytanie + " NO! ");
+                break;
+            case "2":
+                stan = "irrelevant\">nie dotyczy";
+                console.log(pytanie + " nie dotyczy ");
+                break;
+            case "3":
+                stan = "stop\">STOP";
+                console.log(pytanie + " STOP ");
+                break;
+            default:
+                alert("kombinujemy ;)")
+
+        }
+
+        /* :TODO: upchać wyniki w tablicę i sortować ją po nrPytania */
+
+        let myReg = /\d{1,2}/;
+        let nrPytania = pytanie.match(myReg);
+        console.log("nrpytania " + nrPytania);
+        linia = linia + "<tr><td>" + pytanie + "</td><td class=\"" + stan + "</td></tr>";
+    }
+
     
-    console.log(typeof(pytaniaZrobione));
-    /* window.print()
-    
-    let pokazPytaniaZrobione = JSON.parse(pytaniaZrobione);
-    console.log(typeof(pokazPytaniaZrobione));
-    console.log(pokazPytaniaZrobione);*/
-    
-let duda = JSON.parse('sessionStorage');
-var keys = Object.keys(duda);
-console.log('obj contains ' + keys.length + ' keys: '+  keys);
-    /* var y = document.getElementById(pytanie).innerHTML;
-    console.log(y); */
-    alert(Object.keys({"success":"You are welcome","klucz":"wartość"})[1]);
+    console.log(linia);
+
+    linia = linia + "</table>";
+   document.getElementById('miejsce').innerHTML += linia;
+
 }
