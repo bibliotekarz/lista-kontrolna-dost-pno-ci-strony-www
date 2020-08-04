@@ -26,9 +26,9 @@ function statusOdpowiedzi(pytanie, wynik) {
 
 function pobierzOdpowiedzi() {
 
-    /* :TODO: na początku dodać kasuj obiekt tabela (obecnie dodają się w nieskończoność') */
+    document.getElementById('miejsce').innerHTML = "";
 
-    let linia = "<table><tr><th>Pytanie</th><th>Stan</th></tr>";
+    let linia = "<table id=\"wynik\"><tr><th>Lp.</th><th>Pytanie</th><th>Stan</th></tr>";
     for (var i = 0; i < sessionStorage.length; i++) {
         let pytanie = document.getElementById(sessionStorage.key(i)).innerHTML;
         let wartosc = sessionStorage.getItem(sessionStorage.key(i));
@@ -37,19 +37,15 @@ function pobierzOdpowiedzi() {
         switch (wartosc) {
             case "1":
                 stan = "ok\">OK";
-                console.log(pytanie + " OK ");
                 break;
             case "0":
                 stan = "no\">NIE";
-                console.log(pytanie + " NO! ");
                 break;
             case "2":
                 stan = "irrelevant\">nie dotyczy";
-                console.log(pytanie + " nie dotyczy ");
                 break;
             case "3":
                 stan = "stop\">STOP";
-                console.log(pytanie + " STOP ");
                 break;
             default:
                 alert("kombinujemy ;)")
@@ -60,8 +56,8 @@ function pobierzOdpowiedzi() {
 
         let myReg = /\d{1,2}/;
         let nrPytania = pytanie.match(myReg);
-        console.log("nrpytania " + nrPytania);
-        linia = linia + "<tr><td>" + pytanie + "</td><td class=\"" + stan + "</td></tr>";
+        let pytanieGole = pytanie.slice(nrPytania[0].length + 1);
+        linia = linia + "<tr><td>" + nrPytania + ".</td><td>" + pytanieGole + "</td><td class=\"" + stan + "</td></tr>";
     }
 
 
