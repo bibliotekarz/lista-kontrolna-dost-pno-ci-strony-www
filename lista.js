@@ -17,7 +17,7 @@ function statusOdpowiedzi(pytanie, wynik) {
             break;
         case "3":
             x.classList.remove("no", "ok", "irrelevant");
-            x.classList.add("end"); 
+            x.classList.add("end");
             break;
         default:
             alert("kombinujemy ;)")
@@ -25,7 +25,10 @@ function statusOdpowiedzi(pytanie, wynik) {
 }
 
 function pobierzOdpowiedzi() {
-        let linia = "<table><tr><th>Pytanie</th><th>Stan</th></tr>";
+
+    /* :TODO: na początku dodać kasuj obiekt tabela (obecnie dodają się w nieskończoność') */
+
+    let linia = "<table><tr><th>Pytanie</th><th>Stan</th></tr>";
     for (var i = 0; i < sessionStorage.length; i++) {
         let pytanie = document.getElementById(sessionStorage.key(i)).innerHTML;
         let wartosc = sessionStorage.getItem(sessionStorage.key(i));
@@ -61,10 +64,10 @@ function pobierzOdpowiedzi() {
         linia = linia + "<tr><td>" + pytanie + "</td><td class=\"" + stan + "</td></tr>";
     }
 
-    
+
     console.log(linia);
 
     linia = linia + "</table>";
-   document.getElementById('miejsce').innerHTML += linia;
+    document.getElementById('miejsce').innerHTML += linia;
 
 }
