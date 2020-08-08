@@ -39,7 +39,7 @@
     .ino{
         color: red;
     }
-    
+
     .ok {
         border-style: double;
         border-color: green;
@@ -54,6 +54,7 @@
         border-color: gray;
         color: darkgray;
     }
+
     .end {
         border-style: double;
         border-color: red;
@@ -77,4 +78,7 @@
     .button{
         border: darkmagenta;
         border-style: solid;
+    }
+    .ukryte{
+        display: none;
     }

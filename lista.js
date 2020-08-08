@@ -1,7 +1,6 @@
 function statusOdpowiedzi(pytanie, wynik) {
     var x = document.getElementById(pytanie);
     sessionStorage.setItem(pytanie, wynik);
-
     switch (wynik) {
         case "1":
             x.classList.add("ok");
@@ -28,7 +27,7 @@ function pobierzOdpowiedzi() {
 
     document.getElementById('miejsce').innerHTML = "";
 
-    let linia = "<table id=\"wynik\"><tr><th>Lp.</th><th>Pytanie</th><th>Stan</th></tr>";
+    let linia = "<table id=\"wynik\"><tr><th>Lp.</th><th>Pytanie</th><th>Stan</th><th>Odkryj pytanie</th></tr>";
     for (var i = 0; i < sessionStorage.length; i++) {
         let pytanie = document.getElementById(sessionStorage.key(i)).innerHTML;
         let wartosc = sessionStorage.getItem(sessionStorage.key(i));
@@ -55,9 +54,18 @@ function pobierzOdpowiedzi() {
         /* :TODO: upchać wyniki w tablicę i sortować ją po nrPytania */
 
         let myReg = /\d{1,2}/;
+
         let nrPytania = pytanie.match(myReg);
         let pytanieGole = pytanie.slice(nrPytania[0].length + 1);
-        linia = linia + "<tr><td>" + nrPytania + ".</td><td>" + pytanieGole + "</td><td class=\"" + stan + "</td></tr>";
+
+        var divPytania = "d"+ nrPytania;
+        console.log(divPytania);
+        console.log(typeof(divPytania));
+        var pytanieStyl = document.getElementById(divPytania);
+        pytanieStyl.style.display = "none";
+
+
+        linia = linia + "<tr><td>" + nrPytania + ".</td><td>" + pytanieGole + "</td><td class=\"" + stan + "</td><td><button onClick=\"odkryjPytanie();\")>zmień stan</button></td></tr>";
     }
 
 
@@ -65,5 +73,16 @@ function pobierzOdpowiedzi() {
 
     linia = linia + "</table>";
     document.getElementById('miejsce').innerHTML += linia;
+
+}
+/* :TODO: przewalczyć zasięg zmiennej pytanieStyl */
+
+function odkryjPytanie() {
+
+    let pytanieStyl = document.getElementById("d92");
+
+    if (pytanieStyl.style.display = "none") {
+        pytanieStyl.style.display = "initial";
+    }
 
 }
