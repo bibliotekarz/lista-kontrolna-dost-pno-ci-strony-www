@@ -23,11 +23,12 @@ function statusOdpowiedzi(pytanie, wynik) {
     }
 }
 
-function pobierzOdpowiedzi() {
 
+
+function pobierzOdpowiedzi() {
+    const tablica = [];
     document.getElementById('miejsce').innerHTML = "";
 
-    let linia = "<table id=\"wynik\"><tr><th>Lp.</th><th>Pytanie</th><th>Stan</th><th>Odkryj pytanie</th></tr>";
     for (var i = 0; i < sessionStorage.length; i++) {
         let pytanie = document.getElementById(sessionStorage.key(i)).innerHTML;
         let wartosc = sessionStorage.getItem(sessionStorage.key(i));
@@ -51,38 +52,51 @@ function pobierzOdpowiedzi() {
 
         }
 
-        /* :TODO: upchać wyniki w tablicę i sortować ją po nrPytania */
-
         let myReg = /\d{1,2}/;
 
         let nrPytania = pytanie.match(myReg);
         let pytanieGole = pytanie.slice(nrPytania[0].length + 1);
 
-        var divPytania = "d"+ nrPytania;
-        console.log(divPytania);
-        console.log(typeof(divPytania));
-        var pytanieStyl = document.getElementById(divPytania);
-        pytanieStyl.style.display = "none";
+        let divPytania = "d" + nrPytania;
+        document.getElementById(divPytania).style.display = "none";
 
-
-        linia = linia + "<tr><td>" + nrPytania + ".</td><td>" + pytanieGole + "</td><td class=\"" + stan + "</td><td><button onClick=\"odkryjPytanie();\")>zmień stan</button></td></tr>";
+        const tab = [nrPytania, pytanieGole, stan, divPytania];
+        tablica.push(tab);
     }
 
+    let linia1 = "<table id=\"wynik\"><tr><th>Lp.</th><th>Pytanie</th><th>Stan</th><th>Odkryj pytanie</th></tr>";
+    tablica.sort();
 
-    console.log(linia);
+    for (let i = 0; i < tablica.length; i++) {
+        const kolumna1 = tablica[i][0][0]; /* tablica w tablicy pierwszy element ma też jako tablicę dlateo 3*[0] */
+        const kolumna2 = tablica[i][1];
+        const kolumna3 = tablica[i][2];
+        const kolumna4 = tablica[i][3];
 
-    linia = linia + "</table>";
-    document.getElementById('miejsce').innerHTML += linia;
+        linia1 = linia1 + "<tr><td>" + kolumna1 + ".</td><td>" + kolumna2 + "</td><td class=\"" + kolumna3 + "</td><td><a href=\"#" + kolumna4 + "\" onClick=\"odkryjPytanie(" + kolumna4 + ", " + kolumna1 + ");\")>idź do pytania</a></td></tr>";
+        console.log(linia1);
+    }
+
+    linia1 = linia1 + "</table>";
+
+    document.getElementById('miejsce').innerHTML += linia1;
 
 }
-/* :TODO: przewalczyć zasięg zmiennej pytanieStyl */
 
-function odkryjPytanie() {
 
-    let pytanieStyl = document.getElementById("d92");
+function odkryjPytanie(nrDiv, nr) {
+    /* głupie js tworzy zmienne dla każdego obieku html mającego id */
+    nrDiv.style.display = "initial";
+    kasuj = "py" + nr;
+    sessionStorage.removeItem(kasuj);
+    pobierzOdpowiedzi();
+}
 
-    if (pytanieStyl.style.display = "none") {
-        pytanieStyl.style.display = "initial";
+/* :TODO: przerobić na local storage dorobić czyszczenie radio inputów */
+
+function kasujDane(){
+    if (confirm("Czy chcesz wyczyścić zapisane dane?")) {
+        localStorage.clear()
     }
 
 }
