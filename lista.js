@@ -98,5 +98,13 @@ function kasujDane(){
     if (confirm("Czy chcesz wyczyścić zapisane dane?")) {
         localStorage.clear()
     }
+    document.querySelectorAll("INPUT[type='radio']").forEach(function(){
+        this.checked=false
+    });
+    // document.querySelector('input[name="Choose"]:checked').checked = false;
 
+//    rootElement.querySelectorAll("input[type='radio']").forEach( radio => {
+//      radio.setAttribute("onclick", "radioClick(event)");
+//      radio.setAttribute("onkeyup", "radioClick(event)");
+//    });
 }
