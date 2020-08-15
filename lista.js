@@ -1,6 +1,6 @@
 function statusOdpowiedzi(pytanie, wynik) {
     var x = document.getElementById(pytanie);
-    sessionStorage.setItem(pytanie, wynik);
+    localStorage.setItem(pytanie, wynik);
     switch (wynik) {
         case "1":
             x.classList.add("ok");
@@ -29,23 +29,28 @@ function pobierzOdpowiedzi() {
     const tablica = [];
     document.getElementById('miejsce').innerHTML = "";
 
-    for (var i = 0; i < sessionStorage.length; i++) {
-        let pytanie = document.getElementById(sessionStorage.key(i)).innerHTML;
-        let wartosc = sessionStorage.getItem(sessionStorage.key(i));
+    for (var i = 0; i < localStorage.length; i++) {
+        let pytanie = document.getElementById(localStorage.key(i)).innerHTML;
+        let wartosc = localStorage.getItem(localStorage.key(i));
 
-        let stan = "";
+        let klasa = "";
+        let opis = "";
         switch (wartosc) {
             case "1":
-                stan = "ok\">OK";
+                klasa = "ok";
+                opis = "OK";
                 break;
             case "0":
-                stan = "no\">NIE";
+                klasa = "no";
+                opis = "NIE";
                 break;
             case "2":
-                stan = "irrelevant\">nie dotyczy";
+                klasa = "irrelevant";
+                opis = "nie dotyczy";
                 break;
             case "3":
-                stan = "stop\">STOP";
+                klasa = "stop";
+                opis = "STOP";
                 break;
             default:
                 alert("kombinujemy ;)")
@@ -60,20 +65,22 @@ function pobierzOdpowiedzi() {
         let divPytania = "d" + nrPytania;
         document.getElementById(divPytania).style.display = "none";
 
-        const tab = [nrPytania, pytanieGole, stan, divPytania];
+        const tab = [nrPytania, pytanieGole, klasa, opis, divPytania];
         tablica.push(tab);
     }
+
 
     let linia1 = "<table id=\"wynik\"><tr><th>Lp.</th><th>Pytanie</th><th>Stan</th><th>Odkryj pytanie</th></tr>";
     tablica.sort();
 
     for (let i = 0; i < tablica.length; i++) {
-        const kolumna1 = tablica[i][0][0]; /* tablica w tablicy pierwszy element ma też jako tablicę dlateo 3*[0] */
-        const kolumna2 = tablica[i][1];
-        const kolumna3 = tablica[i][2];
-        const kolumna4 = tablica[i][3];
+        const kolumnaNrPytania = tablica[i][0][0]; /* tablica w tablicy pierwszy element ma też jako tablicę dlateo 3*[0] */
+        const kolumnaPytanieGole = tablica[i][1];
+        const kolumnaKlasa = tablica[i][2];
+        const kolumnaOpis = tablica[i][3];
+        const kolumnadivPytania = tablica[i][4];
 
-        linia1 = linia1 + "<tr><td>" + kolumna1 + ".</td><td>" + kolumna2 + "</td><td class=\"" + kolumna3 + "</td><td><a href=\"#" + kolumna4 + "\" onClick=\"odkryjPytanie(" + kolumna4 + ", " + kolumna1 + ");\")>idź do pytania</a></td></tr>";
+        linia1 = linia1 + "<tr><td>" + kolumnaNrPytania + ".</td><td>" + kolumnaPytanieGole + "</td><td class=\"" + kolumnaKlasa + "\">" + kolumnaOpis + "</td><td><a href=\"#" + kolumnadivPytania + "\" onClick=\"odkryjPytanie(" + kolumnadivPytania + ", " + kolumnaNrPytania + ");\")>idź do pytania</a></td></tr>";
         console.log(linia1);
     }
 
@@ -88,23 +95,25 @@ function odkryjPytanie(nrDiv, nr) {
     /* głupie js tworzy zmienne dla każdego obieku html mającego id */
     nrDiv.style.display = "initial";
     kasuj = "py" + nr;
-    sessionStorage.removeItem(kasuj);
+    localStorage.removeItem(kasuj);
     pobierzOdpowiedzi();
 }
 
-/* :TODO: przerobić na local storage dorobić czyszczenie radio inputów */
+/* :TODO: dorobić czyszczenie radio inputów */
+
+
 
 function kasujDane(){
     if (confirm("Czy chcesz wyczyścić zapisane dane?")) {
         localStorage.clear()
     }
-    document.querySelectorAll("INPUT[type='radio']").forEach(function(){
-        this.checked=false
-    });
-    // document.querySelector('input[name="Choose"]:checked').checked = false;
+    console.log(typeof(document.querySelectorAll("INPUT[type='radio']")));
+    console.log(document.querySelectorAll("INPUT[type='radio']"));
 
-//    rootElement.querySelectorAll("input[type='radio']").forEach( radio => {
-//      radio.setAttribute("onclick", "radioClick(event)");
-//      radio.setAttribute("onkeyup", "radioClick(event)");
-//    });
+    document.querySelectorAll("INPUT[type='radio']").forEach(function(){
+        this.checked = false;
+        document.getElementById("p92nie").checked = false;
+    });
+    
 }
+
