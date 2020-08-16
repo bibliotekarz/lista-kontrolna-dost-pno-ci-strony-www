@@ -101,19 +101,34 @@ function odkryjPytanie(nrDiv, nr) {
 
 /* :TODO: dorobić czyszczenie radio inputów */
 
-
+function kasuj (){
+    
+    //document.querySelector("p.pytanie").add("pytanie");
+}
 
 function kasujDane(){
-    if (confirm("Czy chcesz wyczyścić zapisane dane?")) {
-        localStorage.clear()
-    }
-    console.log(typeof(document.querySelectorAll("INPUT[type='radio']")));
-    console.log(document.querySelectorAll("INPUT[type='radio']"));
-
-    document.querySelectorAll("INPUT[type='radio']").forEach(function(){
-        this.checked = false;
-        document.getElementById("p92nie").checked = false;
-    });
+    // if (confirm("Czy chcesz wyczyścić zapisane dane?")) {
+    //     localStorage.clear()
+    // }
     
+    let zaznaczone = document.querySelectorAll("INPUT[type='radio']");
+    for (let zaznaczony of zaznaczone){
+        zaznaczony.checked = false;
+    //    console.log(zaznaczony);
+        // zaznaczony.style.display = "initial";
+    }
+
+     let zaznaczoneDivy = document.querySelectorAll("p.pytanie");
+     for (let zaznaczonyDiv of zaznaczoneDivy){
+        console.log(zaznaczonyDiv);
+        
+    document.querySelector("p.pytanie").classList.remove("end", "no", "ok", "irrelevant");
+        
+    // console.log("dud " + document.querySelector("p.pytanie"));
+    // document.querySelector("p.pytanie").style.display="none";
+
+    //     kasuj();
+     }
+    ////    document.querySelector("p.pytanie").classList.remove("end", "no", "ok", "irrelevant");
 }
 
