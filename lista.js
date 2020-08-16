@@ -69,9 +69,12 @@ function pobierzOdpowiedzi() {
         tablica.push(tab);
     }
 
+    function compareNumbers(a, b) {
+        return parseInt(a)>parseInt(b);
+     }
 
     let linia1 = "<table id=\"wynik\"><tr><th>Lp.</th><th>Pytanie</th><th>Stan</th><th>Odkryj pytanie</th></tr>";
-    tablica.sort();
+    tablica.sort(compareNumbers);
 
     for (let i = 0; i < tablica.length; i++) {
         const kolumnaNrPytania = tablica[i][0][0]; /* tablica w tablicy pierwszy element ma też jako tablicę dlateo 3*[0] */
