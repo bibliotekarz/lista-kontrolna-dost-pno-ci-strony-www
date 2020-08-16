@@ -13,7 +13,7 @@
 
 <body>
 
-    <h2>Weryfikacja dostępności cyfrowej na poziomie 1.</h2>
+    <h2 id="start">Weryfikacja dostępności cyfrowej na poziomie 1.</h2>
     <p class="wprowadzenie">Sprawdzenie dostępności cyfrowej strony internetowej na poziomie 1 nie wymaga żadnej wiedzy
         technicznej na temat obsługi stron internetowych ani na temat kodu HTML. Wymaga jedynie podstawowej umiejętności
         korzystania ze stron internetowych. </p>
@@ -27,7 +27,10 @@
     <p class="wprowadzenie">Jeśli na PYTANIA KLUCZOWE zostanie udzielona odpowiedź negatywna (zaznaczona na czerwono),
         dalsza weryfikacja nie jest konieczna. Badane strony zostają od razu uznane za niedostępne w całości.</p>
 
+    <button class="pobierz" onclick="pobierzOdpowiedzi()">Pobierz zapisane wcześniej odpowiedzi</button>
 
+    <button class="kasuj" onclick="kasujDane()">Kasuj zapamiętane wcześniej odpowiedzi</button>
+    
     <div id="d1">
         <p class="pytanie" id="py1">1. PYTANIE KLUCZOWE: Czy wszystkie elementy aktywne na stronie są dostępne za pomocą
             klawiatury?
@@ -316,6 +319,8 @@
 
     <p class="wprowadzenie">Jeśli na PYTANIA KLUCZOWE zostanie udzielona odpowiedź negatywna (zaznaczona na czerwono),
         dalsza weryfikacja nie jest konieczna. Badane strony zostają od razu uznane za niedostępne w całości.</p>
+
+    <button class="pobierz" onclick="pobierzOdpowiedzi()">Pobierz Odpowiedzi</button>
 
     <div id="d17">
         <p class="pytanie" id="py17">17. PYTANIE KLUCZOWE: Czy istnieje rozwiązanie powodującego dostępność CAPTCHA?</p>
@@ -614,6 +619,7 @@
     <p class="wprowadzenie">Przy każdym pytaniu/zdaniu listy kontrolnej należy jedną z proponowanych odpowiedzi.
         Zaznaczenie odpowiedzi oznaczonej kolorem czerwonym oznacza błąd dostępności cyfrowej. </p>
 
+    <button class="pobierz" onclick="pobierzOdpowiedzi()">Pobierz Odpowiedzi</button>
 
     <h3>Listy i tabele</h3>
 
@@ -1384,6 +1390,8 @@
     <p class="wprowadzenie">Przy każdym pytaniu/zdaniu listy kontrolnej należy jedną z proponowanych odpowiedzi.
         Zaznaczenie odpowiedzi oznaczonej kolorem czerwonym oznacza błąd dostępności cyfrowej.</p>
 
+    <button class="pobierz" onclick="pobierzOdpowiedzi()">Pobierz Odpowiedzi</button>
+
     <div id="d85">
         <p class="pytanie" id="py85">85. Czy wszystkie elementy typu skryptowego lub programowalne w inny sposób są w
             pełni dostępne dla urządzeń wspomagających? </p>
@@ -1513,8 +1521,8 @@
             działań odbywających się w tle…) są one dostępne. </p>
     </div>
 
-    <button onclick="pobierzOdpowiedzi()">Pobierz Odpowiedzi</button>
-    <button onclick="kasujDane()">Kasuj zapamiętane dane</button>
+    <button class="pobierz" onclick="pobierzOdpowiedzi()">Pobierz Odpowiedzi</button>
+    <button class="kasuj" onclick="kasujDane()">Kasuj zapamiętane dane</button>
     <br><br>
     <div id="miejsce"></div><BR><br>
 

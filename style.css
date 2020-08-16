@@ -1,84 +1,139 @@
-    .kryteria {
-        font-size: x-small;
-    }
-    
-    .opis {
-        /*    visibility: hidden; 
+li {
+    list-style-type: square;
+}
+
+h3, h2 {
+    padding: 2rem;
+}
+
+table {
+    border-style: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+}
+
+thead {
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.kryteria {
+    font-size: x-small;
+}
+
+.opis {
+    /*    visibility: hidden; 
         display: none; */
-    }
-    
-    .wprowadzenie {
-        font-size: larger;
-        margin-bottom: 2rem;
-        padding-left: 1rem;
-    }
-    
-    .pytanie {
-        color: black;
-        font-size: large;
-        font-weight: 600;
-        background-color: lightgray;
-        padding: 1rem;
-        margin-top: 1rem;
-    }
-    
-    li {
+}
 
-        list-style-type: square;
-    }
-    
-    h3, h2 {
-        padding: 2rem;
-    }
-    
-    .no {
-        border-style: double;
-        border-color: red;
-    }
-    
-    .ino{
-        color: red;
-    }
+.wprowadzenie {
+    font-size: larger;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
 
-    .ok {
-        border-style: double;
-        border-color: green;
-    }
-    
-    .iok {
+.pytanie {
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    background-color: lightgray;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.no {
+    border-style: double;
+    border-color: red;
+}
+
+.ino {
+    color: red;
+}
+
+.ok {
+    border-style: double;
+    border-color: green;
+}
+
+.iok {
     color: green;
-    }
-    
-    .irrelevant{
-        border-style: double;
-        border-color: gray;
-        color: darkgray;
-    }
+}
 
-    .end {
-        border-style: double;
-        border-color: red;
-        background-color: yellow;
-    }
-    .stop {
-        border-style: double;
-        border-color: red;
-        background-color: yellow;
-    }
-    .end::before {
+.irrelevant {
+    border-style: double;
+    border-color: gray;
+    color: darkgray;
+}
 
-        background-color: red;
-        content: "Tu się kończy dostępność badanej strony :( ";
-    }
-    .end::after {
-        
-        background-color: red;
-        content: " - dalsze badanie mija się z celem.";
-    }
-    .button{
-        border: darkmagenta;
-        border-style: solid;
-    }
-    .ukryte{
-        display: none;
-    }
+.end {
+    border-style: double;
+    border-color: red;
+    background-color: yellow;
+}
+
+.stop {
+    border-style: double;
+    border-color: red;
+    background-color: yellow;
+}
+
+.end::before {
+    background-color: red;
+    content: "Tu się kończy dostępność badanej strony :( ";
+}
+
+.end::after {
+    background-color: red;
+    content: " - dalsze badanie mija się z celem.";
+}
+
+.button {
+    border: darkmagenta;
+    border-style: solid;
+}
+
+.ukryte {
+    display: none;
+}
+
+.nrpytania {
+    text-align: center;
+}
+
+.pytanieTablica {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.stan {
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.odkryj {
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.kasuj {
+    border-color: crimson;
+    background: rgb(245, 210, 210);
+    padding: 0.3rem;
+    margin-right: 1rem;
+}
+
+.pobierz {
+    padding: 0.3rem;
+    margin-right: 1rem;
+}
