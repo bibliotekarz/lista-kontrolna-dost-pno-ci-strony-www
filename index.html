@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Lista kontrolna do sprawdzania dostępności strony www" />
     <meta name="robots" content="index" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lista kontrolna do sprawdzania dostępności strony www</title>
     <script src="lista.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -12,7 +12,10 @@
 </head>
 
 <body>
-
+    <div class="buttony">
+        <button class="pobierz" onclick="pobierzOdpowiedzi()">Pobierz zapisane wcześniej odpowiedzi</button>
+        <button class="kasuj" onclick="kasujDane()">Kasuj zapamiętane wcześniej odpowiedzi</button>
+    </div>
     <h2 id="start">Weryfikacja dostępności cyfrowej na poziomie 1.</h2>
     <p class="wprowadzenie">Sprawdzenie dostępności cyfrowej strony internetowej na poziomie 1 nie wymaga żadnej wiedzy
         technicznej na temat obsługi stron internetowych ani na temat kodu HTML. Wymaga jedynie podstawowej umiejętności
@@ -27,10 +30,6 @@
     <p class="wprowadzenie">Jeśli na PYTANIA KLUCZOWE zostanie udzielona odpowiedź negatywna (zaznaczona na czerwono),
         dalsza weryfikacja nie jest konieczna. Badane strony zostają od razu uznane za niedostępne w całości.</p>
 
-    <button class="pobierz" onclick="pobierzOdpowiedzi()">Pobierz zapisane wcześniej odpowiedzi</button>
-
-    <button class="kasuj" onclick="kasujDane()">Kasuj zapamiętane wcześniej odpowiedzi</button>
-    
     <div id="d1">
         <p class="pytanie" id="py1">1. PYTANIE KLUCZOWE: Czy wszystkie elementy aktywne na stronie są dostępne za pomocą
             klawiatury?
@@ -204,6 +203,10 @@
         <p class="opis">Sprawdź, czy na stronie nie ma sytuacji, w której zaznaczenie fokusem bądź inne działanie nie
             będące kliknięciem ani naciśnięciem klawisza ENTER jakiegoś elementu powoduje wyświetlenie nowego okna.</p>
     </div>
+    <div class="buttony">
+        <button class="pobierz" onclick="pobierzOdpowiedzi()">Zapisz Odpowiedzi</button>
+        <button class="kasuj" onclick="kasujDane()">Kasuj wszystkie odpowiedzi</button>
+    </div>
     <div id="d11">
         <p class="pytanie" id="py11">11. Czy jest na stronie jest aktualna mapa strony bądź wyszukiwarka, jeżeli jest to
             uzasadnione?
@@ -296,6 +299,11 @@
         <p class="opis">Sprawdź, czy treść strony pozostaje taka sama bez względu na orientację ekranu. </p>
     </div>
 
+    <div class="buttony">
+        <button class="pobierz" onclick="pobierzOdpowiedzi()">Zapisz Odpowiedzi</button>
+        <button class="kasuj" onclick="kasujDane()">Kasuj wszystkie odpowiedzi</button>
+    </div>        
+        
     <h2>Weryfikacja dostępności cyfrowej na poziomie 2.</h2>
 
 
@@ -313,15 +321,11 @@
         TAK, NIE lub NIE DOTYCZY.
     </p>
 
-
     <h3>Pytania kluczowe</h3>
 
 
     <p class="wprowadzenie">Jeśli na PYTANIA KLUCZOWE zostanie udzielona odpowiedź negatywna (zaznaczona na czerwono),
         dalsza weryfikacja nie jest konieczna. Badane strony zostają od razu uznane za niedostępne w całości.</p>
-
-    <button class="pobierz" onclick="pobierzOdpowiedzi()">Pobierz Odpowiedzi</button>
-
     <div id="d17">
         <p class="pytanie" id="py17">17. PYTANIE KLUCZOWE: Czy istnieje rozwiązanie powodującego dostępność CAPTCHA?</p>
         <input type="radio" id="p17tak" name="p17" value="1" onclick="statusOdpowiedzi('py17', this.value)">
@@ -525,6 +529,11 @@
             Sprawdzenie należy wykonać jedynie dla elementów, dla których nie ma dokładniejszych metod udostępniania
             treści dla osób niepełnosprawnych (np. audiodeskrypcja).</p>
     </div>
+
+    <div class="buttony">
+        <button class="pobierz" onclick="pobierzOdpowiedzi()">Zapisz Odpowiedzi</button>
+        <button class="kasuj" onclick="kasujDane()">Kasuj wszystkie odpowiedzi</button>
+    </div>
     <div id="d28">
         <p class="pytanie" id="py28">28. Czy wszystkie multimedialne elementy wizualne posiadają możliwą do uruchomienia
             bezwzrokowo, poprawnie sformułowaną audiodeskrypcję? </p>
@@ -607,6 +616,12 @@
             wykresów itp. Poszerzony opis może być dostarczony na przykład w formie linku prowadzącego do miejsca, w
             którym można przeczytać co przedstawia grafika. </p>
     </div>
+
+    <div class="buttony">
+        <button class="pobierz" onclick="pobierzOdpowiedzi()">Zapisz Odpowiedzi</button>
+        <button class="kasuj" onclick="kasujDane()">Kasuj wszystkie odpowiedzi</button>
+    </div>
+
     <h2>Weryfikacja dostępności cyfrowej na poziomie 3.</h2>
     <p class="wprowadzenie">Sprawdzenie dostępności cyfrowej strony internetowej na poziomie 3 wymaga zaawansowanej
         wiedzy na temat funkcjonowania stron internetowych, dodatków do przeglądarek, posługiwania się prostymi
@@ -618,8 +633,6 @@
         niepełnosprawne takimi jak czytnik ekranu.</p>
     <p class="wprowadzenie">Przy każdym pytaniu/zdaniu listy kontrolnej należy jedną z proponowanych odpowiedzi.
         Zaznaczenie odpowiedzi oznaczonej kolorem czerwonym oznacza błąd dostępności cyfrowej. </p>
-
-    <button class="pobierz" onclick="pobierzOdpowiedzi()">Pobierz Odpowiedzi</button>
 
     <h3>Listy i tabele</h3>
 
@@ -796,6 +809,12 @@
         albo inny jednoznaczny,
         wyczerpujący opis zawartości znajdujący się w bezpośredniej bliskości na stronie.</p>
     </div>
+
+    <div class="buttony">
+        <button class="pobierz" onclick="pobierzOdpowiedzi()">Zapisz Odpowiedzi</button>
+        <button class="kasuj" onclick="kasujDane()">Kasuj wszystkie odpowiedzi</button>
+    </div>
+
     <div id="d44">
         <p class="pytanie" id="py44">44. Czy wszystkie opisy alternatywne mają rozsądną długość (liczbę znaków)? </p>
         <input type="radio" id="p44tak" name="p44" value="1" onclick="statusOdpowiedzi('py44', this.value)">
@@ -938,6 +957,12 @@
         <p class="opis">Sprawdź, czy nie ma znaczników &lt;optgroup&gt; niepołączonych z odpowiednio sformułowanym
             znacznikiem &lt;label&gt;.</p>
     </div>
+
+    <div class="buttony">
+        <button class="pobierz" onclick="pobierzOdpowiedzi()">Zapisz Odpowiedzi</button>
+        <button class="kasuj" onclick="kasujDane()">Kasuj wszystkie odpowiedzi</button>
+    </div>
+
     <div id="d54">
         <p class="pytanie" id="py54">54. Czy tekstowe pole formularza, jeśli jest to możliwe, zawiera poprawnie
             działającą funkcję autouzupełniania? </p>
@@ -1058,6 +1083,12 @@
         <p class="opis">Sprawdź, czy badane strony przechodzą test walidatorem HTML W3C bez żadnego błędu wpływającego
             na dostępność cyfrową i czy w kodzie nie są używane przestarzałe, nieużywane znaczniki i atrybuty.</p>
     </div>
+
+    <div class="buttony">
+        <button class="pobierz" onclick="pobierzOdpowiedzi()">Zapisz Odpowiedzi</button>
+        <button class="kasuj" onclick="kasujDane()">Kasuj wszystkie odpowiedzi</button>
+    </div>
+
     <div id="d64">
         <p class="pytanie" id="py64">64. Czy każda strona ma poprawną deklarację języka? </p>
         <input type="radio" id="p64tak" name="p64" value="1" onclick="statusOdpowiedzi('py64', this.value)">
@@ -1195,6 +1226,12 @@
             konieczne dla zrozumienia informacji lub dla konkretnej funkcjonalności, lub czy użytkownik może dowolnie
             opóźnić, zatrzymać i uruchomić to działanie.</p>
     </div>
+
+    <div class="buttony">
+        <button class="pobierz" onclick="pobierzOdpowiedzi()">Zapisz Odpowiedzi</button>
+        <button class="kasuj" onclick="kasujDane()">Kasuj wszystkie odpowiedzi</button>
+    </div>
+
     <div id="d74">
         <p class="pytanie" id="py74">74. Czy na stronie są elementy HTML niepoprawnie użyte w celu zmiany prezentacji?
         </p>
@@ -1382,6 +1419,11 @@
             podniesieniem palca lub zwolnieniem klawisza myszy) możliwe jest anulowanie działania. </p>
     </div>
 
+    <div class="buttony">
+        <button class="pobierz" onclick="pobierzOdpowiedzi()">Zapisz Odpowiedzi</button>
+        <button class="kasuj" onclick="kasujDane()">Kasuj wszystkie odpowiedzi</button>
+    </div>
+
     <h2>Weryfikacja dostępności cyfrowej na poziomie 4.</h2>
 
 
@@ -1389,8 +1431,6 @@
         do weryfikacji na poziomie 3 jak również wiedzy o działaniu różnego rodzaju skryptów. </p>
     <p class="wprowadzenie">Przy każdym pytaniu/zdaniu listy kontrolnej należy jedną z proponowanych odpowiedzi.
         Zaznaczenie odpowiedzi oznaczonej kolorem czerwonym oznacza błąd dostępności cyfrowej.</p>
-
-    <button class="pobierz" onclick="pobierzOdpowiedzi()">Pobierz Odpowiedzi</button>
 
     <div id="d85">
         <p class="pytanie" id="py85">85. Czy wszystkie elementy typu skryptowego lub programowalne w inny sposób są w
@@ -1521,12 +1561,15 @@
             działań odbywających się w tle…) są one dostępne. </p>
     </div>
 
-    <button class="pobierz" onclick="pobierzOdpowiedzi()">Pobierz Odpowiedzi</button>
-    <button class="kasuj" onclick="kasujDane()">Kasuj zapamiętane dane</button>
-    <br><br>
+    <div class="buttony">
+        <button class="pobierz" onclick="pobierzOdpowiedzi()">Zapisz Odpowiedzi</button>
+        <button class="kasuj" onclick="kasujDane()">Kasuj wszystkie odpowiedzi</button>
+    </div>
+    <br>
+    <br>
     <div id="miejsce"></div><BR><br>
 
-
+<a href="#start">na górę</a>
 </body>
 
 
