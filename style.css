@@ -3,7 +3,7 @@ li {
 }
 
 h3, h2 {
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 table {
@@ -33,7 +33,7 @@ tr:nth-child(even) {
 
 .wprowadzenie {
     font-size: larger;
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
     padding-left: 1rem;
 }
 
@@ -41,7 +41,7 @@ tr:nth-child(even) {
     color: black;
     font-size: large;
     font-weight: 600;
-    background-color: lightgray;
+    background-color: #efefef;
     padding: 1rem;
     margin-top: 1rem;
 }
@@ -127,13 +127,20 @@ tr:nth-child(even) {
 }
 
 .kasuj {
-    border-color: crimson;
+    border-color: lightsalmon;
     background: rgb(245, 210, 210);
     padding: 0.3rem;
     margin-right: 1rem;
 }
 
 .pobierz {
+    border-color: lightgreen;
+    background-color: white;
     padding: 0.3rem;
     margin-right: 1rem;
+}
+
+.buttony {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
 }

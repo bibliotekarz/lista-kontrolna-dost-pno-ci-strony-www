@@ -1,5 +1,5 @@
 function statusOdpowiedzi(pytanie, wynik) {
-    var x = document.getElementById(pytanie);
+    let x = document.getElementById(pytanie);
     localStorage.setItem(pytanie, wynik);
     switch (wynik) {
         case "1":
@@ -58,46 +58,45 @@ function pobierzOdpowiedzi() {
         }
 
         let myReg = /\d{1,2}/;
-
         let nrPytania = pytanie.match(myReg);
         let pytanieGole = pytanie.slice(nrPytania[0].length + 1);
-
         let divPytania = "d" + nrPytania;
+
         document.getElementById(divPytania).style.display = "none";
 
         const tab = [nrPytania, pytanieGole, klasa, opis, divPytania];
         tablica.push(tab);
     }
 
+    let linia1 = "<table id=\"wynik\"><thead><tr><th class=\"nrpytania\">Lp.</th><th class=\"pytanieTablica\">Pytanie</th><th class=\"stan\">Stan</th><th class=\"odkryj\">Odkryj pytanie</th></thead></tr>";
+    
     function compareNumbers(a, b) {
         return parseInt(a) > parseInt(b);
     }
 
-    let linia1 = "<table id=\"wynik\"><thead><tr><th class=\"nrpytania\">Lp.</th><th class=\"pytanieTablica\">Pytanie</th><th class=\"stan\">Stan</th><th class=\"odkryj\">Odkryj pytanie</th></thead></tr>";
     tablica.sort(compareNumbers);
 
     for (let i = 0; i < tablica.length; i++) {
-        const kolumnaNrPytania = tablica[i][0][0]; /* tablica w tablicy pierwszy element ma też jako tablicę dlateo 3*[0] */
+        const kolumnaNrPytania = tablica[i][0][0]; /* tablica w tablicy pierwszy element ma też jako tablicę dlatego 3*[0] */
         const kolumnaPytanieGole = tablica[i][1];
         const kolumnaKlasa = tablica[i][2];
         const kolumnaOpis = tablica[i][3];
-        const kolumnadivPytania = tablica[i][4];
+        const kolumnaDivPytania = tablica[i][4];
 
-        linia1 = linia1 + "<tr><td class=\"nrpytania\">" + kolumnaNrPytania + ".</td><td class=\"pytanieTablica\">" + kolumnaPytanieGole + "</td><td class=\"" + kolumnaKlasa + " stan\">" + kolumnaOpis + "</td><td class=\"odkryj\"><a href=\"#" + kolumnadivPytania + "\" onClick=\"odkryjPytanie(" + kolumnadivPytania + ", " + kolumnaNrPytania + ");\")>idź do pytania " + kolumnaNrPytania + "</a></td></tr>";
+        linia1 = linia1 + "<tr><td class=\"nrpytania\">" + kolumnaNrPytania + ".</td><td class=\"pytanieTablica\">" + kolumnaPytanieGole + "</td><td class=\"" + kolumnaKlasa + " stan\">" + kolumnaOpis + "</td><td class=\"odkryj\"><a href=\"#" + kolumnaDivPytania + "\" onClick=\"odkryjPytanie(" + kolumnaDivPytania + ", " + kolumnaNrPytania + ");\")>idź do pytania " + kolumnaNrPytania + "</a></td></tr>";
 
     }
 
     linia1 = linia1 + "</table>";
 
     document.getElementById('miejsce').innerHTML += linia1;
-
     window.location.assign("#miejsce");
 
 }
 
 
 function odkryjPytanie(nrDiv, nr) {
-    /* głupie js tworzy zmienne dla każdego obieku html mającego id */
+    /* js tworzy zmienne dla każdego obieku html mającego id */
     nrDiv.style.display = "initial";
     kasuj = "py" + nr;
     localStorage.removeItem(kasuj);
@@ -117,9 +116,9 @@ function kasujDane() {
     let zaznaczoneDivy = document.querySelectorAll("p.pytanie");
     for (let zaznaczonyDiv of zaznaczoneDivy) {
         zaznaczonyDiv.classList.remove("end", "no", "ok", "irrelevant");
-        location.reload();
-        window.location.assign("#start");
     }
 
+    location.reload();
+    window.location.assign("#start");
 }
 
