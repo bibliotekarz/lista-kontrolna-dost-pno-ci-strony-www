@@ -1,5 +1,7 @@
 # Lista kontrolna dostępności strony www
 
+*Adres działającego skryptu [https://bibliotekarz.github.io/lista-kontrolna-dost-pno-ci-strony-www/](https://bibliotekarz.github.io/lista-kontrolna-dost-pno-ci-strony-www/)*
+
 Strona z listą zapamiętuje lokalnie (w przeglądarce użytkownika) status odpowiedzi na pytania weryfikujące dostępność badanej strony www. Skrypt pomaga niezagubić się w  mnogości pytań podczas badania, zarazem dając informację zwrotną czy odpowiedź jest pozytywna. Pytania posiadające odpowiedzi są przenoszone z listy pytań do tabelki wynikowej na końcu strony.
 
 * Rozpoczynając ponownie pracę ze stroną zapisane dane przywraca pierwszy od góry przycisk "Pobierz zapisane wcześniej odpowiedzi"
