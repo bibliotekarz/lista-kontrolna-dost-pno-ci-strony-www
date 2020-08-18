@@ -5,7 +5,7 @@
 Strona z listą zapamiętuje lokalnie (w przeglądarce użytkownika) status odpowiedzi na pytania weryfikujące dostępność badanej strony www. Skrypt pomaga niezagubić się w  mnogości pytań podczas badania, zarazem dając informację zwrotną czy odpowiedź jest pozytywna. Pytania posiadające odpowiedzi są przenoszone z listy pytań do tabelki wynikowej na końcu strony.
 
 * Rozpoczynając ponownie pracę ze stroną zapisane dane przywraca pierwszy od góry przycisk "Pobierz zapisane wcześniej odpowiedzi"
-* Aby zachowac odpowiedzi należy po ich wybraniu nacisnąć guzik "Zapisz odpowiedzi".
+* Aby zachować odpowiedzi należy po ich wybraniu nacisnąć guzik "Zapisz odpowiedzi".
 * Guzik "Kasuj wszystkie odpowiedzi" usuwa wszystkie dane z przeglądarki. 
 
 Żadne wprowadzane dane nie są gromadzone i przetwarzane na serwerze.
